@@ -29,3 +29,20 @@ Proyectos › total capítulo 6 de gastos
 
 Gastos corrientes al día: 
 Total Capítulo 2 de gastos / 365 días
+
+
+
+
+URLS
+====
+lospresus.de
+lospresus.de/quevan
+lospresus.de/barakaldo
+lospresus.de/barakaldo/2001
+lospresus.de/barakaldo/evolucion
+lospresus.de/barakaldo/y/sestao
+lospresus.de/search?q=barakaldo
+
+
+
+
