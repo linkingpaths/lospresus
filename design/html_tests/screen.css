@@ -1,0 +1,570 @@
+/* CSS de Open Data Euskadi */
+
+/* 
+Cheatsheet: relación de unidades px<>em en OpenData en elementos HTML de primer nivel:
+10px = .714em
+12px = .857em
+14px = 1em
+15px = 1.071em
+16px = 1.143em
+18px = 1.286em
+20px = 1.429em
+24px = 1.714em
+30px = 2.143em
+40px = 2.857em
+*/
+
+/* @group Reset */
+html
+{
+	/*This odd 100.01% value for the font size compensates for several browser bugs.
+First, setting a default body font size in percent (instead of em) eliminates an IE/Win problem with growing or shrinking fonts out of proportion if they are later set in ems in other elements.
+Additionally, some versions of Opera will draw a default font-size of 100% too small compared to other browsers. Safari, on the other hand, has a problem with a font-size of 101%. The current best suggestion is to use the 100.01% value for this property.*/
+	font-size: 100.01%;
+}
+
+html, body {margin: 0;padding: 0;}
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, q, cite, a, abbr, acronym, address, big, small, code, samp, var, tt, pre, del, ins, strike, dfn, kbd, em, strong, font, img, s, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,caption, tbody, tfoot, thead, tr, th, td
+{font-size: 100%;vertical-align: baseline;}
+
+:link,:visited {text-decoration: none;}
+div, dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,pre,p,blockquote {margin: 0;padding: 0;}
+dl,ul,ol {list-style: none;list-style-type: none;}
+/* NOTA: tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse;border-spacing: 0;}
+
+a,
+a:hover,
+a:active,
+a img,
+:link img,
+:visited img
+{border: none;outline: none;outline-style: none;}
+
+:focus {outline: 0;}
+address,caption,cite,code,dfn,th,var{font-style: normal;font-weight: normal;}
+pre, code, tt, samp {font-size: 1em;}
+kbd {text-transform: uppercase;}
+sup {vertical-align: super;}
+sub {vertical-align: sub;}
+pre {white-space: pre;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+{content:"";}
+
+blockquote,q{quotes: "" "";}
+/* @end */
+
+
+
+/* @group Web fonts */
+/* LeagueGothic */
+.LeagueGothic {font-family: 'LeagueGothicRegular', 'Century Gothic', Impact, Arial, sans-serif;}
+/* Avenir */
+.AvenirLTStd-Black {font-family: 'AvenirLTStd65MediumBold', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.AvenirLTStd-Heavy {font-family: 'AvenirLTStd55RomanBold', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.AvenirLTStd-Medium {font-family: 'AvenirLTStd65MediumRegular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.AvenirLTStd-Roman {font-family: 'AvenirLTStd55RomanRegular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.AvenirLTStd-Book {font-family: 'AvenirLTStd45BookRegular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.AvenirLTStd-Light {font-family: 'AvenirLTStd35LightRegular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+/* Clarendon */
+.ClarendonLTStd {font-family: 'ClarendonLTStdRegular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.ClarendonLTStd-Light {font-family: 'ClarendonLTStdLightRegular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.ClarendonLTStd-Bold {font-family: 'ClarendonLTStdBold', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+/* @end */
+
+
+
+/* @group HTML elements */
+body
+{
+	background: #fff;
+	color: #333;
+	font-family: 'AvenirLTStd45BookRegular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;
+	font-size: .875em;/*14px*/
+	line-height: 1.286em;/*18px*/
+}
+
+/* Hacemos que todos los elementos en bloque por defecto tengan un margin inferior correspondiente a 20px */
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,pre,p,blockquote{margin: 0 0 1.429em 0;}
+
+/* @group headings */
+h1, h2, h3, h4, h5, h6
+{
+	/*color: #666;*/
+	font-family: Arial, sans-serif;
+	line-height: 1.2;
+	margin: 0 0 .5em 0;
+}
+h1 {font-size: 1.714em;}/* 24px */
+h2 {font-size: 1.429em;}/* 20px */
+h3 {font-size: 1.143em;}/* 16px */
+h4 {font-size: 1em;}/* 14px */
+h5 {font-size: 1em;}/* 14px */
+h6 {font-size: 1em;}/* 14px */
+/* @end */
+      
+a:link {color: #0074bd;}/* Unvisited link */
+a:visited {color: #0074bd;}/* Visited links */
+a:hover {color: #47b6ed;}/* The user mouses over a link */
+a:focus {}/* The user clicks on a link */
+a:active {}/* The user has clicked a link */
+
+
+acronym,
+abbr
+{
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+a acronym,
+a abbr
+{cursor: pointer;}
+
+/* @group q, bockquote, cite */
+q,
+blockquote
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+}
+
+blockquote {font-size: 15px;}
+
+blockquote cite
+{
+  display: block;
+  font-size: 12px;
+  margin: 10px 0 0 0;
+}
+
+/* STANDARD QUOTES */
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+q:lang(sv) { quotes: '\201D' '\201D' '\2019' '\2019'; }
+q:lang(da) { quotes: '\00BB' '\00AB' '\203A' '\2039'; }
+
+q:before { content: open-quote; }
+q:after  { content: close-quote; }
+
+/* SAFARI SUPPORT */
+q:before   { content: '\201C'; }
+q:after    { content: '\201D'; }
+q q:before { content: '\2018'; }
+q q:after  { content: '\2019'; }
+
+/* BLOCKQUOTES */
+blockquote * { quotes: none; }
+blockquote > *:before { content: '\201C'; }
+blockquote > *:after  { content: '\201D'; }
+blockquote q:before   { content: '\2018'; }
+blockquote q:after    { content: '\2019'; }
+
+/* LANGUAGE-SPECIFIC QUOTES SAFARI STYLE */
+*[lang~='da'] q:before, q[lang~='da']:before,
+*[lang~='da'] blockquote > *:before, blockquote[lang~='da'] > *:before { content: '\201E'; }
+
+*[lang~='da'] q:after, q[lang~='da']:after,
+*[lang~='da'] blockquote > *:after, blockquote[lang~='da'] > *:after { content: '\201C'; }
+
+*[lang~='da'] q q:before, q[lang~='da'] q:before,
+*[lang~='da'] blockquote q:before, blockquote[lang~='da'] q:before { content: '\2019'; }
+
+*[lang~='da'] q q:after, q[lang~='da'] q:after,
+*[lang~='da'] blockquote q:after, blockquote[lang~='da'] q:after { content: '\2019'; }
+
+*[lang~='sv'] q:before, q[lang~='sv']:before,
+*[lang~='sv'] blockquote > *:before, blockquote[lang~='sv'] > *:before { content: '\201D'; }
+
+*[lang~='sv'] q:after, q[lang~='sv']:after,
+*[lang~='sv'] blockquote > *:after, blockquote[lang~='sv'] > *:after { content: '\201D'; }
+
+*[lang~='sv'] q q:before, q[lang~='sv'] q:before,
+*[lang~='sv'] blockquote q:before, blockquote[lang~='sv'] q:before { content: '\2019'; }
+
+*[lang~='sv'] q q:after,  q[lang~='sv'] q:after,
+*[lang~='sv'] blockquote q:after, blockquote[lang~='sv'] q:after { content: '\2019'; }
+
+cite {}
+/* @end */
+kbd
+{
+  background: #eee;
+  border-top: .15em solid #ccc;
+  border-right:.25em solid #aaa;
+  border-bottom:.3em solid #888;
+  border-left:.2em solid #bbb;
+  color: #000;
+  font-size: 1em;
+  font-weight: normal;
+  font-family: "Lucida console", Courier, monospace, sans-serif;
+  line-height: 2;
+  padding: .05em .2em;
+}
+
+/* @group lists */
+ul, ol{}
+ol{}
+ul li, ol li {margin: 0 0 5px 0;}
+dl{}
+dt, dd{margin: 0;}
+dt{font-weight: bold;}
+dd{}
+/* @end */
+
+
+
+/* @group forms */
+form{}
+
+fieldset
+{
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+legend{display: none;}
+
+
+
+label, input, select, optgroup, option, textarea {font-size: 1em;}
+
+input, select, textarea, button
+{
+	margin: 0 0 1.429em 0;
+	padding: .5em;
+}
+
+input,
+select,
+textarea,
+optgroup,
+option
+{
+	background-color: #fff;
+	font-family: Arial, sans-serif;
+}
+
+input,
+select,
+textarea
+{
+	background: #fff;
+	border: 1px solid;
+	border-bottom-color: #d2d2d2;
+	border-left-color: #acacac;
+	border-right-color: #acacac;
+	border-top-color: #6f6f6f;
+}
+
+input,
+textarea
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15) inset;
+	-webkitbox-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15) inset;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15) inset;
+}
+
+label
+{
+	display: inline-block;
+	line-height: 1.1;
+	padding: .5em 0;
+	vertical-align: top;
+}
+
+input{}
+optgroup {font-style: normal;}
+
+option
+{
+  background: #fff;
+  cursor: pointer;
+}
+
+button
+{
+	display: block;
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+}
+
+button {border: none;}
+button:hover{cursor: pointer;}
+button:focus{}
+
+select {}
+textarea {overflow: auto;}
+
+input[type="text"]:hover,
+select:hover,
+textarea:hover
+{
+  border-color: #aaa;
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus
+{
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.25);
+	box-shadow: 0 0 3px rgba(0,0,0,.25);
+	border-color: #666;
+	color: #333;
+}
+/* @end */
+
+
+/* @group tables */
+table, caption, thead, th, tr, td
+{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table, thead, th, tr, td {border: 1px solid #ccc;}
+
+table
+{
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+
+caption
+{
+  border-top: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 5px;
+}
+
+th
+{
+  font-weight: bold;
+  text-align: left;
+}
+
+th,
+td
+{
+  padding: 5px;
+  vertical-align: top;
+}
+
+/* @group thead */
+thead
+{
+  background: #333;
+  color: #fff;
+}
+
+thead th{background: #333;}
+/* @end */
+
+
+/* @group tbody */
+tbody{}
+/* @end */
+
+
+/* @group tfoot */
+tfoot{}
+/* @end */
+/* @end */
+iframe {margin: 0;}
+
+/* @group Selección general */
+::-moz-selection,
+::selection
+{
+	background:#d4f699;
+	color:#7aa62f;
+}
+
+/* Selección de enlaces */ 
+a::-moz-selection,
+a::selection
+{
+	background: #535353;
+	color:#9dd63c;
+}
+/* @end */
+/* @end */
+
+/* @group Common elements */
+/* @end */
+
+
+
+/* @group Global Styles */
+/* Envuelve el contenido central de los bloques principales (header, container, footer, etc.) para darles un ancho y centrarlos en la página */
+.inside
+{
+	margin: 0 auto;
+	/*width: 68.571em;*//* 960px */
+	width: 95%;
+}
+
+/* Para ocultar elementos. Recomendado en WebAIM: http://www.webaim.org/techniques/css/invisiblecontent/ */
+.hide,
+.pagination span,
+.pag_pages em
+{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+/* Cuando un input va dentro de un label (checkbox/radio) */
+label input
+{
+	margin: 0 .35em 0 0;
+	vertical-align: middle;
+}
+
+/* Separador con volumen */
+hr.f0f0f0_bevel {
+	height: 0;
+	clear: both;
+	border: solid #ddd;
+	border-width: 1px 0 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #fff;
+}
+
+/* @group .tags */
+/* Tags */
+.tags li
+{
+	float: left;
+	margin: 0 .15em .35em 0;
+}
+
+.tags a,
+.tags strong,
+.tags span
+{vertical-align: middle;}
+
+.tags a
+{
+	-moz-border-radius: 1.25em;
+	-webkit-border-radius: 1.25em;
+	border-radius: 1.25em;
+	-moz-box-shadow: 0 1px 0 #999;
+	-webkitbox-box-shadow: 0 1px 0 #999;
+	box-shadow: 0 1px 0 #999;
+	background: #fff;
+	display: inline-block;
+	font-size: .857em;
+	margin: 0 .25em 0 0;
+	padding: .35em .75em;
+	text-align: center;
+}
+
+.tags a:hover
+{
+	background: #222;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.tags a:active
+{
+	left: 1px;
+	position: relative;
+	top: 1px;
+}
+/* @end */
+
+
+
+/* @group .btn */
+/* Se aplica a elementos <button> y a enlaces con aspecto de botón */
+.btn
+{
+	-moz-border-radius: .5em;
+	-webkit-border-radius: .5em;
+	border-radius: .5em;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .5), 0 1px 1px rgba(255, 255, 255, 1) inset;
+	-webkitbox-box-shadow: 0 1px 3px rgba(0, 0, 0, .5), 0 1px 1px rgba(255, 255, 255, 1) inset;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .5), 0 1px 1px rgba(255, 255, 255, 1) inset;
+	background: #0074bd url(../img/bg/btn.png) repeat-x;
+	border: 1px solid #396b9d;
+	font-weight: bold;
+	padding: .65em .75em;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .5), -1px -1px 1px rgba(0, 0, 0, .5);
+}
+
+.btn, a.btn, a.btn:visited {color: #fff;}
+a.btn {display: inline-block;}
+
+.btn:hover
+{
+	-moz-box-shadow: none;
+	-webkitbox-box-shadow: none;
+	box-shadow: none;
+	background-color: #008fcd;
+	border: 1px solid #396b9d;
+	color: #fff;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, .5);
+}
+
+.btn:active
+{
+	position: relative;
+	top: 1px;
+}
+/* @end */
+
+/* Listado con disco como bullet */
+.list_disc li
+{
+	background: url(../img/bullets/circle.gif) no-repeat left .35em;
+	padding: 0 0 0 13px;
+}
+
+/* @group dl.line */
+/* line: clase para que el dt y el dd van en la misma línea */
+dl.line dt
+{
+	clear: both;
+	float: left;
+	margin: 0 1em 0 0;
+}
+/* @end */
+
+/* @group .clearfix */
+/* Clearfix permite limpiar flotados. Mas info: http://www.positioniseverything.net/easyclearing.html  */
+.clearfix:after
+{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix
+{display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix
+{height: 1%;}
+
+.clearfix
+{display: block;}
+/* End hide from IE-mac */
+/* @end */
+/* @end */
