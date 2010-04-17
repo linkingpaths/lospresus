@@ -1,6 +1,4 @@
-Cifras de población resultantes de la Revisión del Padrón municipal a 1 de enero de 2002;;;;;;
 CPRO;PROVINCIA;CMUN;NOMBRE;POB02;VARONES;MUJERES
-Álava;;;;291.860;145.251;146.609
 01;Álava;001;Alegría-Dulantzi;1.598;828;770
 01;Álava;002;Amurrio;9.594;4.761;4.833
 01;Álava;049;Añana;191;104;87
@@ -52,7 +50,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB02;VARONES;MUJERES
 01;Álava;062;Zambrana;375;203;172
 01;Álava;018;Zigoitia;1.316;724;592
 01;Álava;063;Zuia;1.956;1.006;950
-Albacete;;;;371.787;185.458;186.329
 02;Albacete;001;Abengibre;972;478;494
 02;Albacete;002;Alatoz;633;334;299
 02;Albacete;003;Albacete;152.155;74.729;77.426
@@ -140,7 +137,6 @@ Albacete;;;;371.787;185.458;186.329
 02;Albacete;084;Villaverde de Guadalimar;502;268;234
 02;Albacete;085;Viveros;512;277;235
 02;Albacete;086;Yeste;3.991;2.040;1.951
-Alicante/Alacant;;;;1.557.968;772.613;785.355
 03;Alicante/Alacant;001;Adsubia;605;322;283
 03;Alicante/Alacant;002;Agost;4.284;2.157;2.127
 03;Alicante/Alacant;003;Agres;623;338;285
@@ -282,7 +278,6 @@ Alicante/Alacant;;;;1.557.968;772.613;785.355
 03;Alicante/Alacant;138;Verger (el);3.897;1.933;1.964
 03;Alicante/Alacant;139;Villajoyosa/Vila Joiosa (la);25.073;12.495;12.578
 03;Alicante/Alacant;140;Villena;32.892;16.296;16.596
-Almería;;;;546.498;276.380;270.118
 04;Almería;001;Abla;1.529;762;767
 04;Almería;002;Abrucena;1.413;694;719
 04;Almería;003;Adra;22.034;11.090;10.944
@@ -385,7 +380,6 @@ Almería;;;;546.498;276.380;270.118
 04;Almería;101;Viator;3.617;1.788;1.829
 04;Almería;102;Vícar;16.464;8.779;7.685
 04;Almería;103;Zurgena;2.140;1.069;1.071
-Ávila;;;;165.138;82.951;82.187
 05;Ávila;001;Adanero;354;189;165
 05;Ávila;002;Adrada (La);2.013;1.041;972
 05;Ávila;005;Albornos;234;129;105
@@ -634,7 +628,6 @@ Almería;;;;546.498;276.380;270.118
 05;Ávila;265;Vita;113;70;43
 05;Ávila;266;Zapardiel de la Cañada;169;82;87
 05;Ávila;267;Zapardiel de la Ribera;130;65;65
-Badajoz;;;;662.808;327.691;335.117
 06;Badajoz;001;Acedera;897;472;425
 06;Badajoz;002;Aceuchal;5.344;2.645;2.699
 06;Badajoz;003;Ahillones;1.158;567;591
@@ -799,7 +792,6 @@ Badajoz;;;;662.808;327.691;335.117
 06;Badajoz;160;Zalamea de la Serena;4.554;2.233;2.321
 06;Badajoz;162;Zarza (La);3.619;1.809;1.810
 06;Badajoz;161;Zarza-Capilla;483;255;228
-Balears (Illes);;;;916.968;458.349;458.619
 07;Balears (Illes);002;Alaior;7.982;4.007;3.975
 07;Balears (Illes);001;Alaró;4.320;2.117;2.203
 07;Balears (Illes);003;Alcúdia;13.824;7.058;6.766
@@ -867,7 +859,6 @@ Balears (Illes);;;;916.968;458.349;458.619
 07;Balears (Illes);062;Son Servera;10.643;5.394;5.249
 07;Balears (Illes);063;Valldemossa;1.830;906;924
 07;Balears (Illes);065;Vilafranca de Bonany;2.518;1.264;1.254
-Barcelona;;;;4.906.117;2.398.899;2.507.218
 08;Barcelona;001;Abrera;8.823;4.562;4.261
 08;Barcelona;002;Aguilar de Segarra;215;112;103
 08;Barcelona;014;Aiguafreda;2.175;1.070;1.105
@@ -1179,7 +1170,6 @@ Barcelona;;;;4.906.117;2.398.899;2.507.218
 08;Barcelona;219;Vilassar de Mar;17.721;8.691;9.030
 08;Barcelona;304;Vilobí del Penedès;921;477;444
 08;Barcelona;308;Viver i Serrateix;194;100;94
-Burgos;;;;352.723;176.770;175.953
 09;Burgos;001;Abajas;55;27;28
 09;Burgos;003;Adrada de Haza;273;151;122
 09;Burgos;006;Aguas Cándidas;94;55;39
@@ -1551,7 +1541,6 @@ Burgos;;;;352.723;176.770;175.953
 09;Burgos;482;Zarzosa de Río Pisuerga;56;33;23
 09;Burgos;483;Zazuar;265;141;124
 09;Burgos;485;Zuñeda;83;44;39
-Cáceres;;;;410.242;205.848;204.394
 10;Cáceres;001;Abadía;297;169;128
 10;Cáceres;002;Abertura;509;267;242
 10;Cáceres;003;Acebo;784;427;357
@@ -1771,7 +1760,6 @@ Cáceres;;;;410.242;205.848;204.394
 10;Cáceres;217;Zarza de Montánchez;617;310;307
 10;Cáceres;218;Zarza la Mayor;1.666;843;823
 10;Cáceres;219;Zorita;1.925;951;974
-Cádiz;;;;1.140.793;566.033;574.760
 11;Cádiz;001;Alcalá de los Gazules;5.565;2.868;2.697
 11;Cádiz;002;Alcalá del Valle;5.278;2.720;2.558
 11;Cádiz;003;Algar;1.714;911;803
@@ -1816,7 +1804,6 @@ Cádiz;;;;1.140.793;566.033;574.760
 11;Cádiz;040;Villaluenga del Rosario;455;240;215
 11;Cádiz;041;Villamartín;12.069;6.045;6.024
 11;Cádiz;042;Zahara;1.526;799;727
-Castellón/Castelló;;;;501.237;250.410;250.827
 12;Castellón/Castelló;002;Aín;156;78;78
 12;Castellón/Castelló;003;Albocàsser;1.381;680;701
 12;Castellón/Castelló;004;Alcalà de Xivert;6.164;3.221;2.943
@@ -1952,7 +1939,6 @@ Castellón/Castelló;;;;501.237;250.410;250.827
 12;Castellón/Castelló;140;Viver;1.314;662;652
 12;Castellón/Castelló;141;Zorita del Maestrazgo;139;68;71
 12;Castellón/Castelló;142;Zucaina;201;113;88
-Ciudad Real;;;;484.338;238.380;245.958
 13;Ciudad Real;001;Abenójar;1.725;865;860
 13;Ciudad Real;002;Agudo;2.013;1.026;987
 13;Ciudad Real;003;Alamillo;674;340;334
@@ -2055,7 +2041,6 @@ Ciudad Real;;;;484.338;238.380;245.958
 13;Ciudad Real;096;Villarrubia de los Ojos;9.598;4.812;4.786
 13;Ciudad Real;097;Villarta de San Juan;2.972;1.512;1.460
 13;Ciudad Real;098;Viso del Marqués;3.002;1.491;1.511
-Córdoba;;;;771.131;377.328;393.803
 14;Córdoba;001;Adamuz;4.455;2.260;2.195
 14;Córdoba;002;Aguilar de la Frontera;13.508;6.687;6.821
 14;Córdoba;003;Alcaracejos;1.423;700;723
@@ -2131,7 +2116,6 @@ Córdoba;;;;771.131;377.328;393.803
 14;Córdoba;073;Villaviciosa de Córdoba;3.774;1.922;1.852
 14;Córdoba;074;Viso (El);2.955;1.441;1.514
 14;Córdoba;075;Zuheros;880;449;431
-Coruña (A);;;;1.111.886;533.914;577.972
 15;Coruña (A);001;Abegondo;5.772;2.884;2.888
 15;Coruña (A);002;Ames;18.788;9.126;9.662
 15;Coruña (A);003;Aranga;2.379;1.200;1.179
@@ -2226,7 +2210,6 @@ Coruña (A);;;;1.111.886;533.914;577.972
 15;Coruña (A);090;Vilasantar;1.622;835;787
 15;Coruña (A);092;Vimianzo;8.686;4.235;4.451
 15;Coruña (A);093;Zas;6.082;2.964;3.118
-Cuenca;;;;201.614;101.048;100.566
 16;Cuenca;001;Abia de la Obispalía;85;49;36
 16;Cuenca;002;Acebrón (El);278;143;135
 16;Cuenca;003;Alarcón;182;86;96
@@ -2465,7 +2448,6 @@ Cuenca;;;;201.614;101.048;100.566
 16;Cuenca;278;Zafrilla;120;55;65
 16;Cuenca;279;Zarza de Tajo;254;122;132
 16;Cuenca;280;Zarzuela;273;141;132
-Girona;;;;598.112;299.657;298.455
 17;Girona;001;Agullana;672;343;329
 17;Girona;002;Aiguaviva;571;291;280
 17;Girona;003;Albanyà;110;59;51
@@ -2687,7 +2669,6 @@ Girona;;;;598.112;299.657;298.455
 17;Girona;222;Vilaür;123;69;54
 17;Girona;233;Vilobí d'Onyar;2.328;1.252;1.076
 17;Girona;232;Vilopriu;152;77;75
-Granada;;;;818.959;402.121;416.838
 18;Granada;001;Agrón;354;181;173
 18;Granada;002;Alamedilla;864;435;429
 18;Granada;003;Albolote;13.725;6.916;6.809
@@ -2856,7 +2837,6 @@ Granada;;;;818.959;402.121;416.838
 18;Granada;913;Zagra;1.108;550;558
 18;Granada;193;Zubia (La);14.119;6.962;7.157
 18;Granada;194;Zújar;2.691;1.364;1.327
-Guadalajara;;;;177.761;90.208;87.553
 19;Guadalajara;001;Abánades;111;64;47
 19;Guadalajara;002;Ablanque;145;77;68
 19;Guadalajara;003;Adobes;50;23;27
@@ -3145,7 +3125,6 @@ Guadalajara;;;;177.761;90.208;87.553
 19;Guadalajara;333;Zaorejas;198;114;84
 19;Guadalajara;334;Zarzuela de Jadraque;44;17;27
 19;Guadalajara;335;Zorita de los Canes;103;57;46
-Guipúzcoa;;;;682.977;335.670;347.307
 20;Guipúzcoa;001;Abaltzisketa;283;161;122
 20;Guipúzcoa;002;Aduna;332;179;153
 20;Guipúzcoa;016;Aia;1.643;915;728
@@ -3234,7 +3213,6 @@ Guipúzcoa;;;;682.977;335.670;347.307
 20;Guipúzcoa;028;Zizurkil;2.900;1.486;1.414
 20;Guipúzcoa;081;Zumaia;8.560;4.300;4.260
 20;Guipúzcoa;080;Zumarraga;10.265;5.131;5.134
-Huelva;;;;464.934;230.999;233.935
 21;Huelva;001;Alájar;781;403;378
 21;Huelva;002;Aljaraque;12.303;6.201;6.102
 21;Huelva;003;Almendro (El);823;427;396
@@ -3314,7 +3292,6 @@ Huelva;;;;464.934;230.999;233.935
 21;Huelva;077;Villarrasa;2.088;1.062;1.026
 21;Huelva;078;Zalamea la Real;3.548;1.755;1.793
 21;Huelva;079;Zufre;976;512;464
-Huesca;;;;208.963;105.566;103.397
 22;Huesca;001;Abiego;291;144;147
 22;Huesca;002;Abizanda;143;69;74
 22;Huesca;003;Adahuesca;160;82;78
@@ -3517,7 +3494,6 @@ Huesca;;;;208.963;105.566;103.397
 22;Huesca;252;Yebra de Basa;157;95;62
 22;Huesca;253;Yésero;79;46;33
 22;Huesca;254;Zaidín;1.722;879;843
-Jaén;;;;647.387;320.575;326.812
 23;Jaén;001;Albanchez de Mágina;1.453;754;699
 23;Jaén;002;Alcalá la Real;21.517;10.607;10.910
 23;Jaén;003;Alcaudete;11.199;5.540;5.659
@@ -3615,7 +3591,6 @@ Jaén;;;;647.387;320.575;326.812
 23;Jaén;099;Villares (Los);5.007;2.505;2.502
 23;Jaén;101;Villarrodrigo;581;295;286
 23;Jaén;903;Villatorres;4.322;2.216;2.106
-León;;;;496.655;242.409;254.246
 24;León;001;Acebedo;282;157;125
 24;León;002;Algadefe;344;174;170
 24;León;003;Alija del Infantado;949;477;472
@@ -3827,7 +3802,6 @@ León;;;;496.655;242.409;254.246
 24;León;228;Villazala;1.025;522;503
 24;León;229;Villazanzo de Valderaduey;688;369;319
 24;León;230;Zotes del Páramo;637;336;301
-Lleida;;;;371.055;186.026;185.029
 25;Lleida;001;Abella de la Conca;188;101;87
 25;Lleida;002;Àger;507;279;228
 25;Lleida;003;Agramunt;5.071;2.633;2.438
@@ -4059,7 +4033,6 @@ Lleida;;;;371.055;186.026;185.029
 25;Lleida;252;Vila-sana;551;272;279
 25;Lleida;253;Vilosell (El);194;91;103
 25;Lleida;255;Vinaixa;618;309;309
-Rioja (La);;;;281.614;140.780;140.834
 26;Rioja (La);001;Ábalos;266;152;114
 26;Rioja (La);002;Agoncillo;930;485;445
 26;Rioja (La);003;Aguilar del Río Alhama;643;324;319
@@ -4234,7 +4207,6 @@ Rioja (La);;;;281.614;140.780;140.834
 26;Rioja (La);180;Zarratón;257;132;125
 26;Rioja (La);181;Zarzosa;13;10;3
 26;Rioja (La);183;Zorraquín;62;36;26
-Lugo;;;;361.782;175.583;186.199
 27;Lugo;001;Abadín;3.342;1.596;1.746
 27;Lugo;002;Alfoz;2.398;1.159;1.239
 27;Lugo;003;Antas de Ulla;2.719;1.297;1.422
@@ -4302,7 +4274,6 @@ Lugo;;;;361.782;175.583;186.199
 27;Lugo;066;Viveiro;15.444;7.442;8.002
 27;Lugo;021;Xermade;2.595;1.258;1.337
 27;Lugo;025;Xove;3.625;1.806;1.819
-Madrid;;;;5.527.152;2.663.407;2.863.745
 28;Madrid;001;Acebeda (La);53;28;25
 28;Madrid;002;Ajalvir;2.526;1.324;1.202
 28;Madrid;003;Alameda del Valle;188;106;82
@@ -4482,7 +4453,6 @@ Madrid;;;;5.527.152;2.663.407;2.863.745
 28;Madrid;181;Villaviciosa de Odón;21.461;10.553;10.908
 28;Madrid;182;Villavieja del Lozoya;183;93;90
 28;Madrid;183;Zarzalejo;1.133;582;551
-Málaga;;;;1.330.010;651.174;678.836
 29;Málaga;001;Alameda;5.017;2.487;2.530
 29;Málaga;002;Alcaucín;1.557;787;770
 29;Málaga;003;Alfarnate;1.430;740;690
@@ -4583,7 +4553,6 @@ Málaga;;;;1.330.010;651.174;678.836
 29;Málaga;097;Villanueva del Trabuco;4.723;2.391;2.332
 29;Málaga;099;Viñuela;1.280;636;644
 29;Málaga;100;Yunquera;3.245;1.686;1.559
-Murcia;;;;1.226.993;616.236;610.757
 30;Murcia;001;Abanilla;6.040;3.045;2.995
 30;Murcia;002;Abarán;12.632;6.348;6.284
 30;Murcia;003;Águilas;28.888;14.405;14.483
@@ -4629,7 +4598,6 @@ Murcia;;;;1.226.993;616.236;610.757
 30;Murcia;041;Unión (La);14.965;7.514;7.451
 30;Murcia;042;Villanueva del Río Segura;1.580;771;809
 30;Murcia;043;Yecla;31.716;16.085;15.631
-Navarra;;;;569.628;284.620;285.008
 31;Navarra;001;Abáigar;97;55;42
 31;Navarra;002;Abárzuza;510;251;259
 31;Navarra;003;Abaurregaina/Abaurrea Alta;160;94;66
@@ -4902,7 +4870,6 @@ Navarra;;;;569.628;284.620;285.008
 31;Navarra;263;Zubieta;293;172;121
 31;Navarra;264;Zugarramurdi;235;121;114
 31;Navarra;265;Zúñiga;162;91;71
-Ourense;;;;343.768;164.967;178.801
 32;Ourense;001;Allariz;5.151;2.480;2.671
 32;Ourense;002;Amoeiro;2.330;1.153;1.177
 32;Ourense;003;Arnoia (A);1.255;586;669
@@ -4995,7 +4962,6 @@ Ourense;;;;343.768;164.967;178.801
 32;Ourense;032;Xinzo de Limia;9.842;4.891;4.951
 32;Ourense;036;Xunqueira de Ambía;2.032;997;1.035
 32;Ourense;037;Xunqueira de Espadanedo;1.087;519;568
-Asturias;;;;1.073.971;515.166;558.805
 33;Asturias;001;Allande;2.374;1.228;1.146
 33;Asturias;002;Aller;14.786;7.259;7.527
 33;Asturias;003;Amieva;889;469;420
@@ -5074,7 +5040,6 @@ Asturias;;;;1.073.971;515.166;558.805
 33;Asturias;076;Villaviciosa;14.189;6.953;7.236
 33;Asturias;077;Villayón;1.895;959;936
 33;Asturias;078;Yernes y Tameza;226;111;115
-Palencia;;;;176.125;86.993;89.132
 34;Palencia;001;Abarca de Campos;50;27;23
 34;Palencia;003;Abia de las Torres;201;101;100
 34;Palencia;004;Aguilar de Campoo;7.565;3.688;3.877
@@ -5266,7 +5231,6 @@ Palencia;;;;176.125;86.993;89.132
 34;Palencia;243;Villoldo;479;255;224
 34;Palencia;245;Villota del Páramo;433;250;183
 34;Palencia;246;Villovieco;113;58;55
-Palmas (Las);;;;951.037;480.420;470.617
 35;Palmas (Las);001;Agaete;5.649;2.889;2.760
 35;Palmas (Las);002;Agüimes;22.567;11.645;10.922
 35;Palmas (Las);003;Antigua;6.543;3.711;2.832
@@ -5301,7 +5265,6 @@ Palmas (Las);;;;951.037;480.420;470.617
 35;Palmas (Las);032;Valleseco;4.030;2.097;1.933
 35;Palmas (Las);033;Vega de San Mateo;7.575;3.963;3.612
 35;Palmas (Las);034;Yaiza;7.320;4.173;3.147
-Pontevedra;;;;919.934;442.257;477.677
 36;Pontevedra;020;Agolada;4.117;2.034;2.083
 36;Pontevedra;001;Arbo;4.173;2.052;2.121
 36;Pontevedra;003;Baiona;11.014;5.410;5.604
@@ -5364,7 +5327,6 @@ Pontevedra;;;;919.934;442.257;477.677
 36;Pontevedra;058;Vilaboa;5.756;2.834;2.922
 36;Pontevedra;060;Vilagarcía de Arousa;33.907;16.350;17.557
 36;Pontevedra;061;Vilanova de Arousa;10.378;5.013;5.365
-Salamanca;;;;347.120;169.208;177.912
 37;Salamanca;001;Abusejo;250;124;126
 37;Salamanca;002;Agallas;195;103;92
 37;Salamanca;003;Ahigal de los Aceiteros;195;98;97
@@ -5727,7 +5689,6 @@ Salamanca;;;;347.120;169.208;177.912
 37;Salamanca;380;Zarapicos;72;39;33
 37;Salamanca;381;Zarza de Pumareda (La);178;97;81
 37;Salamanca;382;Zorita de la Frontera;276;143;133
-Santa Cruz de Tenerife;;;;892.718;442.933;449.785
 38;Santa Cruz de Tenerife;001;Adeje;25.341;13.271;12.070
 38;Santa Cruz de Tenerife;002;Agulo;1.136;563;573
 38;Santa Cruz de Tenerife;003;Alajeró;1.533;823;710
@@ -5781,7 +5742,6 @@ Santa Cruz de Tenerife;;;;892.718;442.933;449.785
 38;Santa Cruz de Tenerife;051;Victoria de Acentejo (La);8.152;4.056;4.096
 38;Santa Cruz de Tenerife;052;Vilaflor;1.776;900;876
 38;Santa Cruz de Tenerife;053;Villa de Mazo;4.723;2.378;2.345
-Cantabria;;;;542.275;264.492;277.783
 39;Cantabria;001;Alfoz de Lloredo;2.593;1.326;1.267
 39;Cantabria;002;Ampuero;3.602;1.834;1.768
 39;Cantabria;003;Anievas;378;191;187
@@ -5884,7 +5844,6 @@ Cantabria;;;;542.275;264.492;277.783
 39;Cantabria;100;Villafufre;1.149;602;547
 39;Cantabria;101;Villaverde de Trucíos;366;185;181
 39;Cantabria;102;Voto;2.241;1.149;1.092
-Segovia;;;;149.286;74.815;74.471
 40;Segovia;001;Abades;856;433;423
 40;Segovia;002;Adrada de Pirón;56;30;26
 40;Segovia;003;Adrados;197;100;97
@@ -6094,7 +6053,6 @@ Segovia;;;;149.286;74.815;74.471
 40;Segovia;231;Yanguas de Eresma;198;96;102
 40;Segovia;233;Zarzuela del Monte;542;272;270
 40;Segovia;234;Zarzuela del Pinar;583;299;284
-Sevilla;;;;1.758.720;862.811;895.909
 41;Sevilla;001;Aguadulce;1.981;1.000;981
 41;Sevilla;002;Alanís;2.009;1.006;1.003
 41;Sevilla;003;Albaida del Aljarafe;1.833;932;901
@@ -6200,7 +6158,6 @@ Sevilla;;;;1.758.720;862.811;895.909
 41;Sevilla;099;Villanueva del Río y Minas;5.302;2.575;2.727
 41;Sevilla;101;Villaverde del Río;6.515;3.295;3.220
 41;Sevilla;102;Viso del Alcor (El);16.355;8.263;8.092
-Soria;;;;91.487;45.860;45.627
 42;Soria;001;Abejar;358;189;169
 42;Soria;003;Adradas;91;50;41
 42;Soria;004;Ágreda;3.219;1.590;1.629
@@ -6384,7 +6341,6 @@ Soria;;;;91.487;45.860;45.627
 42;Soria;217;Vozmediano;47;27;20
 42;Soria;218;Yanguas;134;69;65
 42;Soria;219;Yelo;56;29;27
-Tarragona;;;;631.156;316.447;314.709
 43;Tarragona;001;Aiguamúrcia;671;351;320
 43;Tarragona;002;Albinyana;1.695;884;811
 43;Tarragona;003;Albiol (L');214;118;96
@@ -6568,7 +6524,6 @@ Tarragona;;;;631.156;316.447;314.709
 43;Tarragona;177;Vinebre;459;238;221
 43;Tarragona;178;Vinyols i els Arcs;1.323;693;630
 43;Tarragona;052;Xerta;1.212;600;612
-Teruel;;;;137.342;69.682;67.660
 44;Teruel;001;Ababuj;88;51;37
 44;Teruel;002;Abejuela;47;30;17
 44;Teruel;003;Aguatón;26;11;15
@@ -6805,7 +6760,6 @@ Teruel;;;;137.342;69.682;67.660
 44;Teruel;266;Visiedo;196;88;108
 44;Teruel;267;Vivel del Río Martín;89;45;44
 44;Teruel;268;Zoma (La);28;14;14
-Toledo;;;;546.538;273.893;272.645
 45;Toledo;001;Ajofrín;2.174;1.125;1.049
 45;Toledo;002;Alameda de la Sagra;2.890;1.531;1.359
 45;Toledo;003;Albarreal de Tajo;638;322;316
@@ -7010,7 +6964,6 @@ Toledo;;;;546.538;273.893;272.645
 45;Toledo;203;Yuncler;2.063;1.037;1.026
 45;Toledo;204;Yunclillos;618;329;289
 45;Toledo;205;Yuncos;4.372;2.329;2.043
-Valencia/València;;;;2.267.503;1.113.300;1.154.203
 46;Valencia/València;001;Ademuz;1.152;599;553
 46;Valencia/València;002;Ador;1.216;614;602
 46;Valencia/València;004;Agullent;2.289;1.116;1.173
@@ -7276,7 +7229,6 @@ Valencia/València;;;;2.267.503;1.113.300;1.154.203
 46;Valencia/València;261;Yátova;1.953;1.019;934
 46;Valencia/València;262;Yesa (La);267;141;126
 46;Valencia/València;263;Zarra;400;218;182
-Valladolid;;;;501.157;245.858;255.299
 47;Valladolid;001;Adalia;82;43;39
 47;Valladolid;002;Aguasal;28;15;13
 47;Valladolid;003;Aguilar de Campos;362;195;167
@@ -7502,7 +7454,6 @@ Valladolid;;;;501.157;245.858;255.299
 47;Valladolid;230;Wamba;375;198;177
 47;Valladolid;231;Zaratán;1.727;891;836
 47;Valladolid;232;Zarza (La);151;76;75
-Vizcaya;;;;1.133.444;551.288;582.156
 48;Vizcaya;001;Abadiño;6.954;3.485;3.469
 48;Vizcaya;002;Abanto y Ciérvana-Abanto Zierbena;9.111;4.508;4.603
 48;Vizcaya;911;Ajangiz;425;217;208
@@ -7614,7 +7565,6 @@ Vizcaya;;;;1.133.444;551.288;582.156
 48;Vizcaya;024;Zeanuri;1.152;597;555
 48;Vizcaya;025;Zeberio;992;518;474
 48;Vizcaya;913;Zierbena;1.207;657;550
-Zamora;;;;200.678;99.071;101.607
 49;Zamora;002;Abezames;100;52;48
 49;Zamora;003;Alcañices;1.156;569;587
 49;Zamora;004;Alcubilla de Nogales;193;99;94
@@ -7863,7 +7813,6 @@ Zamora;;;;200.678;99.071;101.607
 49;Zamora;271;Villaveza del Agua;275;142;133
 49;Zamora;273;Viñas;272;137;135
 49;Zamora;275;Zamora;65.575;31.063;34.512
-Zaragoza;;;;871.209;427.901;443.308
 50;Zaragoza;001;Abanto;172;94;78
 50;Zaragoza;002;Acered;264;134;130
 50;Zaragoza;003;Agón;193;102;91
@@ -8158,4 +8107,3 @@ Zaragoza;;;;871.209;427.901;443.308
 50;Zaragoza;298;Zuera;5.715;2.927;2.788
 51;Ceuta;001;Ceuta;76.152;39.195;36.957
 52;Melilla;001;Melilla;69.184;35.178;34.006
-;;;;;;

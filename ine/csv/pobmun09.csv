@@ -1,5 +1,4 @@
 CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
-;Total Álava;;;313.819;156.418;157.401
 01;Álava;001;Alegría-Dulantzi;2.620;1.353;1.267
 01;Álava;002;Amurrio;10.089;5.069;5.020
 01;Álava;049;Añana;176;92;84
@@ -51,7 +50,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 01;Álava;062;Zambrana;377;203;174
 01;Álava;018;Zigoitia;1.649;866;783
 01;Álava;063;Zuia;2.390;1.237;1.153
-;Total Albacete;;;400.891;201.162;199.729
 02;Albacete;001;Abengibre;930;473;457
 02;Albacete;002;Alatoz;591;322;269
 02;Albacete;003;Albacete;169.716;83.838;85.878
@@ -139,7 +137,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 02;Albacete;084;Villaverde de Guadalimar;424;226;198
 02;Albacete;085;Viveros;395;203;192
 02;Albacete;086;Yeste;3.397;1.734;1.663
-;Total Alicante/Alacant;;;1.917.012;958.200;958.812
 03;Alicante/Alacant;001;Adsubia;693;353;340
 03;Alicante/Alacant;002;Agost;4.810;2.432;2.378
 03;Alicante/Alacant;003;Agres;619;325;294
@@ -281,7 +278,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 03;Alicante/Alacant;139;Villajoyosa/Vila Joiosa (la);33.797;16.940;16.857
 03;Alicante/Alacant;140;Villena;35.222;17.559;17.663
 03;Alicante/Alacant;081;Xaló;3.235;1.632;1.603
-;Total Almería;;;684.426;352.395;332.031
 04;Almería;001;Abla;1.504;783;721
 04;Almería;002;Abrucena;1.341;682;659
 04;Almería;003;Adra;24.373;12.338;12.035
@@ -384,7 +380,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 04;Almería;101;Viator;4.860;2.448;2.412
 04;Almería;102;Vícar;22.853;12.114;10.739
 04;Almería;103;Zurgena;3.066;1.518;1.548
-;Total Asturias;;;1.085.289;520.916;564.373
 33;Asturias;001;Allande;2.068;1.056;1.012
 33;Asturias;002;Aller;12.766;6.260;6.506
 33;Asturias;003;Amieva;815;437;378
@@ -463,7 +458,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 33;Asturias;076;Villaviciosa;14.775;7.247;7.528
 33;Asturias;077;Villayón;1.582;797;785
 33;Asturias;078;Yernes y Tameza;185;95;90
-;Total Ávila;;;171.680;86.720;84.960
 05;Ávila;001;Adanero;295;152;143
 05;Ávila;002;Adrada (La);2.734;1.432;1.302
 05;Ávila;005;Albornos;243;130;113
@@ -712,7 +706,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 05;Ávila;265;Vita;99;62;37
 05;Ávila;266;Zapardiel de la Cañada;126;59;67
 05;Ávila;267;Zapardiel de la Ribera;131;66;65
-;Total Badajoz;;;688.777;341.912;346.865
 06;Badajoz;001;Acedera;821;429;392
 06;Badajoz;002;Aceuchal;5.679;2.822;2.857
 06;Badajoz;003;Ahillones;1.052;526;526
@@ -877,7 +870,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 06;Badajoz;160;Zalamea de la Serena;3.978;1.976;2.002
 06;Badajoz;162;Zarza (La);3.563;1.804;1.759
 06;Badajoz;161;Zarza-Capilla;403;202;201
-;Total Balears (Illes);;;1.095.426;551.079;544.347
 07;Balears (Illes);002;Alaior;9.257;4.643;4.614
 07;Balears (Illes);001;Alaró;5.327;2.629;2.698
 07;Balears (Illes);003;Alcúdia;19.071;9.704;9.367
@@ -945,7 +937,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 07;Balears (Illes);062;Son Servera;12.215;6.179;6.036
 07;Balears (Illes);063;Valldemossa;1.995;1.024;971
 07;Balears (Illes);065;Vilafranca de Bonany;2.908;1.457;1.451
-;Total Barcelona;;;5.487.935;2.703.137;2.784.798
 08;Barcelona;001;Abrera;11.521;5.974;5.547
 08;Barcelona;002;Aguilar de Segarra;257;135;122
 08;Barcelona;014;Aiguafreda;2.464;1.195;1.269
@@ -1257,7 +1248,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 08;Barcelona;219;Vilassar de Mar;19.482;9.453;10.029
 08;Barcelona;304;Vilobí del Penedès;1.112;574;538
 08;Barcelona;308;Viver i Serrateix;186;98;88
-;Total Burgos;;;375.563;190.271;185.292
 09;Burgos;001;Abajas;26;16;10
 09;Burgos;003;Adrada de Haza;252;140;112
 09;Burgos;006;Aguas Cándidas;61;39;22
@@ -1629,7 +1619,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 09;Burgos;482;Zarzosa de Río Pisuerga;38;24;14
 09;Burgos;483;Zazuar;255;136;119
 09;Burgos;485;Zuñeda;60;35;25
-;Total Cáceres;;;413.633;205.638;207.995
 10;Cáceres;001;Abadía;325;175;150
 10;Cáceres;002;Abertura;454;233;221
 10;Cáceres;003;Acebo;685;356;329
@@ -1849,7 +1838,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 10;Cáceres;217;Zarza de Montánchez;619;300;319
 10;Cáceres;218;Zarza la Mayor;1.409;714;695
 10;Cáceres;219;Zorita;1.673;816;857
-;Total Cádiz;;;1.230.594;609.984;620.610
 11;Cádiz;001;Alcalá de los Gazules;5.619;2.852;2.767
 11;Cádiz;002;Alcalá del Valle;5.300;2.697;2.603
 11;Cádiz;003;Algar;1.544;802;742
@@ -1894,7 +1882,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 11;Cádiz;040;Villaluenga del Rosario;479;251;228
 11;Cádiz;041;Villamartín;12.526;6.245;6.281
 11;Cádiz;042;Zahara;1.513;769;744
-;Total Cantabria;;;589.235;288.735;300.500
 39;Cantabria;001;Alfoz de Lloredo;2.496;1.258;1.238
 39;Cantabria;002;Ampuero;4.179;2.133;2.046
 39;Cantabria;003;Anievas;366;180;186
@@ -1997,7 +1984,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 39;Cantabria;099;Villaescusa;3.581;1.813;1.768
 39;Cantabria;100;Villafufre;1.109;573;536
 39;Cantabria;102;Voto;2.664;1.417;1.247
-;Total Castellón/Castelló;;;602.301;303.460;298.841
 12;Castellón/Castelló;002;Aín;141;72;69
 12;Castellón/Castelló;003;Albocàsser;1.447;730;717
 12;Castellón/Castelló;004;Alcalà de Xivert;7.926;4.087;3.839
@@ -2133,7 +2119,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 12;Castellón/Castelló;140;Viver;1.754;916;838
 12;Castellón/Castelló;141;Zorita del Maestrazgo;146;68;78
 12;Castellón/Castelló;142;Zucaina;182;100;82
-;Total Ciudad Real;;;527.273;263.038;264.235
 13;Ciudad Real;001;Abenójar;1.592;817;775
 13;Ciudad Real;002;Agudo;1.871;942;929
 13;Ciudad Real;003;Alamillo;554;279;275
@@ -2236,7 +2221,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 13;Ciudad Real;096;Villarrubia de los Ojos;11.191;5.670;5.521
 13;Ciudad Real;097;Villarta de San Juan;3.115;1.599;1.516
 13;Ciudad Real;098;Viso del Marqués;2.811;1.409;1.402
-;Total Córdoba;;;803.998;395.225;408.773
 14;Córdoba;001;Adamuz;4.419;2.267;2.152
 14;Córdoba;002;Aguilar de la Frontera;13.746;6.891;6.855
 14;Córdoba;003;Alcaracejos;1.528;757;771
@@ -2312,7 +2296,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 14;Córdoba;073;Villaviciosa de Córdoba;3.558;1.822;1.736
 14;Córdoba;074;Viso (El);2.810;1.381;1.429
 14;Córdoba;075;Zuheros;784;401;383
-;Total Coruña (A);;;1.145.488;550.841;594.647
 15;Coruña (A);001;Abegondo;5.798;2.876;2.922
 15;Coruña (A);002;Ames;26.983;13.079;13.904
 15;Coruña (A);003;Aranga;2.142;1.066;1.076
@@ -2407,7 +2390,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 15;Coruña (A);090;Vilasantar;1.415;737;678
 15;Coruña (A);092;Vimianzo;8.204;4.010;4.194
 15;Coruña (A);093;Zas;5.385;2.634;2.751
-;Total Cuenca;;;217.363;110.282;107.081
 16;Cuenca;001;Abia de la Obispalía;80;48;32
 16;Cuenca;002;Acebrón (El);282;147;135
 16;Cuenca;003;Alarcón;191;88;103
@@ -2646,7 +2628,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 16;Cuenca;278;Zafrilla;95;43;52
 16;Cuenca;279;Zarza de Tajo;398;216;182
 16;Cuenca;280;Zarzuela;235;128;107
-;Total Girona;;;747.782;379.629;368.153
 17;Girona;001;Agullana;812;429;383
 17;Girona;002;Aiguaviva;714;362;352
 17;Girona;003;Albanyà;152;81;71
@@ -2868,7 +2849,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 17;Girona;222;Vilaür;140;68;72
 17;Girona;233;Vilobí d'Onyar;2.956;1.548;1.408
 17;Girona;232;Vilopriu;221;120;101
-;Total Granada;;;907.428;448.784;458.644
 18;Granada;001;Agrón;358;182;176
 18;Granada;002;Alamedilla;721;364;357
 18;Granada;003;Albolote;17.089;8.583;8.506
@@ -3037,7 +3017,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 18;Granada;913;Zagra;968;475;493
 18;Granada;193;Zubia (La);17.803;8.810;8.993
 18;Granada;194;Zújar;2.997;1.588;1.409
-;Total Guadalajara;;;246.151;126.608;119.543
 19;Guadalajara;001;Abánades;83;42;41
 19;Guadalajara;002;Ablanque;110;60;50
 19;Guadalajara;003;Adobes;55;27;28
@@ -3326,7 +3305,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 19;Guadalajara;333;Zaorejas;169;102;67
 19;Guadalajara;334;Zarzuela de Jadraque;50;29;21
 19;Guadalajara;335;Zorita de los Canes;84;44;40
-;Total Guipúzcoa;;;705.698;346.820;358.878
 20;Guipúzcoa;001;Abaltzisketa;316;178;138
 20;Guipúzcoa;002;Aduna;401;223;178
 20;Guipúzcoa;016;Aia;1.958;1.076;882
@@ -3415,7 +3393,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 20;Guipúzcoa;028;Zizurkil;2.797;1.419;1.378
 20;Guipúzcoa;081;Zumaia;9.285;4.633;4.652
 20;Guipúzcoa;080;Zumarraga;10.104;5.015;5.089
-;Total Huelva;;;513.403;255.144;258.259
 21;Huelva;001;Alájar;808;410;398
 21;Huelva;002;Aljaraque;17.960;8.981;8.979
 21;Huelva;003;Almendro (El);867;451;416
@@ -3495,7 +3472,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 21;Huelva;077;Villarrasa;2.151;1.086;1.065
 21;Huelva;078;Zalamea la Real;3.414;1.691;1.723
 21;Huelva;079;Zufre;973;498;475
-;Total Huesca;;;228.409;116.630;111.779
 22;Huesca;001;Abiego;286;153;133
 22;Huesca;002;Abizanda;126;65;61
 22;Huesca;003;Adahuesca;168;83;85
@@ -3698,7 +3674,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 22;Huesca;252;Yebra de Basa;158;91;67
 22;Huesca;253;Yésero;77;46;31
 22;Huesca;254;Zaidín;1.729;889;840
-;Total Jaén;;;669.782;332.517;337.265
 23;Jaén;001;Albanchez de Mágina;1.228;620;608
 23;Jaén;002;Alcalá la Real;22.783;11.343;11.440
 23;Jaén;003;Alcaudete;11.135;5.522;5.613
@@ -3796,7 +3771,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 23;Jaén;099;Villares (Los);5.783;2.876;2.907
 23;Jaén;101;Villarrodrigo;474;243;231
 23;Jaén;903;Villatorres;4.445;2.255;2.190
-;Total León;;;500.169;244.716;255.453
 24;León;001;Acebedo;267;164;103
 24;León;002;Algadefe;325;166;159
 24;León;003;Alija del Infantado;809;417;392
@@ -4008,7 +3982,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 24;León;228;Villazala;844;443;401
 24;León;229;Villazanzo de Valderaduey;549;307;242
 24;León;230;Zotes del Páramo;495;279;216
-;Total Lleida;;;436.402;223.095;213.307
 25;Lleida;001;Abella de la Conca;183;102;81
 25;Lleida;002;Àger;575;304;271
 25;Lleida;003;Agramunt;5.608;2.866;2.742
@@ -4240,7 +4213,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 25;Lleida;252;Vila-sana;696;347;349
 25;Lleida;253;Vilosell (El);200;98;102
 25;Lleida;255;Vinaixa;607;313;294
-;Total Lugo;;;355.195;172.943;182.252
 27;Lugo;001;Abadín;2.896;1.405;1.491
 27;Lugo;002;Alfoz;2.107;1.021;1.086
 27;Lugo;003;Antas de Ulla;2.407;1.175;1.232
@@ -4308,7 +4280,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 27;Lugo;066;Viveiro;16.238;7.995;8.243
 27;Lugo;021;Xermade;2.256;1.107;1.149
 27;Lugo;025;Xove;3.518;1.757;1.761
-;Total Madrid;;;6.386.932;3.094.874;3.292.058
 28;Madrid;001;Acebeda (La);61;33;28
 28;Madrid;002;Ajalvir;3.780;1.967;1.813
 28;Madrid;003;Alameda del Valle;237;136;101
@@ -4488,7 +4459,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 28;Madrid;181;Villaviciosa de Odón;26.475;12.917;13.558
 28;Madrid;182;Villavieja del Lozoya;258;136;122
 28;Madrid;183;Zarzalejo;1.488;785;703
-;Total Málaga;;;1.593.068;786.393;806.675
 29;Málaga;001;Alameda;5.481;2.732;2.749
 29;Málaga;002;Alcaucín;2.576;1.305;1.271
 29;Málaga;003;Alfarnate;1.348;698;650
@@ -4589,7 +4559,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 29;Málaga;097;Villanueva del Trabuco;5.408;2.711;2.697
 29;Málaga;099;Viñuela;1.994;1.010;984
 29;Málaga;100;Yunquera;3.237;1.651;1.586
-;Total Murcia;;;1.446.520;731.609;714.911
 30;Murcia;001;Abanilla;6.589;3.315;3.274
 30;Murcia;002;Abarán;12.991;6.536;6.455
 30;Murcia;003;Águilas;34.533;17.426;17.107
@@ -4635,7 +4604,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 30;Murcia;041;Unión (La);17.737;8.906;8.831
 30;Murcia;042;Villanueva del Río Segura;2.270;1.124;1.146
 30;Murcia;043;Yecla;35.025;17.668;17.357
-;Total Navarra;;;630.578;315.486;315.092
 31;Navarra;001;Abáigar;102;54;48
 31;Navarra;002;Abárzuza;574;286;288
 31;Navarra;003;Abaurregaina/Abaurrea Alta;140;85;55
@@ -4908,7 +4876,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 31;Navarra;263;Zubieta;315;175;140
 31;Navarra;264;Zugarramurdi;218;111;107
 31;Navarra;265;Zúñiga;127;79;48
-;Total Ourense;;;335.642;161.454;174.188
 32;Ourense;001;Allariz;5.821;2.886;2.935
 32;Ourense;002;Amoeiro;2.327;1.130;1.197
 32;Ourense;003;Arnoia (A);1.103;544;559
@@ -5001,7 +4968,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 32;Ourense;032;Xinzo de Limia;10.161;5.005;5.156
 32;Ourense;036;Xunqueira de Ambía;1.789;898;891
 32;Ourense;037;Xunqueira de Espadanedo;962;472;490
-;Total Palencia;;;173.306;85.950;87.356
 34;Palencia;001;Abarca de Campos;41;24;17
 34;Palencia;003;Abia de las Torres;176;96;80
 34;Palencia;004;Aguilar de Campoo;7.242;3.515;3.727
@@ -5193,7 +5159,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 34;Palencia;243;Villoldo;417;226;191
 34;Palencia;245;Villota del Páramo;368;218;150
 34;Palencia;246;Villovieco;92;48;44
-;Total Palmas (Las);;;1.083.502;545.990;537.512
 35;Palmas (Las);001;Agaete;5.782;2.903;2.879
 35;Palmas (Las);002;Agüimes;28.924;14.814;14.110
 35;Palmas (Las);020;Aldea de San Nicolás (La);8.539;4.299;4.240
@@ -5228,7 +5193,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 35;Palmas (Las);031;Valsequillo de Gran Canaria;9.067;4.617;4.450
 35;Palmas (Las);033;Vega de San Mateo;7.636;3.908;3.728
 35;Palmas (Las);034;Yaiza;13.941;7.570;6.371
-;Total Pontevedra;;;959.764;464.365;495.399
 36;Pontevedra;020;Agolada;3.094;1.513;1.581
 36;Pontevedra;001;Arbo;3.833;1.894;1.939
 36;Pontevedra;003;Baiona;12.091;6.000;6.091
@@ -5291,7 +5255,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 36;Pontevedra;058;Vilaboa;5.978;2.903;3.075
 36;Pontevedra;060;Vilagarcía de Arousa;37.576;18.110;19.466
 36;Pontevedra;061;Vilanova de Arousa;10.719;5.203;5.516
-;Total Rioja (La);;;321.702;162.173;159.529
 26;Rioja (La);001;Ábalos;387;239;148
 26;Rioja (La);002;Agoncillo;1.191;684;507
 26;Rioja (La);003;Aguilar del Río Alhama;573;271;302
@@ -5466,7 +5429,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 26;Rioja (La);180;Zarratón;328;188;140
 26;Rioja (La);181;Zarzosa;14;11;3
 26;Rioja (La);183;Zorraquín;83;45;38
-;Total Salamanca;;;354.608;173.512;181.096
 37;Salamanca;001;Abusejo;236;123;113
 37;Salamanca;002;Agallas;164;86;78
 37;Salamanca;003;Ahigal de los Aceiteros;159;81;78
@@ -5829,7 +5791,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 37;Salamanca;380;Zarapicos;69;35;34
 37;Salamanca;381;Zarza de Pumareda (La);157;89;68
 37;Salamanca;382;Zorita de la Frontera;232;124;108
-;Total Santa Cruz de Tenerife;;;1.020.490;506.646;513.844
 38;Santa Cruz de Tenerife;001;Adeje;43.204;22.277;20.927
 38;Santa Cruz de Tenerife;002;Agulo;1.200;599;601
 38;Santa Cruz de Tenerife;003;Alajeró;2.110;1.141;969
@@ -5884,7 +5845,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 38;Santa Cruz de Tenerife;051;Victoria de Acentejo (La);9.023;4.509;4.514
 38;Santa Cruz de Tenerife;052;Vilaflor;1.854;956;898
 38;Santa Cruz de Tenerife;053;Villa de Mazo;4.802;2.414;2.388
-;Total Segovia;;;164.854;83.636;81.218
 40;Segovia;001;Abades;906;462;444
 40;Segovia;002;Adrada de Pirón;50;25;25
 40;Segovia;003;Adrados;168;93;75
@@ -6094,7 +6054,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 40;Segovia;231;Yanguas de Eresma;165;84;81
 40;Segovia;233;Zarzuela del Monte;613;327;286
 40;Segovia;234;Zarzuela del Pinar;534;275;259
-;Total Sevilla;;;1.900.224;932.941;967.283
 41;Sevilla;001;Aguadulce;2.124;1.070;1.054
 41;Sevilla;002;Alanís;1.894;939;955
 41;Sevilla;003;Albaida del Aljarafe;2.881;1.465;1.416
@@ -6200,7 +6159,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 41;Sevilla;099;Villanueva del Río y Minas;5.283;2.620;2.663
 41;Sevilla;101;Villaverde del Río;7.337;3.741;3.596
 41;Sevilla;102;Viso del Alcor (El);18.351;9.251;9.100
-;Total Soria;;;95.101;48.286;46.815
 42;Soria;001;Abejar;383;210;173
 42;Soria;003;Adradas;75;43;32
 42;Soria;004;Ágreda;3.293;1.676;1.617
@@ -6384,7 +6342,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 42;Soria;217;Vozmediano;44;28;16
 42;Soria;218;Yanguas;114;70;44
 42;Soria;219;Yelo;52;30;22
-;Total Tarragona;;;803.301;407.904;395.397
 43;Tarragona;001;Aiguamúrcia;906;480;426
 43;Tarragona;002;Albinyana;2.275;1.146;1.129
 43;Tarragona;003;Albiol (L');405;210;195
@@ -6568,7 +6525,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 43;Tarragona;177;Vinebre;483;238;245
 43;Tarragona;178;Vinyols i els Arcs;1.829;949;880
 43;Tarragona;052;Xerta;1.300;641;659
-;Total Teruel;;;146.751;75.733;71.018
 44;Teruel;001;Ababuj;80;52;28
 44;Teruel;002;Abejuela;57;38;19
 44;Teruel;003;Aguatón;21;10;11
@@ -6805,7 +6761,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 44;Teruel;266;Visiedo;154;70;84
 44;Teruel;267;Vivel del Río Martín;91;47;44
 44;Teruel;268;Zoma (La);22;9;13
-;Total Toledo;;;689.635;350.578;339.057
 45;Toledo;001;Ajofrín;2.290;1.187;1.103
 45;Toledo;002;Alameda de la Sagra;3.385;1.799;1.586
 45;Toledo;003;Albarreal de Tajo;718;369;349
@@ -7010,7 +6965,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 45;Toledo;203;Yuncler;3.332;1.699;1.633
 45;Toledo;204;Yunclillos;794;415;379
 45;Toledo;205;Yuncos;9.185;4.796;4.389
-;Total Valencia/València;;;2.575.362;1.276.238;1.299.124
 46;Valencia/València;001;Ademuz;1.286;689;597
 46;Valencia/València;002;Ador;1.474;766;708
 46;Valencia/València;004;Agullent;2.449;1.199;1.250
@@ -7277,7 +7231,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 46;Valencia/València;261;Yátova;2.199;1.140;1.059
 46;Valencia/València;262;Yesa (La);260;141;119
 46;Valencia/València;263;Zarra;551;302;249
-;Total Valladolid;;;532.575;261.785;270.790
 47;Valladolid;001;Adalia;61;33;28
 47;Valladolid;002;Aguasal;32;20;12
 47;Valladolid;003;Aguilar de Campos;296;165;131
@@ -7503,7 +7456,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 47;Valladolid;230;Wamba;363;195;168
 47;Valladolid;231;Zaratán;4.992;2.571;2.421
 47;Valladolid;232;Zarza (La);136;76;60
-;Total Vizcaya;;;1.152.658;559.174;593.484
 48;Vizcaya;001;Abadiño;7.260;3.647;3.613
 48;Vizcaya;002;Abanto y Ciérvana-Abanto Zierbena;9.647;4.779;4.868
 48;Vizcaya;911;Ajangiz;445;216;229
@@ -7616,7 +7568,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 48;Vizcaya;025;Zeberio;1.054;523;531
 48;Vizcaya;913;Zierbena;1.382;753;629
 48;Vizcaya;915;Ziortza-Bolibar;396;212;184
-;Total Zamora;;;195.665;97.144;98.521
 49;Zamora;002;Abezames;88;45;43
 49;Zamora;003;Alcañices;1.122;573;549
 49;Zamora;004;Alcubilla de Nogales;146;73;73
@@ -7865,7 +7816,6 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 49;Zamora;271;Villaveza del Agua;249;127;122
 49;Zamora;273;Viñas;229;122;107
 49;Zamora;275;Zamora;66.293;31.380;34.913
-;Total Zaragoza;;;970.313;481.456;488.857
 50;Zaragoza;001;Abanto;125;66;59
 50;Zaragoza;002;Acered;169;91;78
 50;Zaragoza;003;Agón;170;91;79
@@ -8159,7 +8109,5 @@ CPRO;PROVINCIA;CMUN;NOMBRE;POB09;VARONES;MUJERES
 50;Zaragoza;296;Zaida (La);534;265;269
 50;Zaragoza;297;Zaragoza;674.317;328.470;345.847
 50;Zaragoza;298;Zuera;7.427;3.879;3.548
-;Total Ceuta;;;78.674;40.118;38.556
 51;Ceuta;001;Ceuta;78.674;40.118;38.556
-;Total Melilla;;;73.460;37.244;36.216
 52;Melilla;001;Melilla;73.460;37.244;36.216
