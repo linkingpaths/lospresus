@@ -19,5 +19,5 @@ production:
   adapter: mysql
   database: lospresus
   username: lospresus
-  password: vigia.pass
-  host: l05pr35u5
+  password: l05pr35u5
+  host: localhost
