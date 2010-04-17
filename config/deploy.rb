@@ -2,7 +2,10 @@
 # Settings
 #############################################################
 
+set :rails_env, "production"
 set :application, "lospresus"
+
+set :deploy_to, "/home/lospresus/#{application}_app"
 set :keep_releases, 5
 
 default_run_options[:pty] = true
