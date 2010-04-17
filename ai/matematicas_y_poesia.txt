@@ -12,9 +12,9 @@ Personal = capítulo 1
 Gastos cotidianos = capítulo 2
 Proyectos e inversiones = capítulo 6
 Subvenciones = capítulo 4
-Otras administraciones y entidades = capítulo 7
+Otras administraciones y entidades = capítulo 7 
 Activos financieros = capítulo 8
-Prestamos y gastos financieros = capítulo 3 y 9
+Préstamos y gastos financieros = capítulo 3 y 9
 
 
 Facts:
