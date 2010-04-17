@@ -1,0 +1,27 @@
+# == Schema Information
+# Schema version: 20100417090855
+#
+# Table name: capitulos
+#
+#  id             :integer         not null, primary key
+#  presupuesto_id :integer
+#  capitulo       :integer
+#  ingresos       :decimal(, )
+#  gastos         :decimal(, )
+#  created_at     :datetime
+#  updated_at     :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  presupuesto: 
+  capitulo: 1
+  ingresos: 9.99
+  gastos: 9.99
+
+two:
+  presupuesto: 
+  capitulo: 1
+  ingresos: 9.99
+  gastos: 9.99

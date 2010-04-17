@@ -1,0 +1,24 @@
+# == Schema Information
+# Schema version: 20100417090855
+#
+# Table name: municipios
+#
+#  id         :integer         not null, primary key
+#  nombre     :string(255)
+#  provincia  :string(255)
+#  codigo_ine :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre: MyString
+  provincia: MyString
+  codigo_ine: 1
+
+two:
+  nombre: MyString
+  provincia: MyString
+  codigo_ine: 1

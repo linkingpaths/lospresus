@@ -1,0 +1,30 @@
+# == Schema Information
+# Schema version: 20100417090855
+#
+# Table name: demograficas
+#
+#  id           :integer         not null, primary key
+#  municipio_id :integer
+#  ano          :integer
+#  total        :integer
+#  mujeres      :integer
+#  hombres      :integer
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  municipio: 
+  ano: 1
+  total: 1
+  mujeres: 1
+  hombres: 1
+
+two:
+  municipio: 
+  ano: 1
+  total: 1
+  mujeres: 1
+  hombres: 1

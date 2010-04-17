@@ -1,0 +1,24 @@
+# == Schema Information
+# Schema version: 20100417090855
+#
+# Table name: presupuestos
+#
+#  id           :integer         not null, primary key
+#  municipio_id :integer
+#  ano          :integer
+#  total        :decimal(, )
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  municipio: 
+  ano: 1
+  total: 9.99
+
+two:
+  municipio: 
+  ano: 1
+  total: 9.99
