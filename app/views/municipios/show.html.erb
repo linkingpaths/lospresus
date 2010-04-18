@@ -15,12 +15,11 @@
 
 <!-- timeline -->
 <div class="timeline">
-  <p class="years_nav years_prev"><a href="#">&larr; años anteriores</a></p>
-  <p class="years_nav years_next"><a href="#">años siguientes &rarr;</a></p>
-  <ul class="timeline_years">
-    <li class="actual_year"><a href="#">1830</a></li>
-    <% (1985..2009).each do |year| %>
-      <li><%= link_to year, city_card_by_year_path(@muni, year) %></li>
+  <p class="years_nav years_prev" id="mycarousel-prev"><a href="#">&larr; años anteriores</a></p>
+  <p class="years_nav years_next" id="mycarousel-next"><a href="#">años siguientes &rarr;</a></p>
+  <ul id="budget_timeline" class="timeline_years">
+    <% (1985..2009).each do |year| %> 
+      <li <%= (year == @year) ? "class='actual_year'": '' %>><%= link_to year, city_card_by_year_path(@muni, year) %></li>
     <% end %>
   </ul>
 </div>

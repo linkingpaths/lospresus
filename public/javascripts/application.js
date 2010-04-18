@@ -44,10 +44,42 @@ $(document).ready(function () {
   }).result(function(e,item){
     location.href = item.url;
   });
+
+  $('#budget_timeline').jcarousel({
+    // Configuration goes here 
+    scroll: 3,
+    start: 100,
+    initCallback: budget_timeline_callback,
+    buttonNextHTML: null,
+    buttonPrevHTML: null
+  });   
+  
   
   if ($('#holder').length != 0) {single_graph()}
   if ($('#holder_a').length != 0 || $('#holder_b').length != 0) {compare_graph()}
-});
+}); 
+
+function budget_timeline_callback(carousel) {
+    $('.jcarousel-control a').bind('click', function() {
+        carousel.scroll(jQuery.jcarousel.intval(jQuery(this).text()));
+        return false;
+    });
+ 
+    $('.jcarousel-scroll select').bind('change', function() {
+        carousel.options.scroll = jQuery.jcarousel.intval(this.options[this.selectedIndex].value);
+        return false;
+    });
+ 
+    $('#mycarousel-next').bind('click', function() {
+        carousel.next();
+        return false;
+    });
+ 
+    $('#mycarousel-prev').bind('click', function() {
+        carousel.prev();
+        return false;
+    });
+};
 
 var income_txts = ["IMPUESTOS Y TASAS","OTRAS ADMINISTRACIONES","PATRIMONIO","ACTIVOS FINANCIEROS","PRÉSTAMOS"];
 var income_txts_short  = ["IMPUESTOS Y TASAS","OTRAS ADMONS.","PATRIMONIO","ACT. FINANCIEROS","PRÉSTAMOS"];

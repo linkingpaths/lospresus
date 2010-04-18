@@ -1,6 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
 
   map.connect '', :controller => "home"
+
+  map.with_options(:controller => 'static', :action => 'show') do |static|
+    static.about '/quevan', :page => 'about'
+  end
   
   map.with_options(:controller => 'municipios') do |muni|
     muni.city_search  '/search', :action => 'search'
@@ -10,9 +14,6 @@ ActionController::Routing::Routes.draw do |map|
     muni.city_card_by_year  '/:id/:year', :action => 'show'
   end
 
-  map.with_options(:controller => 'static') do |static|
-    static.about '/quevan', :page => 'about'
-  end
 
   map.root :controller => "home"
 end

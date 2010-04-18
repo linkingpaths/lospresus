@@ -2,19 +2,21 @@
 <html dir="ltr" lang="es-ES">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  
+
   <%= title_tag %>
   <%= meta_tags %>
-  
+
   <%= stylesheet_link_tag "autocomplete"  %>
-	<%= stylesheet_link_tag "fontfaces"  %>
-	<%= stylesheet_link_tag "screen"  %>
+  <%= stylesheet_link_tag "fontfaces"  %>
+  <%= stylesheet_link_tag "screen"  %>
+  <%= stylesheet_link_tag "jquery.jcarousel"  %>
 
   <%= javascript_include_tag "jquery" %>
   <%= javascript_include_tag "jquery-ui" %>
   <%= javascript_include_tag "jquery.autocomplete.pack" %>
+  <%= javascript_include_tag "jquery.jcarousel.pack" %>
   <%= javascript_include_tag "jrails" %>
-  
+
   <%= javascript_include_tag "raphael-min" %>
   <%= javascript_include_tag "raphael.presus" %>
   <%= javascript_include_tag "g.raphael-min" %>
@@ -27,17 +29,17 @@
 </head>
 
 <body>
-	<!-- inside -->
-	<div class="inside">
-  	<%= yield %>
+  <!-- inside -->
+  <div class="inside">
+    <%= yield %>
 
-		<!-- footer -->
-		<div class="footer">
-			<p>// <strong>Los Presus.de/</strong> Proyecto creado graciosamente por <a href="http://www.linkingpaths.com/">Linking Paths</a> y <a href="http://www.lapersonnalite.com/">La Personnalité</a> para <a href="http://www.probp.org/">Pro Bono Publico</a> en el concurso <a href="http://www.abredatos.es/">AbreDatos</a>.</p>
-			<p><a href="#">Lospresus.de qué van</a></p>
-		</div>
-		<!-- /footer -->
-	</div>
-	<!-- /inside -->
+    <!-- footer -->
+    <div class="footer">
+      <p>// <strong>Los Presus.de/</strong> Proyecto creado graciosamente por <a href="http://www.linkingpaths.com/">Linking Paths</a> y <a href="http://www.lapersonnalite.com/">La Personnalité</a> para <a href="http://www.probp.org/">Pro Bono Publico</a> en el concurso <a href="http://www.abredatos.es/">AbreDatos</a>.</p>
+      <p><%= link_to "Lospresus.de qué van", about_path %></p>
+    </div>
+    <!-- /footer -->
+  </div>
+  <!-- /inside -->
 </body>
 </html>
