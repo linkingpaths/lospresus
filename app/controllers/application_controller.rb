@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
         :keywords     => "presupuestos, ayuntamientos, gastos, ingresos, subvenciones, municipios, municipal, dinero público, gasto público"
         
         
-  #rescue_from ActionView::TemplateError do render :template => 'errors/404' end
-  #rescue_from ActionController::RoutingError do render :template => 'errors/404' end
+  rescue_from ActionView::TemplateError do render :template => 'errors/404' end
+  rescue_from ActionController::RoutingError do render :template => 'errors/404' end
   
 end
