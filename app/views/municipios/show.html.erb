@@ -110,32 +110,47 @@
         <div class="balance">
           <p class="incomings">
             <span class="title">Total ingresos:</span>
-            <strong><%= money(budget.total_ingresos) %> <span class="arrow">&rarr;</span> <%= Province.incomes_average(@muni.provincia,@year) %> +XX%</strong> <small>que la media en <br/><em><%= @muni.province_name %></em></small>
+            <strong><%= money(budget.total_ingresos) %> <span class="arrow">&rarr;</span>  <%= income_gap(@muni,@year) %>%</strong> <small>que la media en <br/><em><%= @muni.province_name %></em></small>
           </p>
-          <p class="expenses"><span class="title">Total gastos:</span><strong><%= money(budget.total_gastos) %> <span class="arrow">&rarr;</span> -XX%</strong> <small>que la media en <br/><em><%= @muni.province_name %></em></small></p>
+          <p class="expenses">
+            <span class="title">Total gastos:</span>
+            <strong><%= money(budget.total_gastos) %> <span class="arrow">&rarr;</span> <%= expense_gap(@muni,@year) %>%</strong> <small>que la media en <br/><em><%= @muni.province_name %></em></small>
+          </p>
         </div>
       </div>
       <!-- /totals -->
 
       <!-- in_out -->
       <div class="in_out">
-        <p class="citizen_in"><span>Cada habitante aporta:</span><strong>188.210€</strong> <em>(de su bolsillo)</em></p>
-        <p class="townhall_in"><span>El Ayuntamiento recibe:</span><strong>78.909€</strong> <em>(de las Administraciones)</em></p>
-        <p class="townhall_out"><span>El Ayuntamiento aporta:</span><strong>78.909€</strong> <em>(en Subvenciones y Proyectos)</em></p>
+
+        <p class="citizen_in"><span>Cada habitante aporta:</span>
+          <strong><%= money(budget.income_taxes/demos.total) %></strong> 
+          <em>(de su bolsillo)</em>
+        </p>
+
+        <p class="townhall_in"><span>El Ayuntamiento recibe:</span>
+          <strong><%= money(budget.income_administrations) %></strong> 
+          <em>(de las Administraciones)</em>
+        </p>
+
+        <p class="townhall_out"><span>El Ayuntamiento aporta:</span>
+          <strong><%= money(budget.expense_grants+budget.expense_administrations) %></strong> 
+          <em>(en Subvenciones y Proyectos)</em>
+        </p>
       </div>
       <!-- /in_out -->
 
       <!-- staff_vs_projects -->
       <div class="staff_vs_projects">
-        <p class="staff"><span>Gasto en personal:</span><strong>14.669€</strong></p>
+        <p class="staff"><span>Gasto en personal:</span><strong><%= money(budget.expense_people) %></strong></p>
         <p class="versus"><abbr title="Versus">vs.</abbr></p>
-        <p class="projects"><span>Gasto en proyectos:</span><strong>19.201€</strong></p>
+        <p class="projects"><span>Gasto en proyectos:</span><strong><%= money(budget.expense_projects) %></strong></p>
       </div>
       <!-- /staff_vs_projects -->
 
       <!-- normal_expenses -->
       <div class="normal_expenses">
-        <p><span>Gasto corriente / Día:</span><strong>14.669€</strong></p>
+        <p><span>Gasto corriente / Día:</span><strong><%= money(budget.expense_commons/365) %></strong></p>
       </div>
       <!-- /normal_expenses -->
 

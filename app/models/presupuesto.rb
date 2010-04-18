@@ -27,6 +27,10 @@ class Presupuesto < ActiveRecord::Base
     #Impuestos y tasas = capítulo 1, 2, 3
     chapter(1).i + chapter(2).i + chapter(3).i 
   end
+  def income_people
+    #Impuestos  = capítulo 1, 3
+    chapter(1).i + chapter(3).i 
+  end
   def income_administrations
     #Otras administraciones = capítulo 4 y 7
     chapter(4).i + chapter(7).i
