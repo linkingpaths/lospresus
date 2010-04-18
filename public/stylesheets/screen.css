@@ -517,17 +517,6 @@ a::selection
 }
 .timeline li {display: inline-block;}
 
-.timeline .actual_year {}
-
-.timeline .actual_year a,
-.timeline .actual_year a:hover
-{ 
-	background: #000;
-	border: 1px solid #000;
-	color: #333;
-	cursor: default;
-}
-
 .timeline li a
 {
 	-moz-box-shadow: 1px 3px 5px rgba(0, 0, 0, .75) inset;
@@ -557,6 +546,17 @@ a::selection
 	padding: 10px 20px;
 }
 
+.timeline li.actual_year {}
+
+.timeline li.actual_year a,
+.timeline li.actual_year a:hover
+{ 
+	background: #088;
+	border: 1px solid #066;
+	color: #fff;
+	cursor: default;
+}
+
 .timeline .years_nav
 {
 	display: inline-block;
@@ -581,6 +581,7 @@ a::selection
 .timeline .years_prev
 { 
 	float: left;
+	margin: 0 5px 0 0;
 }
 
 .timeline .years_next
@@ -873,9 +874,9 @@ a::selection
 	line-height: 1;
 }
 
-.in_out .citizen_in {background: url(/images/citizen_in.png) no-repeat 10px 0;padding-top: 120px;width: 175px;}
-.in_out .townhall_in {background: url(/images/townhall_in.png) no-repeat 10px 0;padding-top: 120px;width: 205px;}
-.in_out .townhall_out {background: url(/images/townhall_out.png) no-repeat 10px 0;padding-top: 120px;width: 195px;}
+.in_out .citizen_in {background: url(/images/citizen_in.png) no-repeat 10px 0;padding-top: 120px;}
+.in_out .townhall_in {background: url(/images/townhall_in.png) no-repeat 10px 0;padding-top: 120px;}
+.in_out .townhall_out {background: url(/images/townhall_out.png) no-repeat 10px 0;padding-top: 120px;}
 /* @end */
 
 

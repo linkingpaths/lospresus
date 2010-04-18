@@ -2,9 +2,7 @@
  * This <div> element is wrapped by jCarousel around the list
  * and has the classname "jcarousel-container".
  */
-.jcarousel-container {
-    position: relative;
-}
+.jcarousel-container {position: relative;}
 
 .jcarousel-clip {
     z-index: 2;
@@ -38,117 +36,53 @@
  * the <ul> list (inside the <div> described above) and
  * have the classnames "jcarousel-next" and "jcarousel-prev".
  */
-.jcarousel-next {
-    z-index: 3;
-    display: none;
-}
+.jcarousel-next {display: none;}
+.jcarousel-prev {display: none;}
 
-.jcarousel-prev {
-    z-index: 3;
-    display: none;
-}
-
-.jcarousel-container {
-    -moz-border-radius: 10px;
-    background: #F0F6F9;
-    border: 1px solid #346F97;
-}
+.jcarousel-container {float: left;}
 
 .jcarousel-container-horizontal {
-    width: 245px;
-    padding: 20px 40px;
 }
 
-.jcarousel-container-vertical {
-    width: 75px;
-    height: 245px;
-    padding: 40px 20px;
-}
+.jcarousel-container-vertical {}
 
-.jcarousel-clip-horizontal {
-    width:  245px;
-    height: 75px;
-}
+.jcarousel-clip-horizontal {width:  640px;}
 
-.jcarousel-clip-vertical {
-    width:  75px;
-    height: 245px;
-}
+.jcarousel-clip-vertical {}
 
-.jcarousel-item {
-    width: 75px;
-    height: 75px;
-}
+.jcarousel-item {}
 
-.jcarousel-item-horizontal {
-    margin-right: 10px;
-}
+.jcarousel-item-horizontal {}
 
-.jcarousel-item-vertical {
-    margin-bottom: 10px;
-}
+.jcarousel-item-vertical {}
 
-.jcarousel-item-placeholder {
-    background: #fff;
-    color: #000;
-}
+.jcarousel-item-placeholder {}
 
 /**
  *  Horizontal Buttons
  */
-.jcarousel-next-horizontal {
-    position: absolute;
-    top: 43px;
-    right: 5px;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    background: transparent url(next-horizontal.png) no-repeat 0 0;
-}
-
-.jcarousel-next-horizontal:hover {
-    background-position: -32px 0;
-}
-
-.jcarousel-next-horizontal:active {
-    background-position: -64px 0;
-}
+.jcarousel-next-horizontal {}
+.jcarousel-next-horizontal:hover {}
+.jcarousel-next-horizontal:active {}
 
 .jcarousel-next-disabled-horizontal,
 .jcarousel-next-disabled-horizontal:hover,
-.jcarousel-next-disabled-horizontal:active {
-    cursor: default;
-    background-position: -96px 0;
-}
+.jcarousel-next-disabled-horizontal:active {}
 
-.jcarousel-prev-horizontal {
-    position: absolute;
-    top: 43px;
-    left: 5px;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    background: transparent url(prev-horizontal.png) no-repeat 0 0;
-}
+.jcarousel-prev-horizontal {}
 
-.jcarousel-prev-horizontal:hover {
-    background-position: -32px 0;
-}
+.jcarousel-prev-horizontal:hover {}
 
-.jcarousel-prev-horizontal:active {
-    background-position: -64px 0;
-}
+.jcarousel-prev-horizontal:active {}
 
 .jcarousel-prev-disabled-horizontal,
 .jcarousel-prev-disabled-horizontal:hover,
-.jcarousel-prev-disabled-horizontal:active {
-    cursor: default;
-    background-position: -96px 0;
-}
+.jcarousel-prev-disabled-horizontal:active {}
 
 /**
  *  Vertical Buttons
  */
+ /*
 .jcarousel-next-vertical {
     position: absolute;
     bottom: 5px;
@@ -198,3 +132,4 @@
     cursor: default;
     background-position: 0 -96px;
 }
+*/
