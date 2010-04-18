@@ -839,8 +839,14 @@ textarea:focus
 
 .holder_evolution div
 {
+	background-position: 800px 75px;
+	background-repeat: no-repeat;
 	margin: 0;
 }
+
+.holder_evolution #holder_evolution_income {background-image: url(/images/holder_evolution_income.png);}
+.holder_evolution #holder_evolution_expense {background-image: url(/images/holder_evolution_expense.png);}
+.holder_evolution #holder_evolution_population {background-image: url(/images/holder_evolution_population.png);}
 
 .holder_evolution h2
 {
