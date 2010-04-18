@@ -5,9 +5,9 @@
 <!-- contents -->
 <div class="contents">
   <!-- main -->
-  <div class="main">
-    <div style="float:left">
-      <h2>Muni A: <%= @muni.nombre %></h2>
+  <div class="main mainfull">
+    <div class="compare_city compare_city_a">
+      <h2><%= @muni.nombre %></h2>
     
       <% budget = @muni.budget_for(@year) %>
       <% if budget %>
@@ -29,11 +29,11 @@
             <%= (budget.expense_loans*100/budget.total_gastos).round %>
           ];
         </script>
-        <div id="holder_a"></div>
+        <div class="holder" id="holder_a"></div>
       
         <!-- totals -->
         <div class="totals">
-          <h2>Total:</h2>
+          <h3>Total:</h3>
           <div class="balance">
             <p class="incomings">
               <span class="title">Total ingresos:</span>
@@ -53,8 +53,8 @@
       
     </div>
     
-    <div style="float:left">
-      <h2>Muni B: <%= @muni_b.nombre %></h2>
+    <div class="compare_city compare_city_b">
+      <h2><%= @muni_b.nombre %></h2>
     
       <% budget = @muni_b.budget_for(@year) %>
       <% if budget %>
@@ -76,11 +76,11 @@
             <%= (budget.expense_loans*100/budget.total_gastos).round %>
           ];
         </script>
-        <div id="holder_b"></div>
+        <div class="holder" id="holder_b"></div>
         
         <!-- totals -->
         <div class="totals">
-          <h2>Total:</h2>
+          <h3>Total:</h3>
           <div class="balance">
             <p class="incomings">
               <span class="title">Total ingresos:</span>

@@ -788,6 +788,50 @@ textarea:focus
 	width: 659px;
 }
 
+.main.mainfull
+{
+	width: 920px;
+}
+
+.compare_city
+{
+	
+}
+
+.compare_city .holder
+{
+	background: url(/images/graph.gif) no-repeat center center;
+}
+
+.compare_city h2
+{
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	color: #6cb9be;
+	font-family: 'AvenirLTStd55RomanBold', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;
+	font-size: 32px;
+	margin: 0 auto 20px auto;
+	padding: 10px 0;
+	text-align: center;
+	width: 95%;
+}
+
+.compare_city .totals h3
+{
+	display: block;
+	top: 0;
+}
+
+.compare_city_a
+{
+	float: left;
+}
+
+.compare_city_b
+{
+	float: right;
+}
+
 .incomings_title,
 .expenses_title
 {
@@ -816,6 +860,11 @@ textarea:focus
 	background: url(/images/graph.gif) no-repeat center center;
 }
 
+.holder
+{
+	
+}
+
 
 /* @group .totals */
 .totals
@@ -823,7 +872,7 @@ textarea:focus
 	margin: 0 0 60px 0;
 }
 
-.totals h2
+.totals h3
 {
 	color: #008c95;
 	display: inline-block;
