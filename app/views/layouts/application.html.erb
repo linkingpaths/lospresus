@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <%= stylesheet_link_tag "autocomplete"  %>
+
+  <%= javascript_include_tag "jquery" %>
+  <%= javascript_include_tag "jquery-ui" %>
+  <%= javascript_include_tag "jquery.autocomplete.pack" %>
+  <%= javascript_include_tag "jrails" %>
+  <%= javascript_include_tag "application" %>
+
+  <title>Las cuentas claras y el chocolate espeso</title>
+  <style type="text/css" media="screen">
+    html, body { height: 100%; }
+    body {
+      color: #fff;
+      background: #000;
+      margin: 50px auto 0px;
+      position: relative;
+      width: 840px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <%= yield %>
+</body>
+</html>

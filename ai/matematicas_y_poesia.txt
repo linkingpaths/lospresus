@@ -1,0 +1,46 @@
+Ingresos hay que sacar porcentajes sobre el total:
+
+Impuestos y tasas = capítulo 1, 2, 3
+Otras administraciones = capítulo 4 y 7
+Patrimonio = capítulo 5 y 6
+Activos financieros = capítulo 8
+Préstamos = capítulo 9
+
+Gastos hay que sacar porcentajes sobre el total:
+
+Personal = capítulo 1
+Gastos cotidianos = capítulo 2
+Proyectos e inversiones = capítulo 6
+Subvenciones = capítulo 4
+Otras administraciones y entidades = capítulo 7 
+Activos financieros = capítulo 8
+Préstamos y gastos financieros = capítulo 3 y 9
+
+
+Facts:
+
+Del bolsillo: 
+Sumar total ingresos por capítulos 1 y 3
+
+Lo que recibe de otras administraciones = sumar total ingresos capítulos 4 y 7
+Lo que da en subvenciones y participación en proyectos de otros = sumar total gastos capítulos 4 y 7
+
+
+Personal › total capítulo 1 de gastos
+Proyectos › total capítulo 6 de gastos
+
+Gastos corrientes al día: 
+Total Capítulo 2 de gastos / 365 días
+
+
+
+
+URLS
+====
+lospresus.de
+lospresus.de/quevan
+lospresus.de/barakaldo
+lospresus.de/barakaldo/2001
+lospresus.de/barakaldo/evolucion
+lospresus.de/barakaldo/y/sestao
+lospresus.de/search?q=barakaldo
