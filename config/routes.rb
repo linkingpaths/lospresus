@@ -5,7 +5,7 @@ ActionController::Routing::Routes.draw do |map|
     muni.city_card  '/:id', :action => 'show'#, :requirements => { :id => /\S+/ }
     muni.city_card_by_year  '/:id/:year', :action => 'show'
     muni.city_evolution  '/:id/evolucion', :action => 'evolution'
-    muni.city_compare  '/:city_a_id/y/:city_b_id', :action => 'compare'
+    muni.city_compare  '/:id/y/:b_id', :action => 'compare'
   end                 
 
   map.with_options(:controller => 'static') do |static|

@@ -6,10 +6,10 @@
 #  id             :integer         not null, primary key
 #  municipio_id   :integer
 #  ano            :integer
-#  total_ingresos :decimal(, )
+#  total_i :decimal(, )
 #  created_at     :datetime
 #  updated_at     :datetime
-#  total_gastos   :decimal(10, 2)
+#  total_g   :decimal(10, 2)
 #
 
 class Presupuesto < ActiveRecord::Base
@@ -25,24 +25,24 @@ class Presupuesto < ActiveRecord::Base
   ########################################
   def income_taxes
     #Impuestos y tasas = capítulo 1, 2, 3
-    chapter(1).ingresos + chapter(2).ingresos + chapter(3).ingresos 
+    chapter(1).i + chapter(2).i + chapter(3).i 
   end
   def income_administrations
     #Otras administraciones = capítulo 4 y 7
-    chapter(4).ingresos + chapter(7).ingresos
+    chapter(4).i + chapter(7).i
   end                      
   def income_assets
     #Patrimonio = capítulo 5 y 6
-    chapter(5).ingresos + chapter(6).ingresos
+    chapter(5).i + chapter(6).i
     
   end       
   def income_financial
     #Activos financieros = capítulo 8
-    chapter(8).ingresos
+    chapter(8).i
   end
   def income_loans
     #Préstamos = capítulo 9
-    chapter(9).ingresos
+    chapter(9).i
   end                                            
   
   
@@ -51,35 +51,35 @@ class Presupuesto < ActiveRecord::Base
   ########################################
   def expense_people
     #Personal = capítulo 1
-    chapter(1).gastos
+    chapter(1).g
   end      
   
   def expense_commons
-    #Gastos cotidianos = capítulo 2
-    chapter(2).gastos
+    #g cotidianos = capítulo 2
+    chapter(2).g
   end
   
   def expense_projects
     #Proyectos e inversiones = capítulo 6
-    chapter(6).gastos
+    chapter(6).g
   end
 
   def expense_grants
     #Subvenciones = capítulo 4
-    chapter(4).gastos
+    chapter(4).g
   end
 
   def expense_administrations
     #Otras administraciones y entidades = capítulo 7 
-     chapter(7).gastos
+     chapter(7).g
   end
   def expense_financial
     #Activos financieros = capítulo 8
-    chapter(8).gastos
+    chapter(8).g
   end
   def expense_loans
-    #Préstamos y gastos financieros = capítulo 3 y 9  
-    chapter(3).gastos + chapter(9).gastos
+    #Préstamos y g financieros = capítulo 3 y 9  
+    chapter(3).g + chapter(9).g
   end                  
   
   def chapter(i)

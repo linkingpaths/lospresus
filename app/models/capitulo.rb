@@ -18,5 +18,10 @@ class Capitulo < ActiveRecord::Base
   named_scope :number, lambda { |i|
     { :conditions => { :capitulo => i }, :limit => 1 }
   }           
-  
+  def i
+    ingresos || 0
+  end
+  def g
+    gastos || 0
+  end
 end
