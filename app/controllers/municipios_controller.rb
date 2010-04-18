@@ -1,5 +1,5 @@
 class MunicipiosController < ApplicationController
-  before_filter :find_muni, :only => [:show, :evolution]
+  before_filter :find_muni, :only => [:show, :evolution, :compare]
   before_filter :year_context, :only => [:show, :compare]
 
   def show
