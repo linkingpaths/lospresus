@@ -21,7 +21,7 @@ class MunicipiosController < ApplicationController
   end  
   
   def compare
-    @muni_b = Municipio.find(params[:b_id])
+    @muni_b = Municipio.find_by_slug(params[:b_id])
     meta  :title        => "Comparativa de los municipios de #{@muni.nombre} y #{@muni_b.nombre} - lospresus.de",
           :description  => "Presupuesto comparado de #{@muni.nombre} (#{@muni.province_name}) y #{@muni_b.nombre} (#{@muni_b.province_name}) en #{@year}. Fuente oficial Ministerio de Política Territorial.",
           :keywords     => "presupuestos, ayuntamientos, gastos, ingresos, subvenciones, municipios, municipal, dinero público, gasto público, #{@muni.nombre}, #{@muni.province_name}, #{@muni_b.nombre}, #{@muni_b.province_name}"
@@ -36,7 +36,7 @@ class MunicipiosController < ApplicationController
 
   private
     def find_muni
-      @muni = Municipio.find(params[:id])               
+      @muni = Municipio.find_by_slug(params[:id])               
       unless @muni 
         redirect_to :controller =>"home" 
       end

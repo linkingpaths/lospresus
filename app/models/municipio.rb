@@ -34,7 +34,7 @@ class Municipio < ActiveRecord::Base
   end
 
   def to_param
-    slug
+    self.slug
   end  
 
   private
