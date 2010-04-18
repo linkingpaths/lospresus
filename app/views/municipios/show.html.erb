@@ -124,7 +124,12 @@
       <div class="in_out">
 
         <p class="citizen_in"><span>Cada habitante aporta:</span>
-          <strong><%= money(budget.income_taxes/demos.total) %></strong> 
+          <% if demos %>
+            <strong><%= money(budget.income_taxes/demos.total) %></strong> 
+          <% else %>
+            <strong>SIN DATOS</strong>
+          <% end %>
+          
           <em>(de su bolsillo)</em>
         </p>
 
