@@ -9,8 +9,7 @@
 <%= @muni.nombre %>
 
 <hr/> 
-<% year = 2009 %>
-<% budget = @muni.budget_for(year) %>
+<% budget = @muni.budget_for(@year) %>
 <% if budget %>
   <p>Presu: I <%= money(budget.total_ingresos) %> / G <%= money(budget.total_gastos) %></p>
   <ul>
@@ -45,8 +44,8 @@
 
 <div style="margin-bottom:120px;">
   <div style="float:left;border:1px solid white;padding:10px">
-    <h3><%= year %></h3>
-    <% demos = @muni.demographics_for(year) %>
+    <h3><%= @year %></h3>
+    <% demos = @muni.demographics_for(@year) %>
     <% if demos %>
       <%= demos.total %>
       <p>Machotes <%= demos.hombres %> ♂</p>

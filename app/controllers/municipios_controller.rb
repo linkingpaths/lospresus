@@ -3,6 +3,7 @@ class MunicipiosController < ApplicationController
 
   def show
     #meta :title => "Lospresus.de"
+    @year = params[:year] || Date.today.year - 1
     
     respond_to do |wants|
       wants.html 
