@@ -1,7 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html dir="ltr" lang="es-ES">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   
@@ -9,6 +7,8 @@
   <%= meta_tags %>
   
   <%= stylesheet_link_tag "autocomplete"  %>
+	<%= stylesheet_link_tag "fontfaces"  %>
+	<%= stylesheet_link_tag "screen"  %>
 
   <%= javascript_include_tag "jquery" %>
   <%= javascript_include_tag "jquery-ui" %>
@@ -24,20 +24,20 @@
   <%= javascript_include_tag "application" %>
 
   <title>Las cuentas claras y el chocolate espeso</title>
-  <style type="text/css" media="screen">
-    html, body { height: 100%; }
-    body {
-      color: #111;
-      background: #EEE;
-      margin: 50px auto 0px;
-      position: relative;
-      width: 960px;
-      text-align: center;
-    }
-  </style>
 </head>
 
 <body>
-  <%= yield %>
+	<!-- inside -->
+	<div class="inside">
+  	<%= yield %>
+
+		<!-- footer -->
+		<div class="footer">
+			<p>// <strong>Los Presus.de/</strong> Proyecto creado graciosamente por <a href="http://www.linkingpaths.com/">Linking Paths</a> y <a href="http://www.lapersonnalite.com/">La Personnalité</a> para <a href="http://www.probp.org/">Pro Bono Publico</a> en el concurso <a href="http://www.abredatos.es/">AbreDatos</a>.</p>
+			<p><a href="#">Lospresus.de qué van</a></p>
+		</div>
+		<!-- /footer -->
+	</div>
+	<!-- /inside -->
 </body>
 </html>
