@@ -30,13 +30,11 @@
 
 <body>
   <!-- inside -->
-  <div class="inside">
-    <%= render :partial => 'shared/header' %>
-
+  <div class="inside">           
     <%= yield %>
 
     <%= render :partial => 'shared/footer' %>
-
+    
   </div>
   <!-- /inside -->
 </body>
