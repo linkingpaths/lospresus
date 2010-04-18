@@ -22,7 +22,7 @@
     var r = Raphael("holder_evolution_income");
     
     var fin = function () {
-      this.flag = r.g.popup(this.bar.x, this.bar.y, this.bar.value || "0").insertBefore(this);
+      this.flag = r.g.popup(this.bar.x, this.bar.y, format_num(this.bar.value || "0")).insertBefore(this);
     };
     var fout = function () {
       this.flag.animate({opacity: 0}, 300, function () {this.remove();});
@@ -37,13 +37,13 @@
     <% end -%>
     ];
 
-    r.g.barchart(10, 10, 800, 200, [values]).hover(fin, fout).label([states]);
+    r.g.barchart(10, 10, 800, 200, [values]).attr({fill: "#031e1f", "stroke-width": 0, opacity: 0.65}).hover(fin, fout).label([states]);
   };
   function expense_evolution() {
     var r = Raphael("holder_evolution_expense");
     
     var fin = function () {
-      this.flag = r.g.popup(this.bar.x, this.bar.y, this.bar.value || "0").insertBefore(this);
+      this.flag = r.g.popup(this.bar.x, this.bar.y, format_num(this.bar.value || "0")).insertBefore(this);
     };
     var fout = function () {
       this.flag.animate({opacity: 0}, 300, function () {this.remove();});
@@ -58,13 +58,13 @@
     <% end -%>
     ];
 
-    r.g.barchart(10, 10, 800, 200, [values]).hover(fin, fout).label([states]);
+    r.g.barchart(10, 10, 800, 200, [values]).attr({fill: "#031e1f", "stroke-width": 0, opacity: 0.65}).hover(fin, fout).label([states]);
   };
   function population_evolution() {
     var r = Raphael("holder_evolution_population");
     
     var fin = function () {
-      this.flag = r.g.popup(this.bar.x, this.bar.y, this.bar.value || "0").insertBefore(this);
+      this.flag = r.g.popup(this.bar.x, this.bar.y, format_num(this.bar.value || "0")).insertBefore(this);
     };
     var fout = function () {
       this.flag.animate({opacity: 0}, 300, function () {this.remove();});
@@ -79,7 +79,7 @@
     <% end -%>
     ];
 
-    r.g.barchart(10, 10, 800, 200, [values]).hover(fin, fout).label([states]);
+    r.g.barchart(10, 10, 800, 200, [values]).attr({fill: "#031e1f", "stroke-width": 0, opacity: 0.65}).hover(fin, fout).label([states]);
   };
 </script>
 <h2>Ingresos</h2>
