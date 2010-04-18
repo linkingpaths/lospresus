@@ -24,6 +24,7 @@ $(document).ready(function () {
   
   single_graph();
   compare_graph();
+  
 });
 
 function single_graph() {
@@ -52,7 +53,7 @@ function single_graph() {
 function compare_graph() {
   var paper = Raphael("holder2", 460, 530);
   
-  var ingr   = ["PROYECTOS E INVER.","OTRAS ADMONS.","PATRIMONIO","ACT. FINANCIEROS","PRÉSTAMOS"];
+  var ingr   = ["IMPUESTOS Y TASAS","OTRAS ADMONS.","PATRIMONIO","ACT. FINANCIEROS","PRÉSTAMOS"];
   var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
   var vi = ingresos;
   var despl = 0;

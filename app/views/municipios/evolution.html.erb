@@ -1,0 +1,86 @@
+<h2><%= @muni.province_name %></h2>
+
+<hr/>
+<% (1985..2009).each do |year| %>
+  <%= link_to year, city_card_by_year_path(@muni, year) %>
+<% end %>
+<hr/>
+<%= @muni.codigo_ine %>
+<%= @muni.nombre %>
+
+<hr/> 
+<% budget = @muni.budget_for(@year) %>
+<% if budget %>
+  <script type="text/javascript" charset="utf-8">
+    var ingresos = [
+      <%= (budget.income_taxes*100/budget.total_ingresos).round %>,
+      <%= (budget.income_administrations*100/budget.total_ingresos).round %>,
+      <%= (budget.income_assets*100/budget.total_ingresos).round %>,
+      <%= (budget.income_financial*100/budget.total_ingresos).round %>,
+      <%= (budget.income_loans*100/budget.total_ingresos).round %>
+    ];
+    var gastos = [
+      <%= (budget.expense_people*100/budget.total_gastos).round %>,
+      <%= (budget.expense_commons*100/budget.total_gastos).round %>,
+      <%= (budget.expense_projects*100/budget.total_gastos).round %>,
+      <%= (budget.expense_grants*100/budget.total_gastos).round %>,
+      <%= (budget.expense_administrations*100/budget.total_gastos).round %>,
+      <%= (budget.expense_financial*100/budget.total_gastos).round %>,
+      <%= (budget.expense_loans*100/budget.total_gastos).round %>
+    ];
+  </script>
+  <div id="holder"></div>
+
+  <p>Presu: I <%= money(budget.total_ingresos) %> / G <%= money(budget.total_gastos) %></p>
+  <ul>
+    Ingresos:<br/>
+  <li>Impuestos y tasas = <%= money(budget.income_taxes) %></li>
+  <li>Otras administraciones = <%= money(budget.income_administrations) %></li>
+  <li>Patrimonio = <%= money(budget.income_assets) %></li>
+  <li>Activos financieros = <%= money(budget.income_financial) %></li>
+  <li>Préstamos = <%= money(budget.income_loans) %></li>
+  </ul>
+  <ul>
+    Gastos:<br/>
+    <ul>
+      <li>Personal = <%= money(budget.expense_people) %></li>
+      <li>Gastos cotidianos = <%= money(budget.expense_commons) %> </li>
+      <li>Proyectos e inversiones = <%= money(budget.expense_projects) %></li>
+      <li>Subvenciones = <%= money(budget.expense_grants) %></li>
+      <li>Otras administraciones y entidades = <%= money(budget.expense_administrations) %> </li>
+      <li>Activos financieros =<%= money(budget.expense_financial) %></li>
+      <li>Préstamos y gastos financieros = <%= money(budget.expense_loans) %></li>
+    </ul>
+  </ul>
+<% else %>
+  No data.
+<% end %>
+
+
+<hr/>
+
+<div style="margin-bottom:120px;">
+  <div style="float:left;border:1px solid white;padding:10px">
+    <h3><%= @year %></h3>
+    <% demos = @muni.demographics_for(@year) %>
+    <% if demos %>
+      <%= demos.total %>
+      <p>Machotes <%= demos.hombres %> ♂</p>
+      <p>Machotas <%= demos.mujeres %> ♀</p>
+    <% else %>
+      <p>No data.</p>
+    <% end %>
+  </div>
+</div>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<hr/>
+
+<ul>
+  <% munis = Municipio.find_all_by_provincia(@muni.provincia) %>
+  <%= munis.size %> municipios here
+  <% for muni in munis %>
+    <li><%= link_to muni.nombre, city_card_path(muni) %></li>
+  <% end %>
+</ul>

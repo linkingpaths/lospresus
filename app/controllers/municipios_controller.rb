@@ -1,5 +1,5 @@
 class MunicipiosController < ApplicationController
-  before_filter :find_muni, :only => [:show]
+  before_filter :find_muni, :only => [:show, :evolution]
 
   def show
     #meta :title => "Lospresus.de"
@@ -15,6 +15,10 @@ class MunicipiosController < ApplicationController
     q = params[:q]
     @results = Municipio.search(q)
     render :layout => false
+  end
+  
+  def evolution
+    
   end
 
   private
