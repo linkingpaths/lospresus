@@ -2,7 +2,7 @@
   LO QUE BUSCAS
 <% end %>
 
-
+<h2>HAS BUSCADO '<%= @q %>' Y HEMOS ENCONTRADO <%= @results.size %> MUNICIPIOS</h2>
 <% unless @results.blank? %>
   <ul>
   <% for muni in @results %>

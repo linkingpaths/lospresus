@@ -48,12 +48,12 @@ class MunicipiosController < ApplicationController
       @year = params[:year] || Date.today.year - 1
     end
     def search_by_query(options={})
-      q = params[:q]
+      @q = params[:q]
 
-      @results = Municipio.search(q, options)
+      @results = Municipio.search(@q, options)
 
-      meta  :title        => "Resultados de la búsqueda '#{q}' - lospresus.de",
-            :description  => "Resultados de la búsqueda '#{q}' en lospresus.de",
+      meta  :title        => "Resultados de la búsqueda '#{@q}' - lospresus.de",
+            :description  => "Resultados de la búsqueda '#{@q}' en lospresus.de",
             :keywords     => "presupuestos, ayuntamientos, gastos, ingresos, subvenciones, municipios, municipal, dinero público, gasto público"
       
     end
