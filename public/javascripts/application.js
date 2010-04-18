@@ -22,7 +22,7 @@ $(document).ready(function () {
     location.href = item.url;
   });
 
-  $('#city_compare_search').autocomplete("/search", {
+  $('#city_compare_search').autocomplete($('#city_compare_search').attr('rel')+"/search_for_compare", {
     dataType: "json",
     parse: function(data) {
       return $.map(data, function(row) {

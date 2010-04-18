@@ -68,8 +68,8 @@
     </div>
 
     <p class="comparison">
-      <label for="city_search">Comparar los presus de <strong><%= @muni.nombre %></strong> con los de:</label>
-      <input type='text' id="city_search" placeholder="Tu municipio..." autofocus>
+      <label for="city_compare_search">Comparar los presus de <strong><%= @muni.nombre %></strong> con los de:</label>
+      <input type='text' id="city_compare_search" placeholder="Tu municipio..." rel="<%= @muni.slug %>">
       <button class="btn">Comparar</button>
     </p>
   </div>

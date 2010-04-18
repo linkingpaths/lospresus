@@ -1,5 +1,5 @@
 class MunicipiosController < ApplicationController
-  before_filter :find_muni, :only => [:show, :evolution, :compare]
+  before_filter :find_muni, :only => [:show, :evolution, :compare, :search_for_compare]
   before_filter :year_context, :only => [:show, :compare]
 
   def show
@@ -10,6 +10,18 @@ class MunicipiosController < ApplicationController
   end
   
   def search
+    q = params[:q]
+    
+    @results = Municipio.search(q)
+
+    meta  :title        => "Resultados de la búsqueda '#{q}' - lospresus.de",
+          :description  => "Resultados de la búsqueda '#{q}' en lospresus.de",
+          :keywords     => "presupuestos, ayuntamientos, gastos, ingresos, subvenciones, municipios, municipal, dinero público, gasto público"
+
+    render :layout => false
+  end  
+  
+  def search_for_compare
     q = params[:q]
     
     @results = Municipio.search(q)

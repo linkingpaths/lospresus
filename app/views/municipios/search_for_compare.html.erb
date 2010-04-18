@@ -1,0 +1,6 @@
+[<% if !@results.blank? -%>
+  <% for muni in @results -%>
+      {"name": "<%= escape_javascript(muni.nombre) -%>", "url": "<%= escape_javascript(city_compare_path(@muni,muni)) -%>"}
+    <%= "," unless muni == @results.last -%>
+  <% end -%>
+<% end %>]
