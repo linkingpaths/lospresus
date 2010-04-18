@@ -47,8 +47,8 @@ $(document).ready(function () {
 
   $('#budget_timeline').jcarousel({
     // Configuration goes here 
-    scroll: 6,
-    start: 1,
+    scroll: 5,
+    start: 20,
     initCallback: budget_timeline_callback,
     buttonNextHTML: null,
     buttonPrevHTML: null
