@@ -22,9 +22,8 @@ $(document).ready(function () {
     location.href = item.url;
   });
   
-  single_graph();
-  compare_graph();
-  
+  if ($('#holder').length != 0) {single_graph()}
+  if ($('#holder_a').length != 0 || $('#holder_b').length != 0) {compare_graph()}
 });
 
 function single_graph() {
@@ -51,7 +50,7 @@ function single_graph() {
 };
 
 function compare_graph() {
-  var paper = Raphael("holder2", 460, 530);
+  var paper = Raphael("holder_a", 460, 530);
   
   var ingr   = ["IMPUESTOS Y TASAS","OTRAS ADMONS.","PATRIMONIO","ACT. FINANCIEROS","PRÉSTAMOS"];
   var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
@@ -71,7 +70,7 @@ function compare_graph() {
     paper.presus.end_block(0,i*70+i*5,130,70,vg[i],ingr[i],despl,colors[i],235,330);
   };
   ///////////////////////////////////////////////////////////////////////////////////
-  paper = Raphael("holder3", 460, 530);
+  paper = Raphael("holder_b", 460, 530);
   var ingr   = ["PROYECTOS E INVER.","OTRAS ADMONS.","PATRIMONIO","ACT. FINANCIEROS","PRÉSTAMOS"];
   var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
   var vi = ingresos2;
