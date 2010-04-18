@@ -1,17 +1,6 @@
-<!-- header -->
-<div class="header">
-  <div class="title">
-    <h1><span>Los presupuestos de </span><%= @muni.nombre %></h1>
-    <p>Las cosas claras y el chocolate espeso</p>
-  </div>
-
-  <div class="budget">
-    <label for="municipality_go">Ver presus de...</label>
-    <input id="city_search" autofocus type='text' placeholder='Tu municipio...'>
-    <button class="btn">Ver</button>
-  </div>
-</div>
-<!-- /header -->
+<% content_for :header_title do %>
+  <%= @muni.nombre %>
+<% end %>
 
 <!-- timeline -->
 <div class="timeline">
