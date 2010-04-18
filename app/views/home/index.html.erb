@@ -1,5 +1,5 @@
-<form class="initial_search" action="/search">
+<% form_tag(cities_by_query_path, {:method => :get, :class => "initial_search"}) do %>
   <label for="city_search">Ver presus de...</label>
-  <input id="city_search" autofocus type='text' placeholder='Escribe un municipio...'/>
+  <input id="city_search" autofocus type='text' placeholder='Escribe un municipio...' name="q">
   <button class="btn">Ver</button>
-</form>
+<% end %>

@@ -9,27 +9,17 @@ class MunicipiosController < ApplicationController
     
   end
   
+  def cities_by_query
+    search_by_query
+  end
+  
   def search
-    q = params[:q]
-    
-    @results = Municipio.search(q)
-
-    meta  :title        => "Resultados de la búsqueda '#{q}' - lospresus.de",
-          :description  => "Resultados de la búsqueda '#{q}' en lospresus.de",
-          :keywords     => "presupuestos, ayuntamientos, gastos, ingresos, subvenciones, municipios, municipal, dinero público, gasto público"
-
+    search_by_query(:limit => 10)
     render :layout => false
   end  
   
   def search_for_compare
-    q = params[:q]
-    
-    @results = Municipio.search(q)
-
-    meta  :title        => "Resultados de la búsqueda '#{q}' - lospresus.de",
-          :description  => "Resultados de la búsqueda '#{q}' en lospresus.de",
-          :keywords     => "presupuestos, ayuntamientos, gastos, ingresos, subvenciones, municipios, municipal, dinero público, gasto público"
-
+    search_by_query(:limit => 10)
     render :layout => false
   end  
   
@@ -56,5 +46,15 @@ class MunicipiosController < ApplicationController
     end
     def year_context
       @year = params[:year] || Date.today.year - 1
+    end
+    def search_by_query(options={})
+      q = params[:q]
+
+      @results = Municipio.search(q, options)
+
+      meta  :title        => "Resultados de la búsqueda '#{q}' - lospresus.de",
+            :description  => "Resultados de la búsqueda '#{q}' en lospresus.de",
+            :keywords     => "presupuestos, ayuntamientos, gastos, ingresos, subvenciones, municipios, municipal, dinero público, gasto público"
+      
     end
 end

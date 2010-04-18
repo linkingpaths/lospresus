@@ -4,11 +4,13 @@
     <h1><span>Los presupuestos de </span> <%= yield :header_title %></h1>
     <p>Las cosas claras y el chocolate espeso</p>
   </div>
-
-  <div class="budget">
-    <label for="municipality_go">Ver presus de...</label>
-    <input id="city_search" autofocus type='text' placeholder='Tu municipio...'>
-    <button class="btn">Ver</button>
-  </div>
+    
+  <% form_tag(cities_by_query_path, {:method => :get}) do %>
+    <div class="budget">                                   
+      <label for="municipality_go">Ver presus de...</label>
+      <input id="city_search" autofocus type='text' placeholder='Tu municipio...' name="q">
+      <button class="btn">Ver</button>
+    </div>
+  <% end %>
 </div>
 <!-- /header -->    

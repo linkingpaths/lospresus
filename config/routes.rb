@@ -8,6 +8,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.with_options(:controller => 'municipios') do |muni|
     muni.city_search  '/search', :action => 'search'
+    muni.cities_by_query  '/municipios', :action => 'cities_by_query'
     muni.city_card  '/:id', :action => 'show'
     muni.city_search_for_compare  '/:id/search_for_compare', :action => 'search_for_compare'
     muni.city_evolution  '/:id/evolucion', :action => 'evolution'

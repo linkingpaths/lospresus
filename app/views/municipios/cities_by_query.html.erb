@@ -1,0 +1,16 @@
+<% content_for :header_title do %>
+  LO QUE BUSCAS
+<% end %>
+
+
+<% unless @results.blank? %>
+  <ul>
+  <% for muni in @results %>
+    <li><%= link_to muni.nombre, city_card_path(muni) %>, (<%= muni.province_name %>)</li>
+  <% end %>
+  </ul>
+<% else %>
+  <ul>
+    <li>No hay ningún municipio que encaje con tu búsqueda.</li>
+  </ul>
+<% end %>

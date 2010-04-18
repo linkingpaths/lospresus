@@ -47,7 +47,7 @@ $(document).ready(function () {
 
   $('#budget_timeline').jcarousel({
     // Configuration goes here 
-    scroll: 3,
+    scroll: 6,
     start: 1,
     initCallback: budget_timeline_callback,
     buttonNextHTML: null,
