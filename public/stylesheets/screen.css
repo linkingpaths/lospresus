@@ -832,6 +832,37 @@ textarea:focus
 	float: right;
 }
 
+.holder_evolution
+{
+	margin: 0 0 80px 0;
+}
+
+.holder_evolution div
+{
+	margin: 0;
+}
+
+.holder_evolution h2
+{
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding: 5px 0;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.holder_evolution svg
+{
+	-moz-box-shadow: 0 0 15px #fff;
+	-webkitbox-box-shadow: 0 0 15px #fff;
+	box-shadow: 0 0 15px #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	height: 240px;
+	margin: 0;
+	width: 100%;
+}
+
 .incomings_title,
 .expenses_title
 {

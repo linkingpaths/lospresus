@@ -2,8 +2,6 @@
   <%= link_to @muni.nombre, city_card_path(@muni) %>
 <% end %>
 
-<h2><%= @muni.nombre %></h2>
-
 <%= render :partial => 'shared/timeline', :locals => { :muni => @muni } %>
 
 <script type="text/javascript" charset="utf-8">
@@ -78,15 +76,20 @@
     r.g.barchart(10, 10, 800, 200, [values]).attr({fill: "#031e1f", "stroke-width": 0, opacity: 0.65}).hover(fin, fout).label([states]);
   };
 </script>
-<h2>Ingresos</h2>
-<div id="holder_evolution_income"></div>
+<div class="holder_evolution">
+	<h2>Ingresos</h2>
+	<div id="holder_evolution_income"></div>
+</div>
 
-<h2>Gastos</h2>
-<div id="holder_evolution_expense"></div>
+<div class="holder_evolution">
+	<h2>Gastos</h2>
+	<div id="holder_evolution_expense"></div>
+</div>
 
-<h2>Población</h2>
-<div id="holder_evolution_population"></div>
-
+<div class="holder_evolution">
+	<h2>Población</h2>
+	<div id="holder_evolution_population"></div>
+</div>
 <%# 
 <ul>
   < munis = Municipio.find_all_by_provincia(@muni.provincia) >
