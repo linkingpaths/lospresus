@@ -467,6 +467,8 @@ a::selection
 }
 /* @end */
 
+
+
 /* @group .timeline */
 .timeline
 {
@@ -556,9 +558,9 @@ a::selection
 .timeline .timeline_years
 { 
 	display: inline-block;
-	float: left;
+	margin: 0 auto;
 	text-align: center;
-	width: 648px;
+	width: 646px;
 }
 /* @end */
 
@@ -671,12 +673,12 @@ a::selection
 	-moz-border-radius-bottomright: 10px;
 	-webkit-border-bottom-left-radius: 10px;
 	-webkit-border-bottom-right-radius: 10px;
+	background: #97c7c9 url(../img/comparison.png) no-repeat 20px 20px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	background: #97c7c9;
 	border-top: 1px solid #fff;
 	margin: 0;
-	padding: 20px;
+	padding: 100px 20px 20px 20px;
 }
 
 .sidebar .comparison label
@@ -744,7 +746,10 @@ a::selection
 
 
 /* @group .totals */
-.totals {}
+.totals
+{
+	margin: 0 0 60px 0;
+}
 
 .totals h2
 {
@@ -803,10 +808,10 @@ a::selection
 
 
 
-/* @group .facts */
-.facts {}
+/* @group .in_out */
+.in_out {}
 
-.facts p
+.in_out p
 {
 	border-left: 1px solid #ddd;
 	display: inline-block;
@@ -815,13 +820,13 @@ a::selection
 	width: 195px;
 }
 
-.facts span
+.in_out span
 {
 	display: block;
 	line-height: 1;
 }
 
-.facts strong
+.in_out strong
 {
 	color: #add5d7;
 	display: block;
@@ -830,14 +835,117 @@ a::selection
 	line-height: 1;
 }
 
-.facts em
+.in_out em
 {
 	display: block;
 	line-height: 1;
 }
+
+.in_out .citizen_in {background: url(../img/citizen_in.png) no-repeat 10px 0;padding-top: 120px;}
+.in_out .townhall_in {background: url(../img/townhall_in.png) no-repeat 10px 0;padding-top: 120px;}
+.in_out .townhall_out {background: url(../img/townhall_out.png) no-repeat 10px 0;padding-top: 120px;}
 /* @end */
 
 
+
+/* @group .staff_vs_projects */
+.staff_vs_projects
+{
+	border-left: 1px solid #ddd;
+	display: inline-block;
+	margin: 0 40px 0 0;
+	padding: 10px;
+}
+
+.staff_vs_projects p
+{
+	display: inline-block;
+	margin: 0;
+}
+
+.staff_vs_projects span
+{
+	display: block;
+	line-height: 1;
+}
+
+.staff_vs_projects .staff
+{
+	background: url(../img/staff.png) no-repeat;
+	padding-top: 120px;
+}
+
+.staff_vs_projects .projects
+{
+	background: url(../img/projects.png) no-repeat;
+	padding-top: 120px;
+	width: 140px;
+}
+
+.staff_vs_projects .versus
+{
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	color: #add5d7;
+	font-family: 'LeagueGothicRegular', Impact, Arial, sans-serif;
+	font-size: 45px;
+	line-height: 1;
+	margin: 0 10px;
+	padding: 10px 0;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	top: -3px;
+}
+
+.staff_vs_projects .versus abbr
+{
+	border-bottom: none;
+}
+
+.staff_vs_projects strong
+{
+	color: #add5d7;
+	display: block;
+	font-family: 'LeagueGothicRegular', Impact, Arial, sans-serif;
+	font-size: 60px;
+	line-height: 1;
+}
+/* @end */
+
+/* @group .staff_vs_projects */
+.normal_expenses
+{
+	background: url(../img/normal_expenses.png) no-repeat 10px 65px;
+	border-left: 1px solid #ddd;
+	display: inline-block;
+	padding: 131px 10px 10px 10px;
+	vertical-align: top;
+	width: 160px;
+}
+
+.normal_expenses p
+{
+	margin: 0;
+}
+
+.normal_expenses span
+{
+	display: block;
+	line-height: 1;
+}
+
+.normal_expenses strong
+{
+	color: #add5d7;
+	display: block;
+	font-family: 'LeagueGothicRegular', Impact, Arial, sans-serif;
+	font-size: 60px;
+	line-height: 1;
+}
+/* @end */
+
+/* @group .footer */
 .footer
 {
 	border-bottom: 1px solid #ccc;
@@ -851,6 +959,7 @@ a::selection
 	margin: 0;
 	text-align: center;
 }
+/* @end */
 /* @end */
 
 
