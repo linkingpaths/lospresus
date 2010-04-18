@@ -739,7 +739,7 @@ a::selection
 	text-align: right;
 }
 
-#graph
+#holder
 {
 	background: url(/images/graph.gif) no-repeat center center;
 }
