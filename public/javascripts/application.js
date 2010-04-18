@@ -57,6 +57,8 @@ $(document).ready(function () {
   
   if ($('#holder').length != 0) {single_graph()}
   if ($('#holder_a').length != 0 || $('#holder_b').length != 0) {compare_graph()}
+  
+  $("input:text:visible:first").focus();
 }); 
 
 function budget_timeline_callback(carousel) {
