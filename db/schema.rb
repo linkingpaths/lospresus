@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100417125207) do
+ActiveRecord::Schema.define(:version => 20100417235855) do
 
   create_table "capitulos", :force => true do |t|
     t.integer  "presupuesto_id"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(:version => 20100417125207) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "capitulos", ["presupuesto_id", "capitulo"], :name => "index_capitulos_on_presupuesto_id_and_capitulo"
 
   create_table "demograficas", :force => true do |t|
     t.integer  "municipio_id"
@@ -45,11 +47,13 @@ ActiveRecord::Schema.define(:version => 20100417125207) do
   create_table "presupuestos", :force => true do |t|
     t.integer  "municipio_id"
     t.integer  "ano"
-    t.decimal  "total",        :precision => 10, :scale => 2
+    t.decimal  "total_ingresos"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "total_gastos",   :precision => 10, :scale => 2
   end
 
   add_index "presupuestos", ["ano"], :name => "index_presupuestos_on_ano"
+  add_index "presupuestos", ["municipio_id"], :name => "index_presupuestos_on_municipio_id"
 
 end
