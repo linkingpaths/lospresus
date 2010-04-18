@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100417235855) do
+ActiveRecord::Schema.define(:version => 20100418114814) do
 
   create_table "capitulos", :force => true do |t|
     t.integer  "presupuesto_id"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20100417235855) do
     t.integer  "codigo_ine"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "slug"
   end
 
   add_index "municipios", ["codigo_ine"], :name => "index_municipios_on_codigo_ine"

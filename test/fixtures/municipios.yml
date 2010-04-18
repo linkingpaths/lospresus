@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20100417090855
+# Schema version: 20100418114814
 #
 # Table name: municipios
 #
@@ -9,6 +9,7 @@
 #  codigo_ine :integer
 #  created_at :datetime
 #  updated_at :datetime
+#  slug       :string(255)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

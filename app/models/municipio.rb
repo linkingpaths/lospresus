@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20100417090855
+# Schema version: 20100418114814
 #
 # Table name: municipios
 #
@@ -9,14 +9,17 @@
 #  codigo_ine :integer
 #  created_at :datetime
 #  updated_at :datetime
+#  slug       :string(255)
 #
 
 class Municipio < ActiveRecord::Base
+  before_validation :update_or_create_slug
+
   has_many :presupuestos
   has_many :demograficas
-  def to_param
-    "#{self.id}-#{self.nombre.parameterize}"
-  end  
+
+  validates_uniqueness_of :slug
+  
   def province_name
     PROVINCES[provincia]
   end      
@@ -28,6 +31,17 @@ class Municipio < ActiveRecord::Base
   end
   def self.search(query)
     Municipio.find(:all, :conditions => ['nombre LIKE ?', "%#{query}%"])
+  end
+
+  def to_param
+    slug
+  end  
+
+  private
+  def update_or_create_slug
+    if self.new_record? || self.nombre_changed? || self.slug.blank?
+      self.slug = self.nombre.parameterize.to_s
+    end
   end
 end
 

@@ -1,15 +1,15 @@
 # == Schema Information
-# Schema version: 20100417235855
+# Schema version: 20100418114814
 #
 # Table name: presupuestos
 #
 #  id             :integer         not null, primary key
 #  municipio_id   :integer
 #  ano            :integer
-#  total_i :decimal(, )
+#  total_ingresos :decimal(, )
 #  created_at     :datetime
 #  updated_at     :datetime
-#  total_g   :decimal(10, 2)
+#  total_gastos   :decimal(10, 2)
 #
 
 class Presupuesto < ActiveRecord::Base
