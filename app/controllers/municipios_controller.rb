@@ -11,6 +11,7 @@ class MunicipiosController < ApplicationController
   
   def search
     q = params[:q]
+    
     @results = Municipio.search(q)
 
     meta  :title        => "Resultados de la búsqueda '#{q}' - lospresus.de",
