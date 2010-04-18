@@ -47,9 +47,11 @@
     </div>
 
     <p class="comparison">
-      <label for="city_compare_search">Comparar los presus de <strong><%= @muni.nombre %></strong> con los de:</label>
-      <input type='text' id="city_compare_search" placeholder="Tu municipio..." rel="<%= @muni.slug %>">
-      <button class="btn">Comparar</button>
+      <% form_tag(cities_to_compare_by_query_path(@muni), {:method => :get}) do %>
+        <label for="city_compare_search">Comparar los presus de <strong><%= @muni.nombre %></strong> con los de:</label>
+        <input type='text' name="q" id="city_compare_search" placeholder="Tu municipio..." rel="<%= @muni.slug %>">
+        <button class="btn">Comparar</button>
+      <% end %>
     </p>
   </div>
   <!-- /sidebar -->
@@ -138,7 +140,7 @@
       <!-- /normal_expenses -->
 
     <% else %>
-      <p>No tenemos información disponible.</p>
+      <p>No tenemos el presupuesto de este año. ¿Qué tal si pruebas con otro año?</p>
     <% end %>
   </div>
   <!-- /main -->

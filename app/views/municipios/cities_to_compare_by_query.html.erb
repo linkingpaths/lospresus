@@ -1,0 +1,16 @@
+<% content_for :header_title do %>
+  LO QUE BUSCAS
+<% end %>
+
+<h2>HAS BUSCADO '<%= @q %>' Y HEMOS ENCONTRADO <%= @results.size %> MUNICIPIOS PARA QUE LOS PUEDAS COMPARAR CON <%= link_to @muni.nombre.upcase, city_card_path(@muni) %></h2>
+<% unless @results.blank? %>
+  <ul>
+  <% for muni in @results %>
+    <li><%= link_to muni.nombre, city_compare_path(@muni, muni) %>, (<%= muni.province_name %>)</li>
+  <% end %>
+  </ul>
+<% else %>
+  <ul>
+    <li>No hay ningún municipio que encaje con tu búsqueda.</li>
+  </ul>
+<% end %>

@@ -1,5 +1,5 @@
 class MunicipiosController < ApplicationController
-  before_filter :find_muni, :only => [:show, :evolution, :compare, :search_for_compare]
+  before_filter :find_muni, :only => [:show, :evolution, :compare, :search_for_compare, :cities_to_compare_by_query]
   before_filter :year_context, :only => [:show, :compare]
 
   def show
@@ -16,6 +16,10 @@ class MunicipiosController < ApplicationController
   def search
     search_by_query(:limit => 10)
     render :layout => false
+  end  
+  
+  def cities_to_compare_by_query
+    search_by_query
   end  
   
   def search_for_compare
