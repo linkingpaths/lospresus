@@ -49,19 +49,29 @@ blockquote,q{quotes: "" "";}
 
 
 /* @group Web fonts */
-/* LeagueGothic */
+/* Fonts: Usados*/
 .LeagueGothic {font-family: 'LeagueGothicRegular', Impact, Arial, sans-serif;}
-/* Avenir */
-.AvenirLTStd-Black {font-family: 'AvenirLTStd65MediumBold', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+
 .AvenirLTStd-Heavy {font-family: 'AvenirLTStd55RomanBold', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
-.AvenirLTStd-Medium {font-family: 'AvenirLTStd65MediumRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
-.AvenirLTStd-Roman {font-family: 'AvenirLTStd55RomanRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+
 .AvenirLTStd-Book {font-family: 'AvenirLTStd45BookRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+
+/* Fonts: NO usados */
+/*
+.AvenirLTStd-Black {font-family: 'AvenirLTStd65MediumBold', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+
+.AvenirLTStd-Medium {font-family: 'AvenirLTStd65MediumRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+
+.AvenirLTStd-Roman {font-family: 'AvenirLTStd55RomanRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+
 .AvenirLTStd-Light {font-family: 'AvenirLTStd35LightRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
-/* Clarendon */
+
 .ClarendonLTStd {font-family: 'ClarendonLTStdRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+
 .ClarendonLTStd-Light {font-family: 'ClarendonLTStdLightRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+
 .ClarendonLTStd-Bold {font-family: 'ClarendonLTStdBold', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+*/
 /* @end */
 
 
@@ -404,6 +414,29 @@ a::selection
 
 /* @group Common elements */
 
+.initial_search
+{
+	
+}
+
+.initial_search label,
+.initial_search input,
+.initial_search button
+{
+	display: inline-block;
+	font-size: 24px;
+}
+
+.initial_search input
+{
+	
+}
+
+.initial_search button
+{
+	
+}
+
 /* @group .header */
 .header
 {
@@ -722,7 +755,7 @@ a::selection
 	border-bottom: 1px solid #ddd;
 	border-top: 1px solid #ddd;
 	color: #6cb9be;
-	font-family: 'AvenirLTStd65MediumBold', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;
+	font-family: 'AvenirLTStd55RomanBold', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;
 	font-size: 32px;
 	padding: 10px 0;
 	width: 45%;
@@ -817,7 +850,6 @@ a::selection
 	display: inline-block;
 	padding: 10px;
 	vertical-align: top;
-	width: 195px;
 }
 
 .in_out span
@@ -841,9 +873,9 @@ a::selection
 	line-height: 1;
 }
 
-.in_out .citizen_in {background: url(/images/citizen_in.png) no-repeat 10px 0;padding-top: 120px;}
-.in_out .townhall_in {background: url(/images/townhall_in.png) no-repeat 10px 0;padding-top: 120px;}
-.in_out .townhall_out {background: url(/images/townhall_out.png) no-repeat 10px 0;padding-top: 120px;}
+.in_out .citizen_in {background: url(/images/citizen_in.png) no-repeat 10px 0;padding-top: 120px;width: 175px;}
+.in_out .townhall_in {background: url(/images/townhall_in.png) no-repeat 10px 0;padding-top: 120px;width: 205px;}
+.in_out .townhall_out {background: url(/images/townhall_out.png) no-repeat 10px 0;padding-top: 120px;width: 195px;}
 /* @end */
 
 
