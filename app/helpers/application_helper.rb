@@ -5,5 +5,5 @@ module ApplicationHelper
   end
   def people(amount)
     number_with_delimiter(amount, :delimiter => ".")
-  end
+  end                           
 end

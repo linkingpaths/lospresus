@@ -1,15 +1,15 @@
 <!-- header -->
 <div class="header">
-	<div class="title">
-		<h1><span>Los presupuestos de </span><%= @muni.nombre %></h1>
-		<p>Las cosas claras y el chocolate espeso</p>
-	</div>
-	
-	<div class="budget">
-		<label for="municipality_go">Ver presus de...</label>
-		<input type="text" id="municipality_go" placeholder="Tu municipio..." />
-		<button class="btn">Ver</button>
-	</div>
+  <div class="title">
+    <h1><span>Los presupuestos de </span><%= @muni.nombre %></h1>
+    <p>Las cosas claras y el chocolate espeso</p>
+  </div>
+
+  <div class="budget">
+    <label for="municipality_go">Ver presus de...</label>
+    <input id="city_search" autofocus type='text' placeholder='Tu municipio...'>
+    <button class="btn">Ver</button>
+  </div>
 </div>
 <!-- /header -->
 
@@ -69,7 +69,7 @@
     </div>
 
     <p class="comparison">
-      <label for="city_search">Comparar los presus de <strong><%= @muni.province_name %></strong> con los de:</label>
+      <label for="city_search">Comparar los presus de <strong><%= @muni.nombre %></strong> con los de:</label>
       <input type='text' id="city_search" placeholder="Tu municipio..." autofocus>
       <button class="btn">Comparar</button>
     </p>
@@ -108,8 +108,11 @@
       <div class="totals">
         <h2>Total:</h2>
         <div class="balance">
-          <p class="incomings"><span class="title">Total ingresos:</span><strong><%= money(budget.total_ingresos) %> <span class="arrow">&rarr;</span> +XX%</strong> <small>que la media en <br/><em>Gipuzkoa</em></small></p>
-          <p class="expenses"><span class="title">Total gastos:</span><strong><%= money(budget.total_gastos) %> <span class="arrow">&rarr;</span> -XX%</strong> <small>que la media en <br/><em>Santa Cruz de Tenerife</em></small></p>
+          <p class="incomings">
+            <span class="title">Total ingresos:</span>
+            <strong><%= money(budget.total_ingresos) %> <span class="arrow">&rarr;</span> <%= Province.incomes_average(@muni.provincia,@year) %> +XX%</strong> <small>que la media en <br/><em><%= @muni.province_name %></em></small>
+          </p>
+          <p class="expenses"><span class="title">Total gastos:</span><strong><%= money(budget.total_gastos) %> <span class="arrow">&rarr;</span> -XX%</strong> <small>que la media en <br/><em><%= @muni.province_name %></em></small></p>
         </div>
       </div>
       <!-- /totals -->
