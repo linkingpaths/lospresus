@@ -1,13 +1,13 @@
 # == Schema Information
-# Schema version: 20100417090855
+# Schema version: 20100417235855
 #
 # Table name: capitulos
 #
 #  id             :integer         not null, primary key
 #  presupuesto_id :integer
 #  capitulo       :integer
-#  ingresos       :decimal(, )
-#  gastos         :decimal(, )
+#  ingresos       :decimal(10, 2)
+#  gastos         :decimal(10, 2)
 #  created_at     :datetime
 #  updated_at     :datetime
 #
