@@ -29,7 +29,8 @@ set :deploy_via, :remote_cache
 #############################################################
 
 set :user, "lospresus"
-set :domain, "lospresus.de"
+set :domain, "lospresusde.org"
+#set :domain, "lospresus.de"
 server domain, :app, :web
 role :db, domain, :primary => true
 
