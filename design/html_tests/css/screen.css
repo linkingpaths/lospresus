@@ -1,0 +1,1005 @@
+/* Colores */
+/*
+#031e1f (Verde fondo)
+#008c95 (Verde medio)
+#023437 (Verde medio al 20%)
+#032425 (Verde medio al 5%)
+*/
+
+/* @group Reset */
+html
+{
+	/*This odd 100.01% value for the font size compensates for several browser bugs.
+First, setting a default body font size in percent (instead of em) eliminates an IE/Win problem with growing or shrinking fonts out of proportion if they are later set in ems in other elements.
+Additionally, some versions of Opera will draw a default font-size of 100% too small compared to other browsers. Safari, on the other hand, has a problem with a font-size of 101%. The current best suggestion is to use the 100.01% value for this property.*/
+	font-size: 100.01%;
+}
+
+html, body {margin: 0;padding: 0;}
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, q, cite, a, abbr, acronym, address, big, small, code, samp, var, tt, pre, del, ins, strike, dfn, kbd, em, strong, font, img, s, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,caption, tbody, tfoot, thead, tr, th, td
+{font-size: 100%;vertical-align: baseline;}
+
+:link,:visited {text-decoration: none;}
+div, dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,pre,p,blockquote {margin: 0;padding: 0;}
+dl,ul,ol {list-style: none;list-style-type: none;}
+/* NOTA: tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse;border-spacing: 0;}
+
+a,
+a:hover,
+a:active,
+a img,
+:link img,
+:visited img
+{border: none;outline: none;outline-style: none;}
+
+:focus {outline: 0;}
+address,caption,cite,code,dfn,th,var{font-style: normal;font-weight: normal;}
+pre, code, tt, samp {font-size: 1em;}
+kbd {text-transform: uppercase;}
+sup {vertical-align: super;font-size: .5em;}
+sub {vertical-align: sub;}
+pre {white-space: pre;}
+
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes: "" "";}
+/* @end */
+
+
+
+/* @group Web fonts */
+/* LeagueGothic */
+.LeagueGothic {font-family: 'LeagueGothicRegular', Impact, Arial, sans-serif;}
+/* Avenir */
+.AvenirLTStd-Black {font-family: 'AvenirLTStd65MediumBold', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.AvenirLTStd-Heavy {font-family: 'AvenirLTStd55RomanBold', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.AvenirLTStd-Medium {font-family: 'AvenirLTStd65MediumRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.AvenirLTStd-Roman {font-family: 'AvenirLTStd55RomanRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.AvenirLTStd-Book {font-family: 'AvenirLTStd45BookRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.AvenirLTStd-Light {font-family: 'AvenirLTStd35LightRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+/* Clarendon */
+.ClarendonLTStd {font-family: 'ClarendonLTStdRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.ClarendonLTStd-Light {font-family: 'ClarendonLTStdLightRegular', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+.ClarendonLTStd-Bold {font-family: 'ClarendonLTStdBold', 'Century Gothic', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;}
+/* @end */
+
+
+
+/* @group HTML elements */
+body
+{
+	background: #d8e7e7 url(../img/body.png);
+	border-top: 5px solid #008c95;
+	color: #031e1f;
+	font-family: 'AvenirLTStd45BookRegular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+strong
+{
+	font-family: 'AvenirLTStd55RomanBold', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;
+	font-weight: normal;
+}
+
+em
+{
+	font-family: 'Palatino Linotype','Hoefler Text',Georgia,'Times New Roman',serif;
+	font-size: 1.25em;
+	font-style: italic;
+}
+
+/* Hacemos que todos los elementos en bloque por defecto tengan un margin inferior igual */
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,pre,p,blockquote{margin: 0 0 20px 0;}
+
+/* @group headings */
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'LeagueGothicRegular', Impact, Arial, sans-serif;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0 0 .5em 0;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 3px #fff 1px 1px #fff;
+}
+h1 {font-size: 60px;}
+h2 {font-size: 54px;}
+h3 {font-size: 48px;}
+h4 {font-size: 42px;}
+h5 {font-size: 36px;}
+h6 {font-size: 30px;}
+/* @end */
+      
+a:link {color: #008c95;}/* Unvisited link */
+a:visited {color: #008c95;}/* Visited links */
+a:hover {color: #023437;}/* The user mouses over a link */
+a:focus {}/* The user clicks on a link */
+a:active {}/* The user has clicked a link */
+
+
+acronym,
+abbr
+{
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+a acronym,
+a abbr
+{cursor: pointer;}
+
+/* @group q, bockquote, cite */
+q,
+blockquote
+{
+	font-family: 'Palatino Linotype','Hoefler Text',Georgia,'Times New Roman',serif;
+	font-style: italic;
+}
+
+blockquote {font-size: 15px;}
+
+blockquote cite
+{
+  display: block;
+  font-size: 12px;
+  margin: 10px 0 0 0;
+}
+
+/* STANDARD QUOTES */
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+q:lang(sv) { quotes: '\201D' '\201D' '\2019' '\2019'; }
+q:lang(da) { quotes: '\00BB' '\00AB' '\203A' '\2039'; }
+
+q:before { content: open-quote; }
+q:after  { content: close-quote; }
+
+/* SAFARI SUPPORT */
+q:before   { content: '\201C'; }
+q:after    { content: '\201D'; }
+q q:before { content: '\2018'; }
+q q:after  { content: '\2019'; }
+
+/* BLOCKQUOTES */
+blockquote * { quotes: none; }
+blockquote > *:before { content: '\201C'; }
+blockquote > *:after  { content: '\201D'; }
+blockquote q:before   { content: '\2018'; }
+blockquote q:after    { content: '\2019'; }
+
+/* LANGUAGE-SPECIFIC QUOTES SAFARI STYLE */
+*[lang~='da'] q:before, q[lang~='da']:before,
+*[lang~='da'] blockquote > *:before, blockquote[lang~='da'] > *:before { content: '\201E'; }
+
+*[lang~='da'] q:after, q[lang~='da']:after,
+*[lang~='da'] blockquote > *:after, blockquote[lang~='da'] > *:after { content: '\201C'; }
+
+*[lang~='da'] q q:before, q[lang~='da'] q:before,
+*[lang~='da'] blockquote q:before, blockquote[lang~='da'] q:before { content: '\2019'; }
+
+*[lang~='da'] q q:after, q[lang~='da'] q:after,
+*[lang~='da'] blockquote q:after, blockquote[lang~='da'] q:after { content: '\2019'; }
+
+*[lang~='sv'] q:before, q[lang~='sv']:before,
+*[lang~='sv'] blockquote > *:before, blockquote[lang~='sv'] > *:before { content: '\201D'; }
+
+*[lang~='sv'] q:after, q[lang~='sv']:after,
+*[lang~='sv'] blockquote > *:after, blockquote[lang~='sv'] > *:after { content: '\201D'; }
+
+*[lang~='sv'] q q:before, q[lang~='sv'] q:before,
+*[lang~='sv'] blockquote q:before, blockquote[lang~='sv'] q:before { content: '\2019'; }
+
+*[lang~='sv'] q q:after,  q[lang~='sv'] q:after,
+*[lang~='sv'] blockquote q:after, blockquote[lang~='sv'] q:after { content: '\2019'; }
+
+cite {}
+/* @end */
+kbd
+{
+  background: #eee;
+  border-top: .15em solid #ccc;
+  border-right:.25em solid #aaa;
+  border-bottom:.3em solid #888;
+  border-left:.2em solid #bbb;
+  color: #000;
+  font-size: 1em;
+  font-weight: normal;
+  font-family: "Lucida console", Courier, monospace, sans-serif;
+  line-height: 2;
+  padding: .05em .2em;
+}
+
+/* @group lists */
+ul, ol{}
+ol{}
+ul li, ol li {margin: 0 0 5px 0;}
+dl{}
+dt, dd{margin: 0;}
+dt{font-weight: bold;}
+dd{}
+/* @end */
+
+
+
+/* @group forms */
+form{}
+
+fieldset
+{
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+legend{display: none;}
+
+
+
+label, input, select, optgroup, option, textarea {font-size: 1em;}
+
+input, select, textarea, button
+{
+	margin: 0 0 20px 0;
+	padding: 5px;
+}
+
+input,
+select,
+textarea,
+optgroup,
+option
+{
+	background-color: #fff;
+	font-family: 'AvenirLTStd45BookRegular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;
+}
+
+input,
+select,
+textarea
+{
+	background: #fff;
+	border: 1px solid;
+	border-bottom-color: #d2d2d2;
+	border-left-color: #acacac;
+	border-right-color: #acacac;
+	border-top-color: #6f6f6f;
+}
+
+input,
+textarea
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15) inset;
+	-webkitbox-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15) inset;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15) inset;
+}
+
+label
+{
+	display: inline-block;
+	line-height: 1.2;
+	padding: .5em 0;
+	vertical-align: top;
+}
+
+input{}
+optgroup {font-style: normal;}
+
+option
+{
+  background: #fff;
+  cursor: pointer;
+}
+
+button
+{
+	display: block;
+	font-family: 'AvenirLTStd45BookRegular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;
+	font-size: 14px;
+}
+
+button {border: none;}
+button:hover{cursor: pointer;}
+button:focus{}
+
+select {}
+textarea {overflow: auto;}
+
+input[type="text"]:hover,
+select:hover,
+textarea:hover
+{
+  border-color: #aaa;
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus
+{
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.25);
+	box-shadow: 0 0 3px rgba(0,0,0,.25);
+	border-color: #666;
+	color: #333;
+}
+/* @end */
+
+
+/* @group tables */
+table, caption, thead, th, tr, td
+{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table, thead, th, tr, td {border: 1px solid #ccc;}
+
+table
+{
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+
+caption
+{
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  padding: 5px;
+}
+
+th
+{
+  font-weight: bold;
+  text-align: left;
+}
+
+th,
+td
+{
+  padding: 5px;
+  vertical-align: top;
+}
+
+/* @group thead */
+thead
+{
+  background: #333;
+  color: #fff;
+}
+
+thead th{background: #333;}
+/* @end */
+
+
+/* @group tbody */
+tbody{}
+/* @end */
+
+
+/* @group tfoot */
+tfoot{}
+/* @end */
+/* @end */
+iframe {margin: 0;}
+
+/* @group Selección general */
+::-moz-selection,
+::selection
+{
+	background:#d4f699;
+	color:#7aa62f;
+}
+
+/* Selección de enlaces */ 
+a::-moz-selection,
+a::selection
+{
+	background: #535353;
+	color:#9dd63c;
+}
+/* @end */
+/* @end */
+
+/* @group Common elements */
+
+/* @group .header */
+.header
+{
+	background: url(../img/header.png) no-repeat;
+	height: 241px;
+	padding: 20px;
+	position: relative;
+}
+
+.header .title
+{
+	background: url(../img/logo.png) no-repeat;
+	height: 235px;
+}
+
+.header .title h1
+{
+	color: #6cb9be;
+	font-size: 40px;
+	left: 50px;
+	position: relative;
+	top: 140px;
+}
+
+.header .budget
+{
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+	-moz-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5) inset;
+	-webkitbox-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5) inset;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5) inset;
+	
+	background: #031e1f;
+	color: #fff;
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	right: 30px;
+	top: 0;
+}
+
+.header .budget label
+{
+	color: #008c95;
+	font-family: 'LeagueGothicRegular', Impact, Arial, sans-serif;
+	font-size: 32px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.header .budget input
+{
+	margin: 0 0 10px 0;
+	width: 200px;
+}
+/* @end */
+
+/* @group .timeline */
+.timeline
+{
+	background: url(../img/timeline.gif) no-repeat center bottom;
+	padding: 0 0 33px 0;
+}
+	
+.timeline ul
+{
+	height: 43px;
+	margin: 0;
+	overflow: hidden;
+}
+.timeline li {display: inline-block;}
+
+.timeline .actual_year {}
+
+.timeline .actual_year a,
+.timeline .actual_year a:hover
+{ 
+	background: #000;
+	border: 1px solid #000;
+	color: #333;
+	cursor: default;
+}
+
+.timeline li a
+{
+	-moz-box-shadow: 1px 3px 5px rgba(0, 0, 0, .75) inset;
+	-webkitbox-box-shadow: 1px 3px 5px rgba(0, 0, 0, .75) inset;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, .75) inset;
+	background: #023437;
+	border: 1px solid #fff;
+	color: #fff;
+	display: block;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.timeline li a:hover
+{ 
+	background: #032425;
+	border: 1px solid #023437;
+	color: #008c95;
+}
+
+.timeline li a,
+.timeline .years_nav a
+{ 
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #008c95;
+	padding: 10px 20px;
+}
+
+.timeline .years_nav
+{
+	display: inline-block;
+	margin: 0;
+	vertical-align: top;
+}
+
+.timeline .years_nav a
+{
+	-moz-box-shadow: 1px 3px 5px rgba(256, 256, 256, 0.5) inset;
+	-webkitbox-box-shadow: 1px 3px 5px rgba(256, 256, 256, 0.5) inset;
+	box-shadow: 1px 3px 5px rgba(256, 256, 256, 0.5) inset;
+	border-color: #fff;
+	display: inline-block;
+}
+
+.timeline .years_nav a:hover
+{ 
+	border-color: #023437;
+}
+
+.timeline .years_prev
+{ 
+	float: left;
+}
+
+.timeline .years_next
+{ 
+	float: right;
+}
+
+.timeline .timeline_years
+{ 
+	display: inline-block;
+	float: left;
+	text-align: center;
+	width: 648px;
+}
+/* @end */
+
+.show_evolution .btn
+{
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	-moz-box-shadow: 0 3px 5px #008c95;
+	-webkitbox-box-shadow: 0 3px 5px #008c95;
+	box-shadow: 0 3px 5px #008c95;
+	display: block;
+	font-family: 'LeagueGothicRegular', Impact, Arial, sans-serif;
+	font-size: 32px;
+	line-height: 1;
+	margin: 0 auto 40px auto;
+	padding: 10px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 250px;
+}
+
+.contents {}
+
+/* @group .sidebar */
+.sidebar
+{
+	float: left;
+	margin: 0 20px 0 0;
+	text-shadow: 1px 1px 1px #fff;
+	width: 240px;
+}
+
+.sidebar .data
+{
+	/*
+	filter: alpha(opacity=50);
+	-moz-opacity: .5;
+	opacity: .5;
+	*/
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background: #add5d7;
+	margin: 0;
+	padding: 20px;
+}
+
+.sidebar hr
+{
+	height: 0;
+	clear: both;
+	border: solid #72adb0;
+	border-width: 1px 0 0;
+	border-top: 1px solid #72adb0;
+	border-bottom: 1px solid #fff;
+}
+
+.sidebar small
+{
+	font-size: 18px;
+}
+
+.sidebar .year
+{
+	font-size: 30px;
+	margin: 0;
+}
+
+.sidebar .citizen span,
+.sidebar .citizen strong,
+.sidebar .surface span,
+.sidebar .surface strong
+{
+	display: block;
+}
+
+.sidebar .citizen span,
+.sidebar .surface span
+{
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.sidebar .citizen strong,
+.sidebar .surface strong
+{
+	font-size: 30px;
+	line-height: 1;
+}
+
+.sidebar .citizen
+{
+	margin: 0;
+	padding: 10px 0;
+}
+
+.sidebar .surface
+{
+	margin: 0;
+	padding: 10px 0;
+}
+
+.sidebar .comparison
+{
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background: #97c7c9;
+	border-top: 1px solid #fff;
+	margin: 0;
+	padding: 20px;
+}
+
+.sidebar .comparison label
+{
+	
+}
+
+.sidebar .comparison input
+{
+	margin: 0 0 10px 0;
+	width: 190px;
+}
+
+.sidebar .comparison button
+{
+	margin: 0;
+}
+/* @end */
+
+.main
+{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+	-webkitbox-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+	
+	background: #fff;
+	border-bottom: 1px solid #80b5b8;
+	border-right: 1px solid #80b5b8;
+	float: left;
+	padding: 20px;
+	width: 659px;
+}
+
+.incomings_title,
+.expenses_title
+{
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	color: #6cb9be;
+	font-family: 'AvenirLTStd65MediumBold', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Lucida, Arial, sans-serif;
+	font-size: 32px;
+	padding: 10px 0;
+	width: 45%;
+}
+
+.incomings_title
+{
+	float: left;
+}
+
+.expenses_title
+{
+	float: right;
+	text-align: right;
+}
+
+#graph
+{
+	background: url(../img/graph.gif) no-repeat center center;
+}
+
+
+/* @group .totals */
+.totals {}
+
+.totals h2
+{
+	color: #008c95;
+	display: inline-block;
+	margin: 0 20px 0 0;
+	position: relative;
+	top: 45px;
+	vertical-align: top;
+}
+
+.totals .balance
+{
+	border-left: 1px solid #ddd;
+	display: inline-block;
+	margin: 0;
+	padding: 0 0 0 10px;
+}
+
+.totals .balance .incomings
+{
+	
+}
+
+.totals .balance .expenses
+{
+	margin: 0;
+}
+
+.totals p span.title
+{
+	border-bottom: 1px solid #ddd;
+	display: block;
+	margin: 0 0 5px 0;
+	text-transform: uppercase;
+}
+
+.totals p span.arrow
+{
+	color: #ddd;
+}
+
+.totals p strong
+{
+	font-family: 'LeagueGothicRegular', Impact, Arial, sans-serif;
+	font-size: 36px;
+	line-height: 1;
+}
+
+.totals p small
+{
+	display: inline-block;
+	line-height: 1.2;
+}
+/* @end */
+
+
+
+/* @group .facts */
+.facts {}
+
+.facts p
+{
+	border-left: 1px solid #ddd;
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+	width: 195px;
+}
+
+.facts span
+{
+	display: block;
+	line-height: 1;
+}
+
+.facts strong
+{
+	color: #add5d7;
+	display: block;
+	font-family: 'LeagueGothicRegular', Impact, Arial, sans-serif;
+	font-size: 60px;
+	line-height: 1;
+}
+
+.facts em
+{
+	display: block;
+	line-height: 1;
+}
+/* @end */
+
+
+.footer
+{
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding: 10px 0;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.footer p
+{
+	margin: 0;
+	text-align: center;
+}
+/* @end */
+
+
+
+/* @group Global Styles */
+/* Envuelve el contenido central de los bloques principales (header, container, footer, etc.) para darles un ancho y centrarlos en la página */
+.inside
+{
+	margin: 0 auto;
+	width: 960px;
+}
+
+/* Para ocultar elementos. Recomendado en WebAIM: http://www.webaim.org/techniques/css/invisiblecontent/ */
+.hide,
+.header .title h1 span,
+.header .title p
+{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+/* Cuando un input va dentro de un label (checkbox/radio) */
+label input
+{
+	margin: 0 .35em 0 0;
+	vertical-align: middle;
+}
+
+/* @group .tags */
+/* Tags */
+.tags li
+{
+	float: left;
+	margin: 0 .15em .35em 0;
+}
+
+.tags a,
+.tags strong,
+.tags span
+{vertical-align: middle;}
+
+.tags a
+{
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	-moz-box-shadow: 0 1px 0 #999;
+	-webkitbox-box-shadow: 0 1px 0 #999;
+	box-shadow: 0 1px 0 #999;
+	background: #fff;
+	display: inline-block;
+	margin: 0 5px 0 0;
+	padding: 5px 10px;
+	text-align: center;
+}
+
+.tags a:hover
+{
+	background: #222;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.tags a:active
+{
+	left: 1px;
+	position: relative;
+	top: 1px;
+}
+/* @end */
+
+
+
+/* @group .btn */
+/* Se aplica a elementos <button> y a enlaces con aspecto de botón */
+.btn
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: #008c95 url(../img/btn.png) repeat-x left bottom;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	padding: 5px 10px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .5), -1px -1px 1px rgba(0, 0, 0, .5);
+}
+
+.btn, a.btn, a.btn:visited {color: #fff;}
+a.btn {display: inline-block;}
+
+.btn:hover
+{
+	-moz-box-shadow: none;
+	-webkitbox-box-shadow: none;
+	box-shadow: none;
+	background-color: #00a2ad;
+	border: 1px solid #ccc;
+	color: #fff;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, .5);
+}
+
+.btn:active
+{
+	position: relative;
+	top: 1px;
+}
+/* @end */
+
+/* @group dl.line */
+/* line: clase para que el dt y el dd van en la misma línea */
+dl.line dt
+{
+	clear: both;
+	float: left;
+	margin: 0 1em 0 0;
+}
+/* @end */
+
+/* @group .clearfix */
+/* Clearfix permite limpiar flotados. Mas info: http://www.positioniseverything.net/easyclearing.html  */
+.clearfix:after,
+.contents:after,
+.timeline:after
+{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix,
+.contents,
+.timeline
+{display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix,
+* html .contents,
+* html .timeline
+{height: 1%;}
+
+.clearfix,
+.contents,
+.timeline
+{display: block;}
+/* End hide from IE-mac */
+/* @end */
+/* @end */
