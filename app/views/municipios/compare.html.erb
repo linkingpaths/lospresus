@@ -2,105 +2,107 @@
   <%= @muni.nombre %> y <%= @muni_b.nombre %>
 <% end %>
 
-<div style="float:left">
-  <h2>Muni A: <%= @muni.nombre %></h2>
+<!-- contents -->
+<div class="contents">
+  <!-- main -->
+  <div class="main">
+    <div style="float:left">
+      <h2>Muni A: <%= @muni.nombre %></h2>
+    
+      <% budget = @muni.budget_for(@year) %>
+      <% if budget %>
+        <script type="text/javascript" charset="utf-8">
+          var ingresos = [
+            <%= (budget.income_taxes*100/budget.total_ingresos).round %>,
+            <%= (budget.income_administrations*100/budget.total_ingresos).round %>,
+            <%= (budget.income_assets*100/budget.total_ingresos).round %>,
+            <%= (budget.income_financial*100/budget.total_ingresos).round %>,
+            <%= (budget.income_loans*100/budget.total_ingresos).round %>
+          ];
+          var gastos = [
+            <%= (budget.expense_people*100/budget.total_gastos).round %>,
+            <%= (budget.expense_commons*100/budget.total_gastos).round %>,
+            <%= (budget.expense_projects*100/budget.total_gastos).round %>,
+            <%= (budget.expense_grants*100/budget.total_gastos).round %>,
+            <%= (budget.expense_administrations*100/budget.total_gastos).round %>,
+            <%= (budget.expense_financial*100/budget.total_gastos).round %>,
+            <%= (budget.expense_loans*100/budget.total_gastos).round %>
+          ];
+        </script>
+        <div id="holder_a"></div>
+      
+        <!-- totals -->
+        <div class="totals">
+          <h2>Total:</h2>
+          <div class="balance">
+            <p class="incomings">
+              <span class="title">Total ingresos:</span>
+              <strong><%= money(budget.total_ingresos) %> <span class="arrow">&rarr;</span>  <%= income_gap(@muni,@year) %>%</strong> <small>que la media en <br/><em><%= @muni.province_name %></em></small>
+            </p>
+            <p class="expenses">
+              <span class="title">Total gastos:</span>
+              <strong><%= money(budget.total_gastos) %> <span class="arrow">&rarr;</span> <%= expense_gap(@muni,@year) %>%</strong> <small>que la media en <br/><em><%= @muni.province_name %></em></small>
+            </p>
+          </div>
+        </div>
+        <!-- /totals -->
+      <% else %>
+        No data.
+      <% end %>
+      
+      
+    </div>
+    
+    <div style="float:left">
+      <h2>Muni B: <%= @muni_b.nombre %></h2>
+    
+      <% budget = @muni_b.budget_for(@year) %>
+      <% if budget %>
+        <script type="text/javascript" charset="utf-8">
+          var ingresos2 = [
+            <%= (budget.income_taxes*100/budget.total_ingresos).round %>,
+            <%= (budget.income_administrations*100/budget.total_ingresos).round %>,
+            <%= (budget.income_assets*100/budget.total_ingresos).round %>,
+            <%= (budget.income_financial*100/budget.total_ingresos).round %>,
+            <%= (budget.income_loans*100/budget.total_ingresos).round %>
+          ];
+          var gastos2 = [
+            <%= (budget.expense_people*100/budget.total_gastos).round %>,
+            <%= (budget.expense_commons*100/budget.total_gastos).round %>,
+            <%= (budget.expense_projects*100/budget.total_gastos).round %>,
+            <%= (budget.expense_grants*100/budget.total_gastos).round %>,
+            <%= (budget.expense_administrations*100/budget.total_gastos).round %>,
+            <%= (budget.expense_financial*100/budget.total_gastos).round %>,
+            <%= (budget.expense_loans*100/budget.total_gastos).round %>
+          ];
+        </script>
+        <div id="holder_b"></div>
+        
+        <!-- totals -->
+        <div class="totals">
+          <h2>Total:</h2>
+          <div class="balance">
+            <p class="incomings">
+              <span class="title">Total ingresos:</span>
+              <strong><%= money(budget.total_ingresos) %> <span class="arrow">&rarr;</span>  <%= income_gap(@muni,@year) %>%</strong> <small>que la media en <br/><em><%= @muni.province_name %></em></small>
+            </p>
+            <p class="expenses">
+              <span class="title">Total gastos:</span>
+              <strong><%= money(budget.total_gastos) %> <span class="arrow">&rarr;</span> <%= expense_gap(@muni,@year) %>%</strong> <small>que la media en <br/><em><%= @muni.province_name %></em></small>
+            </p>
+          </div>
+        </div>
+        <!-- /totals -->
 
-  <% budget = @muni.budget_for(@year) %>
-  <% if budget %>
-    <script type="text/javascript" charset="utf-8">
-      var ingresos = [
-        <%= (budget.income_taxes*100/budget.total_ingresos).round %>,
-        <%= (budget.income_administrations*100/budget.total_ingresos).round %>,
-        <%= (budget.income_assets*100/budget.total_ingresos).round %>,
-        <%= (budget.income_financial*100/budget.total_ingresos).round %>,
-        <%= (budget.income_loans*100/budget.total_ingresos).round %>
-      ];
-      var gastos = [
-        <%= (budget.expense_people*100/budget.total_gastos).round %>,
-        <%= (budget.expense_commons*100/budget.total_gastos).round %>,
-        <%= (budget.expense_projects*100/budget.total_gastos).round %>,
-        <%= (budget.expense_grants*100/budget.total_gastos).round %>,
-        <%= (budget.expense_administrations*100/budget.total_gastos).round %>,
-        <%= (budget.expense_financial*100/budget.total_gastos).round %>,
-        <%= (budget.expense_loans*100/budget.total_gastos).round %>
-      ];
-    </script>
-    <div id="holder_a"></div>
+        
+      <% else %>
+        No data.
+      <% end %>
+    </div>
   
-    <p>Presu: I <%= money(budget.total_ingresos) %> / G <%= money(budget.total_gastos) %></p>
-    <ul>
-      Ingresos:<br/>
-    <li>Impuestos y tasas = <%= money(budget.income_taxes) %></li>
-    <li>Otras administraciones = <%= money(budget.income_administrations) %></li>
-    <li>Patrimonio = <%= money(budget.income_assets) %></li>
-    <li>Activos financieros = <%= money(budget.income_financial) %></li>
-    <li>Préstamos = <%= money(budget.income_loans) %></li>
-    </ul>
-    <ul>
-      Gastos:<br/>
-      <ul>
-        <li>Personal = <%= money(budget.expense_people) %></li>
-        <li>Gastos cotidianos = <%= money(budget.expense_commons) %> </li>
-        <li>Proyectos e inversiones = <%= money(budget.expense_projects) %></li>
-        <li>Subvenciones = <%= money(budget.expense_grants) %></li>
-        <li>Otras administraciones y entidades = <%= money(budget.expense_administrations) %> </li>
-        <li>Activos financieros =<%= money(budget.expense_financial) %></li>
-        <li>Préstamos y gastos financieros = <%= money(budget.expense_loans) %></li>
-      </ul>
-    </ul>
-  <% else %>
-    No data.
-  <% end %>
-</div>
+  </div>
+  <!-- /main -->
 
-<div style="float:left">
-  <h2>Muni B: <%= @muni_b.nombre %></h2>
-
-  <% budget = @muni_b.budget_for(@year) %>
-  <% if budget %>
-    <script type="text/javascript" charset="utf-8">
-      var ingresos2 = [
-        <%= (budget.income_taxes*100/budget.total_ingresos).round %>,
-        <%= (budget.income_administrations*100/budget.total_ingresos).round %>,
-        <%= (budget.income_assets*100/budget.total_ingresos).round %>,
-        <%= (budget.income_financial*100/budget.total_ingresos).round %>,
-        <%= (budget.income_loans*100/budget.total_ingresos).round %>
-      ];
-      var gastos2 = [
-        <%= (budget.expense_people*100/budget.total_gastos).round %>,
-        <%= (budget.expense_commons*100/budget.total_gastos).round %>,
-        <%= (budget.expense_projects*100/budget.total_gastos).round %>,
-        <%= (budget.expense_grants*100/budget.total_gastos).round %>,
-        <%= (budget.expense_administrations*100/budget.total_gastos).round %>,
-        <%= (budget.expense_financial*100/budget.total_gastos).round %>,
-        <%= (budget.expense_loans*100/budget.total_gastos).round %>
-      ];
-    </script>
-    <div id="holder_b"></div>
-  
-    <p>Presu: I <%= money(budget.total_ingresos) %> / G <%= money(budget.total_gastos) %></p>
-    <ul>
-      Ingresos:<br/>
-    <li>Impuestos y tasas = <%= money(budget.income_taxes) %></li>
-    <li>Otras administraciones = <%= money(budget.income_administrations) %></li>
-    <li>Patrimonio = <%= money(budget.income_assets) %></li>
-    <li>Activos financieros = <%= money(budget.income_financial) %></li>
-    <li>Préstamos = <%= money(budget.income_loans) %></li>
-    </ul>
-    <ul>
-      Gastos:<br/>
-      <ul>
-        <li>Personal = <%= money(budget.expense_people) %></li>
-        <li>Gastos cotidianos = <%= money(budget.expense_commons) %> </li>
-        <li>Proyectos e inversiones = <%= money(budget.expense_projects) %></li>
-        <li>Subvenciones = <%= money(budget.expense_grants) %></li>
-        <li>Otras administraciones y entidades = <%= money(budget.expense_administrations) %> </li>
-        <li>Activos financieros =<%= money(budget.expense_financial) %></li>
-        <li>Préstamos y gastos financieros = <%= money(budget.expense_loans) %></li>
-      </ul>
-    </ul>
-  <% else %>
-    No data.
-  <% end %>
 </div>
+<!-- /contents -->
 
