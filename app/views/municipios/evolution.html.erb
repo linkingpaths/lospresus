@@ -18,7 +18,7 @@
     var r = Raphael("holder_evolution_income");
     
     var fin = function () {
-      this.flag = r.g.popup(this.bar.x, this.bar.y, format_num(this.bar.value || "0")).insertBefore(this);
+      this.flag = r.g.popup(this.bar.x, this.bar.y, format_num(this.bar.value || "0")+" €").insertBefore(this);
     };
     var fout = function () {
       this.flag.animate({opacity: 0}, 300, function () {this.remove();});
@@ -39,7 +39,7 @@
     var r = Raphael("holder_evolution_expense");
     
     var fin = function () {
-      this.flag = r.g.popup(this.bar.x, this.bar.y, format_num(this.bar.value || "0")).insertBefore(this);
+      this.flag = r.g.popup(this.bar.x, this.bar.y, format_num(this.bar.value || "0")+" €").insertBefore(this);
     };
     var fout = function () {
       this.flag.animate({opacity: 0}, 300, function () {this.remove();});
@@ -60,7 +60,7 @@
     var r = Raphael("holder_evolution_population");
     
     var fin = function () {
-      this.flag = r.g.popup(this.bar.x, this.bar.y, format_num(this.bar.value || "0")).insertBefore(this);
+      this.flag = r.g.popup(this.bar.x, this.bar.y, format_num(this.bar.value || "0") + " habs.").insertBefore(this);
     };
     var fout = function () {
       this.flag.animate({opacity: 0}, 300, function () {this.remove();});
