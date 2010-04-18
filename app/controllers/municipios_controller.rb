@@ -1,10 +1,6 @@
 class MunicipiosController < ApplicationController
-<<<<<<< HEAD:app/controllers/municipios_controller.rb
-  before_filter :find_muni, :only => [:show, :compare]
-  before_filter :year_context, :only => [:show, :compare]
-=======
   before_filter :find_muni, :only => [:show, :evolution]
->>>>>>> 5bba0b05686ec02bc5ec13bd0f2962d150c9958b:app/controllers/municipios_controller.rb
+  before_filter :year_context, :only => [:show, :compare]
 
   def show
     #meta :title => "Lospresus.de"
