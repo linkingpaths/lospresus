@@ -413,6 +413,11 @@ a::selection
 /* @end */
 
 /* @group Common elements */
+#city_search,
+.sidebar .comparison input
+{
+	padding-right: 26px;
+}
 
 .initial_search
 {
@@ -723,7 +728,7 @@ a::selection
 .sidebar .comparison input
 {
 	margin: 0 0 10px 0;
-	width: 190px;
+	width: 164px;
 }
 
 .sidebar .comparison button
