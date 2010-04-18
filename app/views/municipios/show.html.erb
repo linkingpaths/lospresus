@@ -1,28 +1,28 @@
 <!-- header -->
 <div class="header">
-	<div class="title">
-		<h1><span>Los presupuestos de </span><%= @muni.province_name %></h1>
-		<p>Las cosas claras y el chocolate espeso</p>
-	</div>
-	
-	<div class="budget">
-		<label for="municipality_go">Ver presus de...</label>
-		<input type="text" id="municipality_go" placeholder="Tu municipio..." />
-		<button class="btn">Ver</button>
-	</div>
+  <div class="title">
+    <h1><span>Los presupuestos de </span><%= @muni.province_name %></h1>
+    <p>Las cosas claras y el chocolate espeso</p>
+  </div>
+
+  <div class="budget">
+    <label for="municipality_go">Ver presus de...</label>
+    <input type="text" id="municipality_go" placeholder="Tu municipio..." />
+    <button class="btn">Ver</button>
+  </div>
 </div>
 <!-- /header -->
 
 <!-- timeline -->
 <div class="timeline">
-	<p class="years_nav years_prev"><a href="#">&larr; años anteriores</a></p>
-	<p class="years_nav years_next"><a href="#">años siguientes &rarr;</a></p>
-	<ul class="timeline_years">
-		<li class="actual_year"><a href="#">1830</a></li>
-		<% (1985..2009).each do |year| %>
-		  <li><%= link_to year, city_card_by_year_path(@muni, year) %></li>
-		<% end %>
-	</ul>
+  <p class="years_nav years_prev"><a href="#">&larr; años anteriores</a></p>
+  <p class="years_nav years_next"><a href="#">años siguientes &rarr;</a></p>
+  <ul class="timeline_years">
+    <li class="actual_year"><a href="#">1830</a></li>
+    <% (1985..2009).each do |year| %>
+      <li><%= link_to year, city_card_by_year_path(@muni, year) %></li>
+    <% end %>
+  </ul>
 </div>
 <!-- /timeline -->
 
@@ -30,118 +30,118 @@
 
 <!-- contents -->
 <div class="contents">
-	<!-- sidebar -->
-	<div class="sidebar">
-		
-		<div class="data">
-			<p class="year">Año <%= @year %> <abbr title="Después de Cristo">DC</abbr></p>
-			<hr/>
-			
-			<% demos = @muni.demographics_for(@year) %>
-			
-	    <% if demos %>
-			<p class="citizen">
-				<span>Habitantes:</span>
-				<strong><%= demos.total %> <small><abbr title="Habitantes">habs.</abbr></small></strong>
-			</p>
-			<hr/>
-			<p class="citizen">
-	      <span>Hombres</span>
-				<strong><%= demos.hombres %> ♂</strong>
-			</p>
-			<hr/>
-			<p class="citizen">
-	      <span>Mujeres</span>
-				<strong><%= demos.mujeres %> ♀</strong>
-			</p>
-	    <% else %>
-	      <p class="citizen"><span>No tenemos información sobre la población.</span></p>
-	    <% end %>
-			</p>
-			
-			<!--
-			<hr/>
-			<p class="surface">
-				<span>Superficie:</span>
-				<strong>6.666.666 <small><abbr title="Metros cuadrados">m<sup>2</sup></abbr></small></strong>
-			</p>
-			-->
-		</div>
-		
-		<p class="comparison">
-			<label for="city_search">Comparar los presus de <strong><%= @muni.province_name %></strong> con los de:</label>
-			<input type='text' id="city_search" placeholder="Tu municipio..." autofocus>
-			<button class="btn">Comparar</button>
-		</p>
-	</div>
-	<!-- /sidebar -->
+  <!-- sidebar -->
+  <div class="sidebar">
+
+    <div class="data">
+      <p class="year">Año <%= @year %> <abbr title="Después de Cristo">DC</abbr></p>
+      <hr/>
+
+      <% demos = @muni.demographics_for(@year) %>
+
+      <% if demos %>
+      <p class="citizen">
+        <span>Habitantes:</span>
+        <strong><%= people(demos.total) %> <small><abbr title="Habitantes">habs.</abbr></small></strong>
+      </p>
+      <hr/>
+      <p class="citizen">
+        <span>Hombres</span>
+        <strong><%= people(demos.hombres) %> ♂</strong>
+      </p>
+      <hr/>
+      <p class="citizen">
+        <span>Mujeres</span>
+        <strong><%= people(demos.mujeres) %> ♀</strong>
+      </p>
+      <% else %>
+        <p class="citizen"><span>No tenemos información sobre la población.</span></p>
+      <% end %>
+      </p>
+
+      <!--
+      <hr/>
+      <p class="surface">
+        <span>Superficie:</span>
+        <strong>6.666.666 <small><abbr title="Metros cuadrados">m<sup>2</sup></abbr></small></strong>
+      </p>
+      -->
+    </div>
+
+    <p class="comparison">
+      <label for="city_search">Comparar los presus de <strong><%= @muni.province_name %></strong> con los de:</label>
+      <input type='text' id="city_search" placeholder="Tu municipio..." autofocus>
+      <button class="btn">Comparar</button>
+    </p>
+  </div>
+  <!-- /sidebar -->
 
 
-	<!-- main -->
-	<div class="main">
-		<% budget = @muni.budget_for(@year) %>
-		<% if budget %>
-		  <script type="text/javascript" charset="utf-8">
-		    var ingresos = [
-		      <%= (budget.income_taxes*100/budget.total_ingresos).round %>,
-		      <%= (budget.income_administrations*100/budget.total_ingresos).round %>,
-		      <%= (budget.income_assets*100/budget.total_ingresos).round %>,
-		      <%= (budget.income_financial*100/budget.total_ingresos).round %>,
-		      <%= (budget.income_loans*100/budget.total_ingresos).round %>
-		    ];
-		    var gastos = [
-		      <%= (budget.expense_people*100/budget.total_gastos).round %>,
-		      <%= (budget.expense_commons*100/budget.total_gastos).round %>,
-		      <%= (budget.expense_projects*100/budget.total_gastos).round %>,
-		      <%= (budget.expense_grants*100/budget.total_gastos).round %>,
-		      <%= (budget.expense_administrations*100/budget.total_gastos).round %>,
-		      <%= (budget.expense_financial*100/budget.total_gastos).round %>,
-		      <%= (budget.expense_loans*100/budget.total_gastos).round %>
-		    ];
-		  </script>
+  <!-- main -->
+  <div class="main">
+    <% budget = @muni.budget_for(@year) %>
+    <% if budget %>
+      <script type="text/javascript" charset="utf-8">
+        var ingresos = [
+          <%= (budget.income_taxes*100/budget.total_ingresos).round %>,
+          <%= (budget.income_administrations*100/budget.total_ingresos).round %>,
+          <%= (budget.income_assets*100/budget.total_ingresos).round %>,
+          <%= (budget.income_financial*100/budget.total_ingresos).round %>,
+          <%= (budget.income_loans*100/budget.total_ingresos).round %>
+        ];
+        var gastos = [
+          <%= (budget.expense_people*100/budget.total_gastos).round %>,
+          <%= (budget.expense_commons*100/budget.total_gastos).round %>,
+          <%= (budget.expense_projects*100/budget.total_gastos).round %>,
+          <%= (budget.expense_grants*100/budget.total_gastos).round %>,
+          <%= (budget.expense_administrations*100/budget.total_gastos).round %>,
+          <%= (budget.expense_financial*100/budget.total_gastos).round %>,
+          <%= (budget.expense_loans*100/budget.total_gastos).round %>
+        ];
+      </script>
 
-			<h2 class="incomings_title">Ingresos</h2>
-			<h2 class="expenses_title">Gastos</h2>
-			<div id="holder"></div>
-		
-			<!-- totals -->
-			<div class="totals">
-				<h2>Total:</h2>
-				<div class="balance">
-					<p class="incomings"><span class="title">Total ingresos:</span><strong><%= money(budget.total_ingresos) %> <span class="arrow">&rarr;</span> +XX%</strong> <small>que la media en <br/><em>Gipuzkoa</em></small></p>
-					<p class="expenses"><span class="title">Total gastos:</span><strong><%= money(budget.total_gastos) %> <span class="arrow">&rarr;</span> -XX%</strong> <small>que la media en <br/><em>Santa Cruz de Tenerife</em></small></p>
-				</div>
-			</div>
-			<!-- /totals -->
-	
-			<!-- in_out -->
-			<div class="in_out">
-				<p class="citizen_in"><span>Cada habitante aporta:</span><strong>188.210€</strong> <em>(de su bolsillo)</em></p>
-				<p class="townhall_in"><span>El Ayuntamiento recibe:</span><strong>78.909€</strong> <em>(de las Administraciones)</em></p>
-				<p class="townhall_out"><span>El Ayuntamiento aporta:</span><strong>78.909€</strong> <em>(en Subvenciones y Proyectos)</em></p>
-			</div>
-			<!-- /in_out -->
-		
-			<!-- staff_vs_projects -->
-			<div class="staff_vs_projects">
-				<p class="staff"><span>Gasto en personal:</span><strong>14.669€</strong></p>
-				<p class="versus"><abbr title="Versus">vs.</abbr></p>
-				<p class="projects"><span>Gasto en proyectos:</span><strong>19.201€</strong></p>
-			</div>
-			<!-- /staff_vs_projects -->
-		
-			<!-- normal_expenses -->
-			<div class="normal_expenses">
-				<p><span>Gasto corriente / Día:</span><strong>14.669€</strong></p>
-			</div>
-			<!-- /normal_expenses -->
-		
-		<% else %>
-		  <p>No tenemos información disponible.</p>
-		<% end %>
-	</div>
-	<!-- /main -->
-	
+      <h2 class="incomings_title">Ingresos</h2>
+      <h2 class="expenses_title">Gastos</h2>
+      <div id="holder"></div>
+
+      <!-- totals -->
+      <div class="totals">
+        <h2>Total:</h2>
+        <div class="balance">
+          <p class="incomings"><span class="title">Total ingresos:</span><strong><%= money(budget.total_ingresos) %> <span class="arrow">&rarr;</span> +XX%</strong> <small>que la media en <br/><em>Gipuzkoa</em></small></p>
+          <p class="expenses"><span class="title">Total gastos:</span><strong><%= money(budget.total_gastos) %> <span class="arrow">&rarr;</span> -XX%</strong> <small>que la media en <br/><em>Santa Cruz de Tenerife</em></small></p>
+        </div>
+      </div>
+      <!-- /totals -->
+
+      <!-- in_out -->
+      <div class="in_out">
+        <p class="citizen_in"><span>Cada habitante aporta:</span><strong>188.210€</strong> <em>(de su bolsillo)</em></p>
+        <p class="townhall_in"><span>El Ayuntamiento recibe:</span><strong>78.909€</strong> <em>(de las Administraciones)</em></p>
+        <p class="townhall_out"><span>El Ayuntamiento aporta:</span><strong>78.909€</strong> <em>(en Subvenciones y Proyectos)</em></p>
+      </div>
+      <!-- /in_out -->
+
+      <!-- staff_vs_projects -->
+      <div class="staff_vs_projects">
+        <p class="staff"><span>Gasto en personal:</span><strong>14.669€</strong></p>
+        <p class="versus"><abbr title="Versus">vs.</abbr></p>
+        <p class="projects"><span>Gasto en proyectos:</span><strong>19.201€</strong></p>
+      </div>
+      <!-- /staff_vs_projects -->
+
+      <!-- normal_expenses -->
+      <div class="normal_expenses">
+        <p><span>Gasto corriente / Día:</span><strong>14.669€</strong></p>
+      </div>
+      <!-- /normal_expenses -->
+
+    <% else %>
+      <p>No tenemos información disponible.</p>
+    <% end %>
+  </div>
+  <!-- /main -->
+
 </div>
 <!-- /contents -->
 
@@ -155,7 +155,7 @@
 <h2><%= @muni.province_name %></h2>
 <hr/>
 <p class="show_evolution"><%= link_to "&larr; Evolución &rarr;", city_evolution_path(@muni), :class=>"btn" %></p>
-<hr/>  
+<hr/>
 Comparar con <input id="city_search" autofocus type='text' placeholder='Search inside'>
 <hr/>
 <% (1985..2009).each do |year| %>
@@ -165,7 +165,7 @@ Comparar con <input id="city_search" autofocus type='text' placeholder='Search i
 <%= @muni.codigo_ine %>
 <%= @muni.nombre %>
 
-<hr/> 
+<hr/>
 <% budget = @muni.budget_for(@year) %>
 <% if budget %>
   <script type="text/javascript" charset="utf-8">
