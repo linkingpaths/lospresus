@@ -30,7 +30,7 @@ class Municipio < ActiveRecord::Base
     presupuestos.for_year(year).first
   end
   def self.search(query)
-    Municipio.find(:all, :conditions => ['nombre LIKE ?', "%#{query}%"])
+    Municipio.find(:all, :conditions => ['nombre LIKE ?', "%#{query}%"], :limit => 10)
   end
 
   def to_param
