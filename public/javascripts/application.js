@@ -105,9 +105,18 @@ function single_graph() {
 };
 
 function compare_graph() {
-  var divs  = ["holder_a","holder_b"];
-  var ingrs = [ingresos,ingresos2];
-  var gasts = [gastos,gastos2];
+  var divs = ingrs = gasts = [];
+  
+  if ($('#holder_a').length != 0) {
+    divs = ["holder_a"];
+    ingrs = [ingresos];
+    gasts = [gastos];
+  }
+  if ($('#holder_b').length != 0) {
+    divs = (divs.length > 0) ? ["holder_a","holder_b"] : ["holder_b"];
+    ingrs = (ingrs.length > 0) ? [ingresos, ingresos2] : [ingresos2];
+    gasts = (gasts.length > 0) ? [gastos, gastos2] : [gastos2];
+  }
   
   for (var x=0; x < divs.length; x++) {
     var paper = Raphael(divs[x], 460, 530);
