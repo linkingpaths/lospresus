@@ -9,69 +9,88 @@
 <%= @muni.nombre %>
 
 <hr/> 
-<% budget = @muni.budget_for(@year) %>
-<% if budget %>
-  <script type="text/javascript" charset="utf-8">
-    var ingresos = [
-      <%= (budget.income_taxes*100/budget.total_ingresos).round %>,
-      <%= (budget.income_administrations*100/budget.total_ingresos).round %>,
-      <%= (budget.income_assets*100/budget.total_ingresos).round %>,
-      <%= (budget.income_financial*100/budget.total_ingresos).round %>,
-      <%= (budget.income_loans*100/budget.total_ingresos).round %>
+
+<script type="text/javascript" charset="utf-8">
+  var states = [1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009];
+
+  window.onload = function () {
+    income_evolution();
+    expense_evolution();
+    population_evolution();
+  };
+  function income_evolution() {
+    var r = Raphael("holder_evolution_income");
+    
+    var fin = function () {
+      this.flag = r.g.popup(this.bar.x, this.bar.y, this.bar.value || "0").insertBefore(this);
+    };
+    var fout = function () {
+      this.flag.animate({opacity: 0}, 300, function () {this.remove();});
+    };
+
+    var values = [
+    <% (1985..2009).each do |year| -%>
+      <% budget = @muni.budget_for(year) -%>
+      <% if budget -%>
+      <%= budget.total_ingresos -%><%= year == 2009 ? "" : "," -%>
+      <% else -%>0,<% end -%>
+    <% end -%>
     ];
-    var gastos = [
-      <%= (budget.expense_people*100/budget.total_gastos).round %>,
-      <%= (budget.expense_commons*100/budget.total_gastos).round %>,
-      <%= (budget.expense_projects*100/budget.total_gastos).round %>,
-      <%= (budget.expense_grants*100/budget.total_gastos).round %>,
-      <%= (budget.expense_administrations*100/budget.total_gastos).round %>,
-      <%= (budget.expense_financial*100/budget.total_gastos).round %>,
-      <%= (budget.expense_loans*100/budget.total_gastos).round %>
+
+    r.g.barchart(10, 10, 800, 200, [values]).hover(fin, fout).label([states]);
+  };
+  function expense_evolution() {
+    var r = Raphael("holder_evolution_expense");
+    
+    var fin = function () {
+      this.flag = r.g.popup(this.bar.x, this.bar.y, this.bar.value || "0").insertBefore(this);
+    };
+    var fout = function () {
+      this.flag.animate({opacity: 0}, 300, function () {this.remove();});
+    };
+
+    var values = [
+    <% (1985..2009).each do |year| -%>
+      <% budget = @muni.budget_for(year) -%>
+      <% if budget -%>
+      <%= budget.total_gastos -%><%= year == 2009 ? "" : "," -%>
+      <% else -%>0,<% end -%>
+    <% end -%>
     ];
-  </script>
-  <div id="holder"></div>
 
-  <p>Presu: I <%= money(budget.total_ingresos) %> / G <%= money(budget.total_gastos) %></p>
-  <ul>
-    Ingresos:<br/>
-  <li>Impuestos y tasas = <%= money(budget.income_taxes) %></li>
-  <li>Otras administraciones = <%= money(budget.income_administrations) %></li>
-  <li>Patrimonio = <%= money(budget.income_assets) %></li>
-  <li>Activos financieros = <%= money(budget.income_financial) %></li>
-  <li>Préstamos = <%= money(budget.income_loans) %></li>
-  </ul>
-  <ul>
-    Gastos:<br/>
-    <ul>
-      <li>Personal = <%= money(budget.expense_people) %></li>
-      <li>Gastos cotidianos = <%= money(budget.expense_commons) %> </li>
-      <li>Proyectos e inversiones = <%= money(budget.expense_projects) %></li>
-      <li>Subvenciones = <%= money(budget.expense_grants) %></li>
-      <li>Otras administraciones y entidades = <%= money(budget.expense_administrations) %> </li>
-      <li>Activos financieros =<%= money(budget.expense_financial) %></li>
-      <li>Préstamos y gastos financieros = <%= money(budget.expense_loans) %></li>
-    </ul>
-  </ul>
-<% else %>
-  No data.
-<% end %>
+    r.g.barchart(10, 10, 800, 200, [values]).hover(fin, fout).label([states]);
+  };
+  function population_evolution() {
+    var r = Raphael("holder_evolution_population");
+    
+    var fin = function () {
+      this.flag = r.g.popup(this.bar.x, this.bar.y, this.bar.value || "0").insertBefore(this);
+    };
+    var fout = function () {
+      this.flag.animate({opacity: 0}, 300, function () {this.remove();});
+    };
 
+    var values = [
+    <% (1985..2009).each do |year| -%>
+      <% demographic = @muni.demographics_for(year) -%>
+      <% if demographic -%>
+      <%= demographic.total -%><%= year == 2009 ? "" : "," -%>
+      <% else -%>0,<% end -%>
+    <% end -%>
+    ];
 
-<hr/>
+    r.g.barchart(10, 10, 800, 200, [values]).hover(fin, fout).label([states]);
+  };
+</script>
+<h2>Ingresos</h2>
+<div id="holder_evolution_income"></div>
 
-<div style="margin-bottom:120px;">
-  <div style="float:left;border:1px solid white;padding:10px">
-    <h3><%= @year %></h3>
-    <% demos = @muni.demographics_for(@year) %>
-    <% if demos %>
-      <%= demos.total %>
-      <p>Machotes <%= demos.hombres %> ♂</p>
-      <p>Machotas <%= demos.mujeres %> ♀</p>
-    <% else %>
-      <p>No data.</p>
-    <% end %>
-  </div>
-</div>
+<h2>Gastos</h2>
+<div id="holder_evolution_expense"></div>
+
+<h2>Población</h2>
+<div id="holder_evolution_population"></div>
+
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
