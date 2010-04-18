@@ -49,73 +49,55 @@ $(document).ready(function () {
   if ($('#holder_a').length != 0 || $('#holder_b').length != 0) {compare_graph()}
 });
 
+var income_txts = ["IMPUESTOS Y TASAS","OTRAS ADMINISTRACIONES","PATRIMONIO","ACTIVOS FINANCIEROS","PRÉSTAMOS"];
+var income_txts_short  = ["IMPUESTOS Y TASAS","OTRAS ADMONS.","PATRIMONIO","ACT. FINANCIEROS","PRÉSTAMOS"];
+var expense_txts = ["PERSONAL","GASTOS COTIDIANOS","PROYECTOS E INVERSIONES","SUBVENCIONES","OTRAS ENTIDADES","ACTIVOS FINANCIEROS","PRÉSTAMOS"];
+
 function single_graph() {
   var paper = Raphael("holder", 660, 530);
   
-  var ingr   = ["IMPUESTOS Y TASAS","OTRAS ADMINISTRACIONES","PATRIMONIO","ACTIVOS FINANCIEROS","PRÉSTAMOS"];
-  var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
   var vi = ingresos;
   var despl = 0;
   for (var i=0; i < vi.length; i++) {
     despl = despl + 260*vi[i]/100
-    paper.presus.start_block(0,i*100+i*5,200,100,vi[i],ingr[i],despl,colors[i],305,24);
+    paper.presus.start_block(0,i*100+i*5,200,100,vi[i],income_txts[i],despl,305,24);
   };
   
-  var ingr   = ["PERSONAL","GASTOS COTIDIANOS","PROYECTOS E INVERSIONES","SUBVENCIONES","OTRAS ENTIDADES","ACTIVOS FINANCIEROS","PRÉSTAMOS"];
-  var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
   var vg = gastos;
   var despl = 0;
   for (var i=0; i < vg.length; i++) {
     despl = despl + 260*vg[i]/100
-    paper.presus.end_block(0,i*70+i*5,200,70,vg[i],ingr[i],despl,colors[i],335,459);
+    paper.presus.end_block(0,i*70+i*5,200,70,vg[i],expense_txts[i],despl,335,459);
   };
   paper.safari();
 };
 
 function compare_graph() {
-  var paper = Raphael("holder_a", 460, 530);
+  var divs  = ["holder_a","holder_b"];
+  var ingrs = [ingresos,ingresos2];
+  var gasts = [gastos,gastos2];
   
-  var ingr   = ["IMPUESTOS Y TASAS","OTRAS ADMONS.","PATRIMONIO","ACT. FINANCIEROS","PRÉSTAMOS"];
-  var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
-  var vi = ingresos;
-  var despl = 0;
-  for (var i=0; i < vi.length; i++) {
-    despl = despl + 260*vi[i]/100
-    paper.presus.start_block(0,i*100+i*5,130,100,vi[i],ingr[i],despl,colors[i],205,20);
-  };
+  for (var x=0; x < divs.length; x++) {
+    var paper = Raphael(divs[x], 460, 530);
 
-  var ingr   = ["PERSONAL","GASTOS COTIDIANOS","PROYECTOS E INVERSIONES","SUBVENCIONES","OTRAS ENTIDADES","ACTIVOS FINANCIEROS","PRÉSTAMOS"];
-  var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
-  var vg = gastos;
-  var despl = 0;
-  for (var i=0; i < vg.length; i++) {
-    despl = despl + 260*vg[i]/100
-    paper.presus.end_block(0,i*70+i*5,130,70,vg[i],ingr[i],despl,colors[i],235,330);
-  };
-  ///////////////////////////////////////////////////////////////////////////////////
-  paper = Raphael("holder_b", 460, 530);
-  var ingr   = ["IMPUESTOS Y TASAS","OTRAS ADMONS.","PATRIMONIO","ACT. FINANCIEROS","PRÉSTAMOS"];
-  var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
-  var vi = ingresos2;
-  var despl = 0;
-  for (var i=0; i < vi.length; i++) {
-    despl = despl + 260*vi[i]/100
-    paper.presus.start_block(0,i*100+i*5,130,100,vi[i],ingr[i],despl,colors[i],205,20);
-  };
+    var vi = ingrs[x];
+    var despl = 0;
+    for (var i=0; i < vi.length; i++) {
+      despl = despl + 260*vi[i]/100
+      paper.presus.start_block(0,i*100+i*5,130,100,vi[i],income_txts_short[i],despl,205,20);
+    };
 
-  var ingr   = ["PERSONAL","GASTOS COTIDIANOS","PROYECTOS E INVERSIONES","SUBVENCIONES","OTRAS ENTIDADES","ACTIVOS FINANCIEROS","PRÉSTAMOS"];
-  var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
-  var vg = gastos2;
-  var despl = 0;
-  for (var i=0; i < vg.length; i++) {
-    despl = despl + 260*vg[i]/100
-    paper.presus.end_block(0,i*70+i*5,130,70,vg[i],ingr[i],despl,colors[i],235,330);
+    var vg = gasts[x];
+    var despl = 0;
+    for (var i=0; i < vg.length; i++) {
+      despl = despl + 260*vg[i]/100
+      paper.presus.end_block(0,i*70+i*5,130,70,vg[i],expense_txts[i],despl,235,330);
+    };
+    paper.safari();
   };
-  paper.safari();
 };
 
-function format_num(num)
-{
+function format_num(num){
   num += '';
   x = num.split(',');
   x1 = x[0];

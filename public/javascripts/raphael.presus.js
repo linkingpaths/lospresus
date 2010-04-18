@@ -6,7 +6,8 @@
  */
 (function () {
   Raphael.fn.presus = Raphael.fn.presus || {};
-  Raphael.fn.presus.start_block = function (sx,sy,ex,ey,percent,text,despl,color,start,font_size){
+  Raphael.fn.presus.start_block = function (sx,sy,ex,ey,percent,text,despl,start,font_size){
+    var color = "#031e1f";
     var padding = 10;
     var l = 50;
 
@@ -23,7 +24,7 @@
       "L",sx,sy+ey,
       "L",sx+10,sy+ey/2,
       "z"
-    ]).attr({fill: color, "stroke-width": 0, opacity: percent/100.0+0.35});//.attr({fill: "url(http://www.irunmywebsite.com/images/irunmywebsitesmall.png)", stroke: color});
+    ]).attr({fill: color, "stroke-width": 0, opacity: (percent < 1 ? 0.1 : percent/100.0+0.35)});
 
     var txt = this.print(0, 0, percent+"%", this.getFont("League Gothic"), 60).attr({fill: "#fff"});
     var bbox = txt.getBBox();
@@ -34,7 +35,8 @@
     txt.translate(sx+ex-bbox.width-padding,sy+bbox.height+(font_size<24 ? 60 : 55));
   };
 
-  Raphael.fn.presus.end_block = function (sx,sy,ex,ey,percent,text,despl,color,start,sblock){
+  Raphael.fn.presus.end_block = function (sx,sy,ex,ey,percent,text,despl,start,sblock){
+    var color = "#031e1f";
     var padding = 10;
     var l = 50;
 
@@ -52,7 +54,7 @@
       "L",start+20,despl+130-pos,
       "C",start+20+l,despl+130-pos,sblock+sx-l,sy,sblock+sx,sy,
       "z"
-    ]).attr({fill: color, "stroke-width": 0, opacity: percent/100.0+0.35});
+    ]).attr({fill: color, "stroke-width": 0, opacity: (percent < 1 ? 0.1 : percent/100.0+0.35)});
 
     var txt = this.print(0, 0, percent+"%", this.getFont("League Gothic"), 40).attr({fill: "#fff"});
     var bbox = txt.getBBox();
