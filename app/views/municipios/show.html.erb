@@ -2,17 +2,7 @@
   <%= link_to @muni.nombre, city_card_path(@muni) %> EN <%= @year %>
 <% end %>
 
-<!-- timeline -->
-<div class="timeline">
-  <p class="years_nav years_prev" id="mycarousel-prev"><a href="#">&larr; años anteriores</a></p>
-  <p class="years_nav years_next" id="mycarousel-next"><a href="#">años siguientes &rarr;</a></p>
-  <ul id="budget_timeline" class="timeline_years">
-    <% (1985..2009).each do |year| %> 
-      <li <%= (year == @year) ? "class='actual_year'": '' %>><%= link_to year, city_card_by_year_path(@muni, year) %></li>
-    <% end %>
-  </ul>
-</div>
-<!-- /timeline -->
+<%= render :partial => 'shared/timeline', :locals => { :muni => @muni } %>
 
 <p class="show_evolution"><%= link_to "&larr; Evolución &rarr;", city_evolution_path(@muni), :class=>"btn" %></p>
 
