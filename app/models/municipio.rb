@@ -14,4 +14,20 @@
 class Municipio < ActiveRecord::Base
   has_many :presupuestos
   has_many :demograficas
+  def to_param
+    "#{self.id}-#{self.nombre.parameterize}"
+  end  
+  def province_name
+    PROVINCES[provincia]
+  end      
+  def demographics_for(year)
+    demograficas.for_year(year).first
+  end
+  def budget_for(year)
+    presupuestos.for_year(year).first
+  end
+  def self.search(query)
+    Municipio.find(:all, :conditions => ['nombre LIKE ?', "%#{query}%"])
+  end
 end
+

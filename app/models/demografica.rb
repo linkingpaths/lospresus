@@ -15,4 +15,7 @@
 
 class Demografica < ActiveRecord::Base
   belongs_to :municipio
+  named_scope :for_year, lambda { |y|
+    { :conditions => { :ano => y }, :limit => 1 }
+  }
 end

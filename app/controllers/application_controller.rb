@@ -5,6 +5,9 @@ class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
-  # Scrub sensitive parameters from your log
-  # filter_parameter_logging :password
+  filter_parameter_logging :password
+  
+  #rescue_from ActionView::TemplateError do render :template => 'errors/404' end
+  #rescue_from ActionController::RoutingError do render :template => 'errors/404' end
+  
 end

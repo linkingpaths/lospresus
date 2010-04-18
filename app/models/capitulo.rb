@@ -14,4 +14,9 @@
 
 class Capitulo < ActiveRecord::Base
   belongs_to :presupuesto
+  
+  named_scope :number, lambda { |i|
+    { :conditions => { :capitulo => i }, :limit => 1 }
+  }           
+  
 end
