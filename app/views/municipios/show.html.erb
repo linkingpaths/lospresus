@@ -1,5 +1,8 @@
 <h2><%= @muni.province_name %></h2>
-
+<hr/>
+<%= link_to "Evolución", city_evolution_path(@muni) %>
+<hr/>  
+Comparar con <input id="city_search" autofocus type='text' placeholder='Search inside'>
 <hr/>
 <% (1985..2009).each do |year| %>
   <%= link_to year, city_card_by_year_path(@muni, year) %>
