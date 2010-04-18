@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html lang="en"> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <title>Graphs</title> 
+    <script src="javascripts/raphael-min.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="javascripts/raphael.presus.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="fonts/League_Gothic.font.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript" charset="utf-8">
+      window.onload = function(){
+        one();
+        two();
+      };
+      
+      function one() {
+        var paper = Raphael("holder", 660, 530);
+        
+        var ingr   = ["IMPUESTOS Y TASAS","OTRAS ADMINISTRACIONES","PATRIMONIO","ACTIVOS FINANCIEROS","PRÉSTAMOS"];
+        var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
+        var vi = ingresos;
+        var despl = 0;
+        for (var i=0; i < vi.length; i++) {
+          despl = despl + 260*vi[i]/100
+          paper.presus.start_block(0,i*100+i*5,200,100,vi[i],ingr[i],despl,colors[i],305,24);
+        };
+        
+        var ingr   = ["PERSONAL","GASTOS COTIDIANOS","PROYECTOS E INVERSIONES","SUBVENCIONES","OTRAS ENTIDADES","ACTIVOS FINANCIEROS","PRÉSTAMOS"];
+        var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
+        var vg = gastos;
+        var despl = 0;
+        for (var i=0; i < vg.length; i++) {
+          despl = despl + 260*vg[i]/100
+          paper.presus.end_block(0,i*70+i*5,200,70,vg[i],ingr[i],despl,colors[i],335,459);
+        };
+        paper.safari();
+      };
+      
+      function two() {
+        var paper = Raphael("holder2", 460, 530);
+        
+        var ingr   = ["PROYECTOS E INVER.","OTRAS ADMONS.","PATRIMONIO","ACT. FINANCIEROS","PRÉSTAMOS"];
+        var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
+        var vi = ingresos;
+        var despl = 0;
+        for (var i=0; i < vi.length; i++) {
+          despl = despl + 260*vi[i]/100
+          paper.presus.start_block(0,i*100+i*5,130,100,vi[i],ingr[i],despl,colors[i],205,20);
+        };
+
+        var ingr   = ["PERSONAL","GASTOS COTIDIANOS","PROYECTOS E INVERSIONES","SUBVENCIONES","OTRAS ENTIDADES","ACTIVOS FINANCIEROS","PRÉSTAMOS"];
+        var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
+        var vg = gastos;
+        var despl = 0;
+        for (var i=0; i < vg.length; i++) {
+          despl = despl + 260*vg[i]/100
+          paper.presus.end_block(0,i*70+i*5,130,70,vg[i],ingr[i],despl,colors[i],235,330);
+        };
+        ///////////////////////////////////////////////////////////////////////////////////
+        paper = Raphael("holder3", 460, 530);
+        var ingr   = ["PROYECTOS E INVER.","OTRAS ADMONS.","PATRIMONIO","ACT. FINANCIEROS","PRÉSTAMOS"];
+        var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
+        var vi = ingresos2;
+        var despl = 0;
+        for (var i=0; i < vi.length; i++) {
+          despl = despl + 260*vi[i]/100
+          paper.presus.start_block(0,i*100+i*5,130,100,vi[i],ingr[i],despl,colors[i],205,20);
+        };
+
+        var ingr   = ["PERSONAL","GASTOS COTIDIANOS","PROYECTOS E INVERSIONES","SUBVENCIONES","OTRAS ENTIDADES","ACTIVOS FINANCIEROS","PRÉSTAMOS"];
+        var colors = ["#031e1f","#031e1f","#031e1f","#031e1f","#031e1f","#031e1f","#031e1f"]
+        var vg = gastos2;
+        var despl = 0;
+        for (var i=0; i < vg.length; i++) {
+          despl = despl + 260*vg[i]/100
+          paper.presus.end_block(0,i*70+i*5,130,70,vg[i],ingr[i],despl,colors[i],235,330);
+        };
+        paper.safari();
+      };
+    </script> 
+  </head> 
+  <body>
+      <script type="text/javascript" charset="utf-8">
+        var ingresos = [5,55,25,10,5];
+        var gastos = [5,25,25,10,5,20,10];
+        var ingresos2 = [5,65,15,14,1];
+        var gastos2 = [5,25,25,10,5,20,10];
+      </script>
+      <div id="holder"></div>
+      <div id="holder2" style="float:left"></div>
+      <div id="holder3" style="float:left"></div>
+  </body> 
+</html>

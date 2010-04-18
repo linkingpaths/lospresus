@@ -11,6 +11,26 @@
 <hr/> 
 <% budget = @muni.budget_for(@year) %>
 <% if budget %>
+  <script type="text/javascript" charset="utf-8">
+    var ingresos = [
+      <%= (budget.income_taxes*100/budget.total_ingresos).round %>,
+      <%= (budget.income_administrations*100/budget.total_ingresos).round %>,
+      <%= (budget.income_assets*100/budget.total_ingresos).round %>,
+      <%= (budget.income_financial*100/budget.total_ingresos).round %>,
+      <%= (budget.income_loans*100/budget.total_ingresos).round %>
+    ];
+    var gastos = [
+      <%= (budget.expense_people*100/budget.total_gastos).round %>,
+      <%= (budget.expense_commons*100/budget.total_gastos).round %>,
+      <%= (budget.expense_projects*100/budget.total_gastos).round %>,
+      <%= (budget.expense_grants*100/budget.total_gastos).round %>,
+      <%= (budget.expense_administrations*100/budget.total_gastos).round %>,
+      <%= (budget.expense_financial*100/budget.total_gastos).round %>,
+      <%= (budget.expense_loans*100/budget.total_gastos).round %>
+    ];
+  </script>
+  <div id="holder"></div>
+
   <p>Presu: I <%= money(budget.total_ingresos) %> / G <%= money(budget.total_gastos) %></p>
   <ul>
     Ingresos:<br/>
@@ -19,9 +39,7 @@
   <li>Patrimonio = <%= money(budget.income_assets) %></li>
   <li>Activos financieros = <%= money(budget.income_financial) %></li>
   <li>Préstamos = <%= money(budget.income_loans) %></li>
-  </ul>   
-  
-  
+  </ul>
   <ul>
     Gastos:<br/>
     <ul>
@@ -33,7 +51,6 @@
       <li>Activos financieros =<%= money(budget.expense_financial) %></li>
       <li>Préstamos y gastos financieros = <%= money(budget.expense_loans) %></li>
     </ul>
-    
   </ul>
 <% else %>
   No data.
