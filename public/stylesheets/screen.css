@@ -421,7 +421,11 @@ a::selection
 
 .initial_search
 {
-	
+	background: url(/images/home.png) no-repeat;
+	height: 163px;
+	margin: 0 auto 40px auto;
+	padding: 260px 0 0 70px;
+	width: 449px;
 }
 
 .initial_search label,
@@ -429,12 +433,41 @@ a::selection
 .initial_search button
 {
 	display: inline-block;
-	font-size: 24px;
+}
+
+.initial_search label
+{
+	display: none;
 }
 
 .initial_search input
 {
-	
+	-moz-box-shadow: none;
+	-webkitbox-box-shadow: none;
+	box-shadow: none;
+	background-color: transparent;
+	border: none;
+	font-family: 'LeagueGothicRegular', Impact, Arial, sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	width: 200px;
+}
+
+input[type="text"]:hover,
+select:hover,
+textarea:hover
+{
+  border-color: none;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus
+{
+	-moz-box-shadow: none;
+	-webkitbox-box-shadow: none;
+	box-shadow: none;
+	border-color: none;
 }
 
 .initial_search button
