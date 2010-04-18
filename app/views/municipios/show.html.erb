@@ -1,5 +1,5 @@
 <% content_for :header_title do %>
-  <%= @muni.nombre %> EN <%= @year %>
+  <%= link_to @muni.nombre, city_card_path(@muni) %> EN <%= @year %>
 <% end %>
 
 <!-- timeline -->

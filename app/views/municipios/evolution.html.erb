@@ -1,5 +1,5 @@
 <% content_for :header_title do %>
-  <%= @muni.nombre %>
+  <%= link_to @muni.nombre, city_card_path(@muni) %>
 <% end %>
 
 <h2><%= @muni.province_name %></h2>
