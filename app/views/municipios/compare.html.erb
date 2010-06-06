@@ -6,9 +6,9 @@
 <div class="contents">
   <!-- main -->
   <div class="main mainfull">
+
     <div class="compare_city compare_city_a">
       <h2><%= @muni.nombre %></h2>
-    
       <% budget = @muni.budget_for(@year) %>
       <% if budget %>
         <script type="text/javascript" charset="utf-8">
@@ -30,7 +30,7 @@
           ];
         </script>
         <div class="holder" id="holder_a"></div>
-      
+
         <!-- totals -->
         <div class="totals">
           <h3>Total:</h3>
@@ -49,13 +49,10 @@
       <% else %>
         <p>No podemos realizar la comparación porque nos falta el presupuesto de este año. Snif.</p>
       <% end %>
-      
-      
     </div>
-    
+
     <div class="compare_city compare_city_b">
       <h2><%= @muni_b.nombre %></h2>
-    
       <% budget = @muni_b.budget_for(@year) %>
       <% if budget %>
         <script type="text/javascript" charset="utf-8">
@@ -77,32 +74,29 @@
           ];
         </script>
         <div class="holder" id="holder_b"></div>
-        
+
         <!-- totals -->
         <div class="totals">
           <h3>Total:</h3>
           <div class="balance">
             <p class="incomings">
               <span class="title">Total ingresos:</span>
-              <strong><%= money(budget.total_ingresos) %> <span class="arrow">&rarr;</span>  <%= income_gap(@muni,@year) %>%</strong> <small>que la media en <br/><em><%= @muni.province_name %></em></small>
+              <strong><%= money(budget.total_ingresos) %> <span class="arrow">&rarr;</span>  <%= income_gap(@muni_b,@year) %>%</strong> <small>que la media en <br/><em><%= @muni_b.province_name %></em></small>
             </p>
             <p class="expenses">
               <span class="title">Total gastos:</span>
-              <strong><%= money(budget.total_gastos) %> <span class="arrow">&rarr;</span> <%= expense_gap(@muni,@year) %>%</strong> <small>que la media en <br/><em><%= @muni.province_name %></em></small>
+              <strong><%= money(budget.total_gastos) %> <span class="arrow">&rarr;</span> <%= expense_gap(@muni_b,@year) %>%</strong> <small>que la media en <br/><em><%= @muni_b.province_name %></em></small>
             </p>
           </div>
         </div>
         <!-- /totals -->
-
-        
       <% else %>
         <p>No podemos realizar la comparación porque nos falta el presupuesto de este año. Snif.</p>
       <% end %>
     </div>
-  
+
   </div>
   <!-- /main -->
 
 </div>
 <!-- /contents -->
-
