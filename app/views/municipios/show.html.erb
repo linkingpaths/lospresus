@@ -161,7 +161,7 @@
 <hr/>
 Comparar con <input id="city_search" autofocus type='text' placeholder='Search inside'>
 <hr/>
-<% (1985..2009).each do |year| %>
+<% (1985..Date.today.year-1).each do |year| %>
   <%= link_to year, city_card_by_year_path(@muni, year) %>
 <% end %>
 <hr/>

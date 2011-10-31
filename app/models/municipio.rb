@@ -18,8 +18,6 @@ class Municipio < ActiveRecord::Base
   has_many :presupuestos
   has_many :demograficas
 
-  validates_uniqueness_of :slug
-  
   def province_name
     PROVINCES[provincia]
   end      
