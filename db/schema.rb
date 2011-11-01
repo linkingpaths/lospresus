@@ -9,13 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100418114814) do
+ActiveRecord::Schema.define(:version => 20100418145301) do
 
   create_table "capitulos", :force => true do |t|
     t.integer  "presupuesto_id"
     t.integer  "capitulo"
-    t.decimal  "ingresos",       :precision => 10, :scale => 2
-    t.decimal  "gastos",         :precision => 10, :scale => 2
+    t.decimal  "ingresos",       :precision => 12, :scale => 2
+    t.decimal  "gastos",         :precision => 12, :scale => 2
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -48,10 +48,10 @@ ActiveRecord::Schema.define(:version => 20100418114814) do
   create_table "presupuestos", :force => true do |t|
     t.integer  "municipio_id"
     t.integer  "ano"
-    t.decimal  "total_ingresos"
+    t.decimal  "total_ingresos", :precision => 12, :scale => 2
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.decimal  "total_gastos",   :precision => 10, :scale => 2
+    t.decimal  "total_gastos",   :precision => 12, :scale => 2
   end
 
   add_index "presupuestos", ["ano"], :name => "index_presupuestos_on_ano"

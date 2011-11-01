@@ -2,7 +2,7 @@ require 'fastercsv'
 
 module SupportFunctions
   def self.check_demography
-    ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10"].each do |year|
+    ["86","87","88","89","90","91","92","93","94","95","96","98","99","00","01","02","03","04","05","06","07","08","09","10"].each do |year|
       file = "#{RAILS_ROOT}/data/ine/csv/pobmun#{year}.csv"
       puts "*********************************************************************"
       puts "Processing year '#{year}"
@@ -43,25 +43,22 @@ module SupportFunctions
   end
 
   def self.check_city_slugs
+    puts "*********************************************************************"
+    puts "Checking dup slugs"
+    puts "*********************************************************************"
+    
     munis = Municipio.all
 
     munis.each_with_index do |muni, idx|
-      clashing = Municipio.find_all_by_nombre(muni.nombre)
+      puts "[#{idx+1}/#{munis.size}] #{muni.nombre}"
+      clashing = Municipio.find_all_by_slug(muni.slug)
 
-      if clashing.size == 1
-        puts "Slugized #{muni.nombre} [#{idx}/#{munis.size}]"
-        unless muni.slug
-          muni.slug = muni.nombre.parameterize
-          muni.save!
-        end
-      else
+      if clashing.size > 1
         puts "Clashing names found for #{muni.nombre}!"
         clashing.each do |cs|
-          unless cs.slug
-            cs.slug = (cs.nombre + "-" + cs.province_name).parameterize
-            puts "Trying #{cs.id} - #{cs.slug}"
-            cs.save!
-          end
+          cs.slug = (cs.nombre + "-" + cs.province_name).parameterize
+          puts "Trying #{cs.id} - #{cs.slug}"
+          cs.save!
         end
       end
     end
@@ -102,10 +99,14 @@ module SupportFunctions
   end
 
   def self.check_budgets_total
+    puts "*********************************************************************"
+    puts "Processing total badgets"
+    puts "*********************************************************************"
+
     munis = Municipio.all
 
     munis.each_with_index do |muni, idx|
-      puts "Updating #{muni.nombre} [#{idx}/#{munis.size}]"
+      puts "[#{idx+1}/#{munis.size}] Updating #{muni.nombre}"
       muni.presupuestos.each do |budget|
         if budget.total_ingresos == nil || budget.total_gastos == nil
           c1, c2, c3, c4, c5, c6, c7, c8, c9 = budget.chapter(1), budget.chapter(2), budget.chapter(3), budget.chapter(4), budget.chapter(5), budget.chapter(6), budget.chapter(7), budget.chapter(8), budget.chapter(9)
