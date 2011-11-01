@@ -23,7 +23,7 @@ module SupportFunctions
                            :codigo_ine => ine_id)
           puts "Creating #{mun.nombre}"
         end
-        y = "20#{year}".to_i
+        y = year.to_i > 85 ? "19#{year}".to_i : "20#{year}".to_i
         demos = mun.demograficas.find_by_ano(y)
         unless demos
           puts "Creating demographics for #{mun.nombre} [#{y}]"
